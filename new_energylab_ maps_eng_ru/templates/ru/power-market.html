@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рынок электроэнергии</title>
+    <link rel="stylesheet" href="../../static/css/power-market.css">
+    <link rel="stylesheet" href="../../static/css/hybrid-modeling.css">
+    <link rel="icon" href="../../static/img/icon.ico">
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("pm-navbar.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="banner">
+        <div class="slogan">
+            <h3>Моделирование и цифровизация электроэнергетической системы Казахстана для формирования новых рыночных моделей, тарифная политика, обеспечивающая высокую долю возобновляемых источников энергии. </h3>
+        </div>
+    </div>
+
+
+<div class="tag">
+      <h1>О проекте</h1>
+    </div>
+    <div class="short_about">
+      <div>
+          <b>Цель:</b>Цель проекта: изучить и проанализировать пути формирования эффективной тарифной политики и новых рыночных механизмов в электроэнергетике Казахстана с увеличением доли возобновляемых источников энергии (ВИЭ) и цифровизацией отрасли путем сравнения различных сценариев развития; разработка программного обеспечения или веб-платформы для эффективной работы оператора по сбыту электроэнергии.
+        
+        </div>
+    </div>
+  
+  <center>
+    <img src="../../static/img/pm-structure.png" class="pm-structure">   
+  </center>
+
+<div class="about_link">
+  <button class="button-31" role="button" onclick="openWindow('pm-about.html')">подробнее</button>
+</div>
+
+
+    <div id="footer"></div>
+
+
+    <script>
+
+        function openWindow(link){
+            window.open(link);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+
+        let slideIndex = 0;
+        const slidesPerView = 3; // Number of members per slide
+
+        function updateCarousel() {
+            const slideWidth = 100 / slidesPerView;
+            track.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+
+            prevButton.disabled = slideIndex === 0;
+            nextButton.disabled = slideIndex >= slides.length - slidesPerView;
+        }
+
+        function slidePrev() {
+            slideIndex = Math.max(0, slideIndex - 2);
+            updateCarousel();
+        }
+
+        function slideNext() {
+            slideIndex = Math.min(slideIndex +2, slides.length - slidesPerView);
+            updateCarousel();
+        }
+
+        prevButton.addEventListener('click', slidePrev);
+        nextButton.addEventListener('click', slideNext);
+
+        updateCarousel();
+        });
+    </script>
+    
+</body>
+</html>

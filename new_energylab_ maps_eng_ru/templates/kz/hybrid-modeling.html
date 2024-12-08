@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Modeling</title> 
+    <link rel="stylesheet" href="../../static/css/hybrid-modeling.css">
+    <link rel="icon" href="../../static/img/icon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style>   
+        .carousel-caption{
+            bottom: 35%;
+            position: absolute;   
+         }
+    </style>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("hm-navbar.html"); 
+        $("#footer").load("footer.html"); 
+        });
+</script> 
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+  
+  <header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('../../static/img/hm-theme.png')">
+          <div class="carousel-caption">
+            <h1>Гибридное Моделирование</h1>
+            <p>Энергетическое моделирование для планирования устойчивого будущего</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  
+
+<div class="info-section">
+    <div>
+        <h1>Цели</h1>
+            <ul>
+                <li>Разработать комплексный инструмент гибридного моделирования энергосистемы, включающий модель долгосрочного планирования энергосистемы и операционную модель электроэнергетической системы</li>
+                <li>Разработать Дорожную карту внедрения ВИЭ на 2030/2050 гг., соответствующую оптимальным параметрам производительности, обеспечивающим надежность, экономическую целесообразность и экологичность энергосистемы</li>
+            </ul>
+    </div>
+
+    <div>
+        <h1>Задачи</h1>
+        <ul>
+            <li>Обновление долгосрочной модели энергосистемы</li>
+            <li>Создание оперативной модели мощности с высокой пространственной, временной, технической дезагрегацией</li>
+            <liv>Связывание инструментов моделирования</liv>
+            <li>Разработка дорожной карты возобновляемой энергетики для Казахстана</li>
+            <li>Анализ чувствительности и оценка неопределенностей </li>
+
+        </ul>
+    </div>
+
+    <div>
+        <h1>Ожидаемые результаты</h1>
+        <ul>
+            <li>Инструмент моделирования с входными данными высокого качества</li>
+            <li>Анализ сценариев</li>
+            <li>Дорожная карта по возобновляемой энергетике в Казахстане с данными об оптимальном географическом положении, сроках строительства и инвестициях с учетом потенциала возобновляемой энергетики и потребности региона в энергии</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="inner-maps">
+
+    <div id="parent">
+        <iframe src="../../maps/energy_stations_map.html" frameborder="0" width="100%" height="100%"  id="map" ></iframe>
+        <div id="buttons">
+          <button onclick="energyStations()"  type="button" class="btn btn-primary" id="energy" >Линии электростанций</button>
+          <button onclick="commompp()" type="button" class="btn btn-secondary" id="common" >Все виды электростанции </button>  
+          <button onclick="wind()" type="button" class="btn btn-secondary" id="wind">Ветер</button>
+          <button onclick="coal()" type="button" class="btn btn-secondary" id="coal">Уголь</button>
+          <button onclick="gas()" type="button" class="btn btn-secondary" id="gas">Газ</button>
+          <button onclick="pv()" type="button" class="btn btn-secondary" id="pv">Солнечная</button>
+          <button onclick="hydro()" type="button" class="btn btn-secondary" id="hydro">Гидро</button>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div class="carousel-container">
+    <h1>Наша <strong>Команда</strong></h1>
+
+  <div class="carousel-track" onclick="openWindow('hm-team.html')" >
+    <div class="carousel-slide">
+      <!-- Team member 1 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Zhakiyev.png" alt="Team Member 1">
+        <h3>Жакиев Нурхат Куандыкович</h3>
+        <p>Кандидат физико-математических наук</p>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <!-- Team member 2 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Sarsembayev.png" alt="Team Member 1">
+        <h3>Баянды Сарсембаев</h3>
+        <p>Кандидат наук в области электротехники и электроники</p>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <!-- Team member 3 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Akhmetov.png" alt="Team Member 1">
+        <h3>Ербол Ахметов</h3>
+        <p>Магистр наук в области электротехники и электронной техники</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <!-- Team member 4 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Ten.png" alt="Team Member 1">
+        <h3>Александр Тен</h3>
+        <p>Магистр наук в области электротехники и вычислительной техники</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <!-- Team member 5 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Bakdolotov.png" alt="Team Member 1">
+        <h3>Айдын Бакдолотов</h3>
+        <p>Магистр наук в ядерной инженерии </p>
+      </div>
+    </div>
+    
+    <div class="carousel-slide">
+      <!-- Team member 6 -->
+      <div class="team-member">
+        <img src="../../static/img/team/Mukatov.png" alt="Team Member 1">
+        <h3>Бекжан Мукатов</h3>
+        <p>Кандидат технических наук в области энергосистем</p>
+      </div>
+    </div>
+    
+    <!-- Add more carousel-slide divs for additional members -->
+  </div>
+
+  <div class="pseudo-btns">
+    <div class="carousel-prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </div>
+
+    <div class="carousel-next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </div>
+
+  </div>
+
+</div>
+
+<section class="section section-default mt-none mb-none">
+  <div class="container" style="margin-top: 5%;">
+    <h1 class="mb-sm">Наши <strong>Партнеры</strong></h1>
+    <strong>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://aifc.kz/en">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/a-aifc-logo-2.svg" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="#"> 
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/KADE.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://www.kegoc.kz/en/"> 
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/kegoc.png" />
+            </div>
+           </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://www.korem.kz/rus/">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/korem.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://www.tu.berlin/en/">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/berlin.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://www.ed.ac.uk/">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/Edinburgh univeristy.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://gazi.edu.tr/">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/Gazi_University_.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="https://www.unipi.it/index.php/english">
+            <div class="square-holder">
+              <img alt="" src="../../static/img/partners/University-of-Pisa-Italy.png" />
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </strong>  
+  </div>
+</section>
+
+
+
+
+<div id="footer"></div>
+
+
+<script type="text/javascript">  
+
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  const prevButton = document.querySelector('.carousel-prev');
+  const nextButton = document.querySelector('.carousel-next');
+
+  let slideIndex = 0;
+  const slidesPerView = 3; // Number of members per slide
+
+  function updateCarousel() {
+    const slideWidth = 100 / slidesPerView;
+    track.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+
+    prevButton.disabled = slideIndex === 0;
+    nextButton.disabled = slideIndex >= slides.length - slidesPerView;
+  }
+
+  function slidePrev() {
+    slideIndex = Math.max(0, slideIndex - 2);
+    updateCarousel();
+  }
+
+  function slideNext() {
+    slideIndex = Math.min(slideIndex +2, slides.length - slidesPerView);
+    updateCarousel();
+  }
+
+  prevButton.addEventListener('click', slidePrev);
+  nextButton.addEventListener('click', slideNext);
+
+  updateCarousel();
+}); 
+
+
+      function openWindow(link){
+            window.open(link);
+        }
+
+
+    btn_list = ['energy', 'common','wind','coal','gas','pv','hydro']
+    
+    function setSecondary(){
+      for( i=0; i<btn_list.length; i++){
+
+        document.getElementById(btn_list[i]).classList.remove('btn-primary');
+        document.getElementById(btn_list[i]).classList.add('btn-secondary')  
+      }
+    }
+
+
+    function energyStations(){
+      document.getElementById("map").src= '../../maps/energy_stations_map.html'
+      setSecondary()
+      document.getElementById("energy").classList.add('btn-primary')
+
+    }
+
+    function wind(){
+      document.getElementById("map").src= '../../maps/Wind_map.html'
+      setSecondary()
+      document.getElementById("wind").classList.add('btn-primary')
+
+    }
+
+    function gas(){
+      document.getElementById("map").src= '../../maps/Gas_map.html'
+      setSecondary()
+      document.getElementById("gas").classList.add('btn-primary')
+
+    }
+
+    function coal(){
+      document.getElementById("map").src= '../../maps/Coal_map.html'
+      setSecondary()
+      document.getElementById("coal").classList.add('btn-primary')
+
+    }
+
+    function pv(){
+      document.getElementById("map").src= '../../maps/PV_map.html'
+      setSecondary()
+      document.getElementById("pv").classList.add('btn-primary')
+
+    }
+
+    function hydro(){
+      document.getElementById("map").src= '../../maps/Hydro_map.html'
+      setSecondary()
+      document.getElementById("hydro").classList.add('btn-primary')
+
+    }
+
+    function commompp(){
+      document.getElementById("map").src= '../../maps/Common_map.html'
+      setSecondary()
+      document.getElementById("common").classList.add('btn-primary')
+
+    }
+
+</script> 
+
+
+</body>
+</html>

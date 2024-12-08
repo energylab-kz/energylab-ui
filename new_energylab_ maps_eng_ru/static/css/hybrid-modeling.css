@@ -1,0 +1,344 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+}   
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.carousel-caption{
+    margin-bottom: 10%;
+    position: absolute;
+    color: black;
+}
+
+.carousel-caption>p{
+  color: black;
+}
+
+.carousel-caption h1 {
+max-width: 100%;
+text-align:center;
+font-size: 5em;
+color: black;
+
+}
+
+
+.info-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 30%;
+    margin-top: 5%;
+    height: 35%;
+
+}
+
+.info-section div{
+    /* border: 2px red solid; */
+    background-color: whitesmoke;
+    width: 23%;
+    height: 100%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+
+}
+
+.info-section div h1{
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+.info-section div ul{
+    margin-top: 5%;
+}
+
+
+
+.inner-maps{
+    align-items: centers;
+    margin-top: 3%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inner-maps div{
+    width: 95%;
+
+}
+
+#parent > div {
+    width: 10%;
+    height: 70%;
+    position:relative;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    bottom: 85%;
+ }
+
+
+ .btn-secondary{
+    background-color: whitesmoke !important;
+    border: whitesmoke !important;
+    color: black !important;
+ }
+
+ .btn-primary{
+    background-color: black !important;
+    border: black !important;
+    color: whitesmoke !important;
+ }
+
+ .hydro{
+    background-color: whitesmoke;
+ }
+    
+
+.map-buttons{
+    display: flex;
+    justify-content: centerr;
+}
+
+#companyCarousel{
+    border: 2px red solid;
+    margin-top: 5%;
+}
+
+
+
+.carousel-inner{
+ width: 50%;
+}
+
+.team-member {
+    text-align: center;
+}
+  
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  
+  .team-member h3 {
+    margin-top: 10px;
+}
+  
+  .team-member p {
+    margin-bottom: 10px;
+}
+  
+  .carousel-control-prev:focus,
+  .carousel-control-next:focus {
+    outline: none;
+  }
+  
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before {
+    display: none;
+  }
+ 
+ /* ----------*/
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+
+  }
+
+  .carousel-container>h1{
+    text-align: center;
+    margin-bottom:3%;
+    flex: 75%;
+  }
+
+
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 calc(100% / 3);
+    padding: 10px;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    /* border-radius: 4px; */
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background-color: #ddd;
+  }
+
+  .pseudo-btns{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+.container>h1{
+  /* text-align: center; */
+  margin-bottom: 5%;
+}
+
+
+.square-holder {
+  padding:30px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:20px;
+  background-color:#f1f1f1;
+  min-height:200px
+}
+
+.square-holder img {
+  max-width:50%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.square-holder:hover img{
+  filter:none;
+}
+
+
+        /* Add some basic styling to your list */
+
+      .team-div>h1{
+        text-align: center;
+        margin-top: 2%;
+    
+    }
+        .team-list {
+          list-style-type: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+
+      .team-list>li{
+          flex: 1;
+          margin: 10px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          background-color: #f9f9f9;
+          max-width: 300px;
+          text-align: center;
+      }
+
+      .team-list>h2 {
+          margin: 0;
+      }
+
+      .team_img{
+          width: 50%; /* Set a fixed width for the images */
+          height: 50%; /* Set a fixed height for the images */
+          object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+          border-radius: 50%;
+      } 
+
+      h2{
+        text-align: center;
+      }
+
+      .project_info{
+        width: 80%;
+        margin-top: 2%;
+      }
+
+      .pdf-div{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        /* width: 100%; */
+        margin-top: 3%;
+      }
+
+      .pdf-div > div{
+        width: 40%;
+      }
+
+      .pdf-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .pdf-files{
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .pdf-files div {
+        width: 35%;
+        text-align: center;
+        font-size: small;
+        border: 2px black solid;
+
+      }
+
+      .pdf-files p,img{
+        margin-top: 2%;
+      }
+
+      .pdf-img{
+        width: 30%;
+      }
+
+      .team-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .team-member {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }

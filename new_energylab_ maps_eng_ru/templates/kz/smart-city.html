@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../static/img/icon.ico">
+    <link rel="stylesheet" href="../../static/css/smart-city.css">
+    <link rel="stylesheet" href="../../static/css/hybrid-modeling.css">
+
+    <title>Умный Город</title>
+   
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("sc-navbar.html"); 
+        $("#footer").load("footer.html"); 
+        });
+</script> 
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="banner">
+        <div class="slogan">
+            <h1>УМНЫЙ ГОРОД </h1>
+            <h3>Умный - значит энергоэффективный</h3>
+        </div>
+        <div>
+        </div>
+    </div>
+
+
+    <div class="tag">
+        <h1>О Проекте</h1>
+    </div>
+    <div class="info">
+        <div>
+            <b>Название подпроекта РП-3:</b> Разработка ИТ-решений для оптимизации системы тепло- и электроснабжения. Системы теплоэлектрорегулирования города Москвы с применением методов машинного обучения для повышения энергоэффективности и снижения выбросов вредных веществ.
+            <br/> <b>Цель и задачи:</b> Разработка ИТ-решений для оптимизации энергосистемы умного города с применением методов машинного обучения для снижения вредных выбросов. Далее будут разработаны инструменты принятия решений по оптимизации ТЭЦ, системы теплоснабжения города и системы управления ресурсопотреблением многоквартирного дома.
+            <br>
+            <b>Ожидаемые результаты:</b>В РП-3 будут разработаны: инструмент принятия решений по оптимальному выбору состава генерирующего оборудования ТЭЦ; модель тепловой сети модель городской теплосети на основе анализа больших данных телеметрии; информационно-вычислительная система оптимальных режимов работы теплоэнергетики с использованием современных методов на базе Виртуальной электростанции; прототип системы управления потреблением ресурсов на примере многоквартирного жилого дома; информационно-вычислительная система расчета оптимальных режимов работы теплоэнергии многоквартирного дома; модули информационно-вычислительной системы для анализа энергоэффективности, потерь выбросов, выявления «слепых зон» в системе телеметрии, моделирования стохастического профиля потребления.
+            </div>
+    </div>
+
+    <div class="about_link">
+        <button class="button-31" role="button" onclick="openWindow('sc-about.html')">more</button>
+    </div>
+
+
+    <!-- Team -->
+
+
+
+    <div class="carousel-container">
+        <h1>Наша <strong>Команда</strong></h1>
+    
+      <div class="carousel-track" onclick="openWindow('sc-team.html') ">
+        <div class="carousel-slide">
+          <!-- Team member 1 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Zhakiyev.png" alt="Team Member 1">
+            <h3>Жакиев Нурхат Куандыкович</h3>
+            <p>Кандидат физико-математических наук</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 2 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Balzhan.jpg" alt="Team Member 1">
+            <h3>Балжан Азибек</h3>
+            <p> Магистр электротехники и вычислительной техники</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 3 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Archipkin.jpg" alt="Team Member 1">
+            <h3>Олег Архипкин</h3>
+            <p>Магистр прикладной физики и математики</p>
+          </div>
+        </div>
+    
+        <div class="carousel-slide">
+          <!-- Team member 4 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Aidos.jpg" alt="Team Member 1">
+            <h3>Айдос Сатана</h3>
+            <p>Магистр Университета Генуи в области энергетики</p>
+          </div>
+        </div>
+    
+        <div class="carousel-slide">
+          <!-- Team member 5 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Zhans.png" alt="Team Member 1">
+            <h3>Нурлан Жансерик</h3>
+            <p> Кандидат наук. кандидат компьютерных наук</p>
+          </div>
+        </div>
+        
+        <div class="carousel-slide">
+          <!-- Team member 6 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Kenzhina-M.jpg" alt="Team Member 1">
+            <h3>Кенжина Мадина</h3>
+            <p>Степень бакалавра, электротехника и электроника</p>
+          </div>
+        </div>
+        
+        <!-- Add more carousel-slide divs for additional members -->
+      </div>
+    
+      <div class="pseudo-btns">
+        <div class="carousel-prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+    
+        <div class="carousel-next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+    
+      </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <script>
+
+        function openWindow(link){
+            window.open(link);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+
+        let slideIndex = 0;
+        const slidesPerView = 3; // Number of members per slide
+
+        function updateCarousel() {
+            const slideWidth = 100 / slidesPerView;
+            track.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+
+            prevButton.disabled = slideIndex === 0;
+            nextButton.disabled = slideIndex >= slides.length - slidesPerView;
+        }
+
+        function slidePrev() {
+            slideIndex = Math.max(0, slideIndex - 2);
+            updateCarousel();
+        }
+
+        function slideNext() {
+            slideIndex = Math.min(slideIndex +2, slides.length - slidesPerView);
+            updateCarousel();
+        }
+
+        prevButton.addEventListener('click', slidePrev);
+        nextButton.addEventListener('click', slideNext);
+
+        updateCarousel();
+        });
+    </script>
+</body>
+</html>

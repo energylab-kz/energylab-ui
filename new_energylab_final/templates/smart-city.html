@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/img/icon.ico">
+    <link rel="stylesheet" href="../static/css/smart-city.css">
+    <link rel="stylesheet" href="../static/css/hybrid-modeling.css">
+
+    <title>Smart City</title>
+   
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("sc-navbar.html"); 
+        $("#footer").load("footer.html"); 
+        });
+</script> 
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="banner">
+        <div class="slogan">
+            <h1> SMART CITY </h1>
+            <h3> smart - means energy efficient</h3>
+        </div>
+        <div>
+        </div>
+    </div>
+
+
+    <div class="tag">
+        <h1>About</h1>
+    </div>
+    <div class="info">
+        <div>
+            <b>Name RP-3 subproject:</b> Elaboration of IT solutions for optimization of heat and power supply system Thermal-electrical control systems of Moscow city with application of methods of machine learning for increase of power efficiency and reductions of harmful emissions emissions reduction.
+            <br/> <b>Goal and objectives:</b> Development of IT solutions to optimizse the energy system of of a smart city with application of machine learning methods to reduce harmful emissions. The following will be developed decision making tools to optimize the CHP, heating system of the city and the control system of resource resource consumption of an apartment building.
+            <br>
+            <b>Expected Results:</b> RP-3 will be developed: a decision-making tool for the optimal selection of the composition of the generating equipment of the CHP; a model of the heat network city heating network model based on telemetry big data analysis; information-computer system for optimal modes of operation of the heat and power sector using modern methods on the basis of the Virtual Power Plant; a prototype system for resource consumption management based on the example of a multi-family residential building; information and computer system for calculating the optimal modes of operation of the heat and power of an apartment building; information and computer system modules for the analysis of energy efficiency, losses emissions, identification of blind spots in the telemetry system, modeling of the stochastic consumption profile consumption.
+            </div>
+    </div>
+
+    <div class="about_link">
+        <button class="button-31" role="button" onclick="openWindow('sc-about.html')">more</button>
+    </div>
+
+
+    <!-- Team -->
+
+
+
+    <div class="carousel-container">
+        <h1>Meet The <strong>Team</strong></h1>
+    
+      <div class="carousel-track" onclick="openWindow('sc-team.html') ">
+        <div class="carousel-slide">
+          <!-- Team member 1 -->
+          <div class="team-member">
+            <img src="../static/img/team/Zhakiyev.png" alt="Team Member 1">
+            <h3>Zhakiev Nurkhat Kuandykovich</h3>
+            <p>PhD in Physics</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 2 -->
+          <div class="team-member">
+            <img src="../static/img/team/Balzhan.jpg" alt="Team Member 1">
+            <h3>Balzhan Azibek</h3>
+            <p> Master in Electrical and Computer Engineering</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 3 -->
+          <div class="team-member">
+            <img src="../static/img/team/Archipkin.jpg" alt="Team Member 1">
+            <h3>Oleg Arkhipkin</h3>
+            <p>Master of Applied Physics and Mathematics</p>
+          </div>
+        </div>
+    
+        <div class="carousel-slide">
+          <!-- Team member 4 -->
+          <div class="team-member">
+            <img src="../static/img/team/Aidos.jpg" alt="Team Member 1">
+            <h3>Aidos Satan</h3>
+            <p>Master’s degree student at University of Genova in Energy Engineering</p>
+          </div>
+        </div>
+    
+        <div class="carousel-slide">
+          <!-- Team member 5 -->
+          <div class="team-member">
+            <img src="../static/img/team/Zhans.png" alt="Team Member 1">
+            <h3>Nurlan Zhanserik</h3>
+            <p> Ph.D. candidate in Computer Science</p>
+          </div>
+        </div>
+        
+        <div class="carousel-slide">
+          <!-- Team member 6 -->
+          <div class="team-member">
+            <img src="../static/img/team/Kenzhina-M.jpg" alt="Team Member 1">
+            <h3>Kenzhina Madina</h3>
+            <p>Bachelor's degree, Electrical and Electronics Engineering</p>
+          </div>
+        </div>
+        
+        <!-- Add more carousel-slide divs for additional members -->
+      </div>
+    
+      <div class="pseudo-btns">
+        <div class="carousel-prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+    
+        <div class="carousel-next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+    
+      </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <script>
+
+        function openWindow(link){
+          window.location.replace(link);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+
+        let slideIndex = 0;
+        const slidesPerView = 3; // Number of members per slide
+
+        function updateCarousel() {
+            const slideWidth = 100 / slidesPerView;
+            track.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+
+            prevButton.disabled = slideIndex === 0;
+            nextButton.disabled = slideIndex >= slides.length - slidesPerView;
+        }
+
+        function slidePrev() {
+            slideIndex = Math.max(0, slideIndex - 2);
+            updateCarousel();
+        }
+
+        function slideNext() {
+            slideIndex = Math.min(slideIndex +2, slides.length - slidesPerView);
+            updateCarousel();
+        }
+
+        prevButton.addEventListener('click', slidePrev);
+        nextButton.addEventListener('click', slideNext);
+
+        updateCarousel();
+        });
+    </script>
+</body>
+</html>

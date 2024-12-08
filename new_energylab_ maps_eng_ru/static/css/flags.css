@@ -1,0 +1,24 @@
+
+.lng{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    /* border:  red 2px solid; */
+}
+
+.flag-en{
+    width: 35px;
+    height: 20px;
+    background-image: url('../img/english_flag.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.flag-ru{
+    width: 35px;
+    height: 20px;
+    background-image: url('../img/russian_flag.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

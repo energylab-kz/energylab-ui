@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/img/icon.ico">
+    <link rel="stylesheet" href="new-energylab/static/css/base.css">
+    <title>Energy Lab</title>
+
+    <script
+        src="https://code.jquery.com/ыjquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("new-energylab/templates/hm-navbar.html"); 
+        $("#footer").load("new-energylab/templates/footer.html"); 
+        });
+    </script> 
+    
+</head>
+
+<body> 
+    <div id="header">
+            <img src=" new-energylab/static/img/header-logo.png" style= "width: 15%; height: 10%s;" onclick="openProj('#')">
+    </div>
+    <div class="projects">
+        <div class="porjects-inner">
+            <!-- <h1>Projects</h1> -->
+                <div onclick="openProj('new-energylab/templates/hybrid-modeling.html')" class="hm">
+                    <h2>Hybrid Modeling</h2>
+                </div>
+                <div  onclick="openProj('new-energylab/templates/smart-city.html')"  class="sc">
+                    <h2>Smart City</h2>
+                </div>
+                <div onclick="openProj('new-energylab/templates/chpp.html')"  class="chp">
+                    <h2>CHPP-1</h2>
+                </div>
+                <div onclick="openProj('new-energylab/templates/power-market.html')"  class="pm">
+                    <h2>Power Market</h2>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        function openProj(proj){
+            window.open(proj);
+        }
+    </script>
+
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЭЦ-1</title>
+    <link rel="stylesheet" href="../../static/css/chpp.css">
+    <link rel="stylesheet" href="../../static/css/hybrid-modeling.css">
+    <link rel="icon" href="../../static/img/icon.ico">
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+
+    <script> 
+        $(function(){
+        $("#navbar").load("chpp-navbar.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="banner">
+        <div class="slogan">
+            <h3>Применение методов моделирования и машинного обучения для оптимального планирования состава генерирующего оборудования Павлодарской ТЭЦ-1</h3>
+            <!-- <h3> smart - means energy efficient</h3> -->
+        </div>
+    </div>
+
+
+<!-- 
+    <div class="tag">
+        <h1>About</h1>
+    </div>
+    <div class="info">
+        <div>
+            <b>Name RP-3 subproject:</b> Elaboration of IT solutions for optimization of heat and power supply system Thermal-electrical control systems of Moscow city with application of methods of machine learning for increase of power efficiency and reductions of harmful emissions emissions reduction.
+            <br/> <b>Goal and objectives:</b> Development of IT solutions to optimize the energy system of of a smart city with application of machine learning methods to reduce harmful emissions. The following will be developed decision making tools to optimize the CHP, heating system of the city and the control system of resource resource consumption of an apartment building.
+            <br>
+            <b>Expected Results:</b> RP-3 will be developed: a decision-making tool for the optimal selection of the composition of the generating equipment of the CHP; a model of the heat network city heating network model based on telemetry big data analysis; information-computer system for optimal modes of operation of the heat and power sector using modern methods on the basis of the Virtual Power Plant; a prototype system for resource consumption management based on the example of a multi-family residential building; information and computer system for calculating the optimal modes of operation of the heat and power of an apartment building; information and computer system modules for the analysis of energy efficiency, losses emissions, identification of blind spots in the telemetry system, modeling of the stochastic consumption profile consumption.
+            </div>
+    </div>
+
+    <div class="about_link">
+        <button class="button-31" role="button" onclick="openWindow('sc-about.html')">more</button>
+    </div> -->
+
+
+<div class="info-section-up">
+    <div>
+        <h1>Задачи</h1>
+            <ul>
+                <li>Сбор и обработка данных телеметрии, диапазонов режимов работы, погоды, оцифровка процессов, схем и чертежей.</li>
+                <li>Моделирование ТЭЦ и разработка алгоритма машинного обучения для планирования (краткосрочного и долгосрочного) обслуживания и ремонтов оборудования.</li>
+                <li>Разработка рекомендаций по повышению энергоэффективности, по управлению надежностью ТЭЦ на основе Дерева решений.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h1>Цель</h1>
+        <ul>
+          Цель – изучение потенциала повышения энергоэффективности ТЭЦ, снижения выбросов парниковых газов и применения методов моделирования и машинного обучения для оптимального планирования состава генерирующего оборудования ТЭЦ г. Павлодара, Казахстан.
+        </ul>
+    </div>
+</div>
+
+
+<div class="info">
+
+    <div>
+       <h1>Актуальность проекта:</h1>
+       Данное исследование важно для прикладной апробации методов обработки больших данных с использованием методов машинного обучения, поступающих с промышленного объекта, производящего электроэнергию, тепло и промышленный пар. Павлодарская ТЭЦ особенная тем, что расположена в северной зоне Казахстана, и имеет двух разных потребителей - алюминиевый завод и население. Сложность изменчивости профиля потребления требует применения современных методов прогнозного планирования состава генерирующего оборудования на сутки, неделю, год вперед. Долгий срок службы агрегатов, отработанных часов требует постоянной корректировки плана ремонтов на год вперед. Необходимо учитывать кривую динамического спроса на тепловую и электрическую энергию методами прогнозирования в зависимости от погоды, изменчивость потребления тепловой и электрической энергии изменяется по вероятностным законам на основе исторических данных о потреблении населения.
+    </div>
+    <div>
+        <h1> Результаты</h1>
+        В процессе работы над научным проектом был проведен количественный анализ данных ТЭЦ-1 АО «Алюминий Казахстана». Были проанализированы различные уровни загрузки агрегатов, проведена кластеризация данных. В среде GAMS разработана модель ТЭЦ для оптимального среднесрочного планирования состава генерирующего оборудования на сутки вперед. Численные результаты моделей ARIMA и Decision Tree показывают, что эффективность предложенного подхода проявляется при большой неопределенности спроса, когда эксплуатационные расходы системы и расход топлива увеличиваются из-за незапланированных изменений генерации. Преимущества предлагаемой модели заключаются в моделировании неопределенностей при решении стохастической многолетней задачи выбора состава энергоблоков. Разработанные алгоритмы могут быть использованы для других аналогичных ТЭЦ.
+    </div>
+    
+</div>
+
+
+
+    <!-- Team -->
+
+
+
+    <div class="carousel-container">
+        <h1>Наша <strong>Команда</strong></h1>
+    
+      <div class="carousel-track" onclick="openWindow('chpp-team.html') ">
+        <div class="carousel-slide">
+          <!-- Team member 1 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Zhakiyev.png" alt="Team Member 1">
+            <h3>Жакиев Нурхат Куандыкович</h3>
+            <p>Кандидат физико-математических наук</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 2 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Unknown_person.jpeg" alt="Team Member 1">
+            <h3>Омиргалиев Руслан</h3>
+            <p> Магистр в области электротехники</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <!-- Team member 3 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Unknown_person.jpeg" alt="Team Member 1">
+            <h3>Салкенов Алдияр Канатович</h3>
+            <p>Магистр информационных технологий</p>
+          </div>
+        </div>
+    
+        <div class="carousel-slide">
+          <!-- Team member 4 -->
+          <div class="team-member">
+            <img src="../../static/img/team/Unknown_person.jpeg" alt="Team Member 1">
+            <h3>Социал Жулдыз Женискызы</h3>
+            <p>Магистр машиностроения и аэрокосмической техники</p>
+          </div>
+        </div>
+        
+        <!-- Add more carousel-slide divs for additional members -->
+      </div>
+    
+      <div class="pseudo-btns">
+        <div class="carousel-prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+    
+        <div class="carousel-next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+    
+      </div>
+    </div>
+
+
+
+    <div id="footer"></div>
+
+
+    <script>
+
+        function openWindow(link){
+            window.open(link);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+
+        let slideIndex = 0;
+        const slidesPerView = 3; // Number of members per slide
+
+        function updateCarousel() {
+            const slideWidth = 100 / slidesPerView;
+            track.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+
+            prevButton.disabled = slideIndex === 0;
+            nextButton.disabled = slideIndex >= slides.length - slidesPerView;
+        }
+
+        function slidePrev() {
+            slideIndex = Math.max(0, slideIndex - 2);
+            updateCarousel();
+        }
+
+        function slideNext() {
+            slideIndex = Math.min(slideIndex +2, slides.length - slidesPerView);
+            updateCarousel();
+        }
+
+        prevButton.addEventListener('click', slidePrev);
+        nextButton.addEventListener('click', slideNext);
+
+        updateCarousel();
+        });
+    </script>
+    
+</body>
+</html>

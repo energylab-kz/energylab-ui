@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c5c7e35b87ebff3cbcb27c7ecb8c076 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3c5c7e35b87ebff3cbcb27c7ecb8c076" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3c5c7e35b87ebff3cbcb27c7ecb8c076 = L.map(
+                "map_3c5c7e35b87ebff3cbcb27c7ecb8c076",
+                {
+                    center: [48.0, 68.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb34fa60ac2dc48240b1e8b95648863c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var feature_group_1ff3dc471a1d1f82c6773a989f409938 = L.featureGroup(
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+        function geo_json_ce88548c7a247287800bc2dc03b3afd4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "lightblue"};
+            }
+        }
+
+        function geo_json_ce88548c7a247287800bc2dc03b3afd4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ce88548c7a247287800bc2dc03b3afd4 = L.geoJson(null, {
+                onEachFeature: geo_json_ce88548c7a247287800bc2dc03b3afd4_onEachFeature,
+            
+                style: geo_json_ce88548c7a247287800bc2dc03b3afd4_styler,
+        });
+
+        function geo_json_ce88548c7a247287800bc2dc03b3afd4_add (data) {
+
+            geo_json_ce88548c7a247287800bc2dc03b3afd4
+                .addData(data)
+                .addTo(feature_group_1ff3dc471a1d1f82c6773a989f409938);
+        }
+
+        fetch("./coordinates/Common_map.json")
+        .then(function (response) {
+            return geo_json_ce88548c7a247287800bc2dc03b3afd4_add(response.json());
+        })
+
+                 
+    
+            var layer_control_5cebcb344d6adf079b63bf9ec9bd2666 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cb34fa60ac2dc48240b1e8b95648863c,
+                },
+                overlays :  {
+                    "Country" : feature_group_1ff3dc471a1d1f82c6773a989f409938,
+                },
+            };
+            L.control.layers(
+                layer_control_5cebcb344d6adf079b63bf9ec9bd2666.base_layers,
+                layer_control_5cebcb344d6adf079b63bf9ec9bd2666.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var marker_61f750652d3a1877ad5feec7031af959 = L.marker(
+                [52.98947, 63.12995],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_d32f7e42a7ff030ad1c9cce9498db292 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_61f750652d3a1877ad5feec7031af959.setIcon(icon_d32f7e42a7ff030ad1c9cce9498db292);
+        
+    
+            marker_61f750652d3a1877ad5feec7031af959.bindTooltip(
+                `<div>
+                     Name: SSGPO Rudny CHP 
+ Capacity: 267.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33dce3b2cd97e03cafb9d4e132a306e6 = L.marker(
+                [47.7975, 67.712778],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f3f9490cbb0a5cb329659580fa2ff40e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_33dce3b2cd97e03cafb9d4e132a306e6.setIcon(icon_f3f9490cbb0a5cb329659580fa2ff40e);
+        
+    
+            marker_33dce3b2cd97e03cafb9d4e132a306e6.bindTooltip(
+                `<div>
+                     Name: Karaganda energy center CHP 1 
+ Capacity: 32.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f06016dcd56d12ccd97ad0c0d6892083 = L.marker(
+                [47.78556, 67.74389],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_af6b4f8f1eaff0b324377ec75fb547e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f06016dcd56d12ccd97ad0c0d6892083.setIcon(icon_af6b4f8f1eaff0b324377ec75fb547e9);
+        
+    
+            marker_f06016dcd56d12ccd97ad0c0d6892083.bindTooltip(
+                `<div>
+                     Name: Zhezkazgan CHP 
+ Capacity: 182.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55d594bfffac640866cb54a59ed9b7c8 = L.marker(
+                [43.521066, 68.561357],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_01fc5d4bdffe29aeaa80affcbef401e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_55d594bfffac640866cb54a59ed9b7c8.setIcon(icon_01fc5d4bdffe29aeaa80affcbef401e5);
+        
+    
+            marker_55d594bfffac640866cb54a59ed9b7c8.bindTooltip(
+                `<div>
+                     Name: Kentau CHP 5 
+ Capacity: 17.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd2351af0c5e4332b89d3a51be70327e = L.marker(
+                [54.897759, 69.187306],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_d6da90fc50c5684bc5c5b8144f1209a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_cd2351af0c5e4332b89d3a51be70327e.setIcon(icon_d6da90fc50c5684bc5c5b8144f1209a8);
+        
+    
+            marker_cd2351af0c5e4332b89d3a51be70327e.bindTooltip(
+                `<div>
+                     Name: SevKazEnergo Petropavlovsk CHP 
+ Capacity: 434.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d17c2eb7a454eb0d548ca07c9d09483 = L.marker(
+                [51.202205, 71.431861],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a605a1fcb50f5e8f5db07ff526c1285d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1d17c2eb7a454eb0d548ca07c9d09483.setIcon(icon_a605a1fcb50f5e8f5db07ff526c1285d);
+        
+    
+            marker_1d17c2eb7a454eb0d548ca07c9d09483.bindTooltip(
+                `<div>
+                     Name: Akmola CHP 1 
+ Capacity: 22.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af661781e119db347fabba239792328a = L.marker(
+                [51.190675, 71.506344],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_7381290d71747573c8f5486280e75402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_af661781e119db347fabba239792328a.setIcon(icon_7381290d71747573c8f5486280e75402);
+        
+    
+            marker_af661781e119db347fabba239792328a.bindTooltip(
+                `<div>
+                     Name: Akmola CHP 2 
+ Capacity: 360.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2135351adc3dd53ce6deab73be392270 = L.marker(
+                [52.483558, 72.034092],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f3cf296ef42fab3696b5a6e1a24fda46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2135351adc3dd53ce6deab73be392270.setIcon(icon_f3cf296ef42fab3696b5a6e1a24fda46);
+        
+    
+            marker_2135351adc3dd53ce6deab73be392270.bindTooltip(
+                `<div>
+                     Name: Jet 
+ Capacity: 180.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51631feeefec5dbcfe21640b1206ce95 = L.marker(
+                [49.70528, 72.55222],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_7548e6deaf8acfa20cd3a569f09eca85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_51631feeefec5dbcfe21640b1206ce95.setIcon(icon_7548e6deaf8acfa20cd3a569f09eca85);
+        
+    
+            marker_51631feeefec5dbcfe21640b1206ce95.bindTooltip(
+                `<div>
+                     Name: JSC Shakhtinskaya CHP 
+ Capacity: 18.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef74bd19495cf05b27e1bcb08c17060a = L.marker(
+                [50.08944, 72.91722],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_74cefa8ad361c873c5c157c6be9e5eb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ef74bd19495cf05b27e1bcb08c17060a.setIcon(icon_74cefa8ad361c873c5c157c6be9e5eb4);
+        
+    
+            marker_ef74bd19495cf05b27e1bcb08c17060a.bindTooltip(
+                `<div>
+                     Name: Bassel Group LLS Karaganda TTP 1 
+ Capacity: 84.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecbd189b27dc9393bdc3dd3e45d8b18e = L.marker(
+                [50.0475, 73.02306],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_58d209bc70227b83cd7925dfcfd4712f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ecbd189b27dc9393bdc3dd3e45d8b18e.setIcon(icon_58d209bc70227b83cd7925dfcfd4712f);
+        
+    
+            marker_ecbd189b27dc9393bdc3dd3e45d8b18e.bindTooltip(
+                `<div>
+                     Name: Arcelor Mittal TPP 
+ Capacity: 180.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5acb8eeb1d219985a9e12bae298875ca = L.marker(
+                [50.048621, 73.051203],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_4449e4bd09cab2a983b983f6ddff6a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5acb8eeb1d219985a9e12bae298875ca.setIcon(icon_4449e4bd09cab2a983b983f6ddff6a67);
+        
+    
+            marker_5acb8eeb1d219985a9e12bae298875ca.bindTooltip(
+                `<div>
+                     Name: Arcelor Mittal Temir Tau CHP 2 
+ Capacity: 435.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1668a028157b09298dc3d94ff0009f9 = L.marker(
+                [49.841806, 73.080139],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9190550ed2b6ed804995922629dfaa5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c1668a028157b09298dc3d94ff0009f9.setIcon(icon_9190550ed2b6ed804995922629dfaa5e);
+        
+    
+            marker_c1668a028157b09298dc3d94ff0009f9.bindTooltip(
+                `<div>
+                     Name: Karaganda energy center CHP 1 
+ Capacity: 32.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f80aa65c95bd3b950115955b3b109b73 = L.marker(
+                [49.808621, 73.087964],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_cdbd29a3edc5822d45c94a24a1aef5b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f80aa65c95bd3b950115955b3b109b73.setIcon(icon_cdbd29a3edc5822d45c94a24a1aef5b6);
+        
+    
+            marker_f80aa65c95bd3b950115955b3b109b73.bindTooltip(
+                `<div>
+                     Name: Karaganda energy center CHP 3 
+ Capacity: 670.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6957b27284c4ca9240efbf4ee0b6c608 = L.marker(
+                [49.85482, 73.119131],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_343d738bd657dd7a2a1e92a1d6da55aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_6957b27284c4ca9240efbf4ee0b6c608.setIcon(icon_343d738bd657dd7a2a1e92a1d6da55aa);
+        
+    
+            marker_6957b27284c4ca9240efbf4ee0b6c608.bindTooltip(
+                `<div>
+                     Name: Kazakhmys Corporation TTP 1 
+ Capacity: 663.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b00bc0af8b4e856074cd1031e8e25071 = L.marker(
+                [46.82778, 74.94972],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_eb6aaeb477ed43444cd8cb7e1fa0856d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b00bc0af8b4e856074cd1031e8e25071.setIcon(icon_eb6aaeb477ed43444cd8cb7e1fa0856d);
+        
+    
+            marker_b00bc0af8b4e856074cd1031e8e25071.bindTooltip(
+                `<div>
+                     Name: Kazakhmys Corporation Balkhash CHP 
+ Capacity: 115.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1f72e66e80e71abd5191af029e83082 = L.marker(
+                [51.69556, 75.32972],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a0fb5d2cd040d36e23efd5ad0cbcee60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b1f72e66e80e71abd5191af029e83082.setIcon(icon_a0fb5d2cd040d36e23efd5ad0cbcee60);
+        
+    
+            marker_b1f72e66e80e71abd5191af029e83082.bindTooltip(
+                `<div>
+                     Name: Ekibastuz CHP 
+ Capacity: 12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8079fbdb7cc293fea3cd003128eb053 = L.marker(
+                [51.886421, 75.37668],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_6e11a60e97c4b5d08d9bdffc48be3103 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c8079fbdb7cc293fea3cd003128eb053.setIcon(icon_6e11a60e97c4b5d08d9bdffc48be3103);
+        
+    
+            marker_c8079fbdb7cc293fea3cd003128eb053.bindTooltip(
+                `<div>
+                     Name: Ekibastuz TTP 1 
+ Capacity: 3500.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b78e6601d8914956f95f033cc0d678a = L.marker(
+                [52.02313, 75.47436],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_20ecf2b2d559fc618ff89dea1e7da4f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8b78e6601d8914956f95f033cc0d678a.setIcon(icon_20ecf2b2d559fc618ff89dea1e7da4f7);
+        
+    
+            marker_8b78e6601d8914956f95f033cc0d678a.bindTooltip(
+                `<div>
+                     Name: Ekibastuz TTP 2 
+ Capacity: 1000.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_086275b2b7da1dc780a3d1efef770fc6 = L.marker(
+                [43.294329, 76.798834],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_c661e615c4ff8a31140a9e64b9cf6f03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_086275b2b7da1dc780a3d1efef770fc6.setIcon(icon_c661e615c4ff8a31140a9e64b9cf6f03);
+        
+    
+            marker_086275b2b7da1dc780a3d1efef770fc6.bindTooltip(
+                `<div>
+                     Name: Almaty CHP 2 
+ Capacity: 510.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1674f35f2648f313dba67ff7bbebec1 = L.marker(
+                [52.11861, 76.87583],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_fc46ce1d055ebffff9d42906b583869c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a1674f35f2648f313dba67ff7bbebec1.setIcon(icon_fc46ce1d055ebffff9d42906b583869c);
+        
+    
+            marker_a1674f35f2648f313dba67ff7bbebec1.bindTooltip(
+                `<div>
+                     Name: Aksuskaya 
+ Capacity: 2450.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd3eb177f2955e60a94b152a0b779e26 = L.marker(
+                [43.280544, 76.930175],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_dc1220ca399fcd99aa8e0ad2a8e6ff3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_bd3eb177f2955e60a94b152a0b779e26.setIcon(icon_dc1220ca399fcd99aa8e0ad2a8e6ff3d);
+        
+    
+            marker_bd3eb177f2955e60a94b152a0b779e26.bindTooltip(
+                `<div>
+                     Name: Almaty CHP 1 
+ Capacity: 120.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2072a92f8a07925f4abbe2b87b48f9f0 = L.marker(
+                [52.36667, 76.93389],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_729f557bfdc9836fcb03f53c153bef51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2072a92f8a07925f4abbe2b87b48f9f0.setIcon(icon_729f557bfdc9836fcb03f53c153bef51);
+        
+    
+            marker_2072a92f8a07925f4abbe2b87b48f9f0.bindTooltip(
+                `<div>
+                     Name: Pavlodar CHP 3 
+ Capacity: 555.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07cb3deb4b460616bb0e652b22bae041 = L.marker(
+                [52.322186, 76.966245],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_c30aa38af0fd3b5f8049c0e96c4b8beb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_07cb3deb4b460616bb0e652b22bae041.setIcon(icon_c30aa38af0fd3b5f8049c0e96c4b8beb);
+        
+    
+            marker_07cb3deb4b460616bb0e652b22bae041.bindTooltip(
+                `<div>
+                     Name: Pavlodarenergo Pavlodar CHP 2 
+ Capacity: 110.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8272ac2757ec39bf6b28dcd693a74254 = L.marker(
+                [43.423167, 77.00695],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_680dd7f3b5e046a9a41beea1f52ec538 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8272ac2757ec39bf6b28dcd693a74254.setIcon(icon_680dd7f3b5e046a9a41beea1f52ec538);
+        
+    
+            marker_8272ac2757ec39bf6b28dcd693a74254.bindTooltip(
+                `<div>
+                     Name: Almaty CHP 3 
+ Capacity: 173.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba22715d503b6cb458d62a3eb58ea8e0 = L.marker(
+                [52.2502, 77.05818],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_393f8098efdf1cfd709254be186fa528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ba22715d503b6cb458d62a3eb58ea8e0.setIcon(icon_393f8098efdf1cfd709254be186fa528);
+        
+    
+            marker_ba22715d503b6cb458d62a3eb58ea8e0.bindTooltip(
+                `<div>
+                     Name: Aluminium of Kazakhstan Pavlodar CHP 1 
+ Capacity: 350.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce25737f0b0968add138871327deff90 = L.marker(
+                [44.860649, 78.743767],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_99b6babf64c54ba3fcf8a50ca3bd8aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ce25737f0b0968add138871327deff90.setIcon(icon_99b6babf64c54ba3fcf8a50ca3bd8aeb);
+        
+    
+            marker_ce25737f0b0968add138871327deff90.bindTooltip(
+                `<div>
+                     Name: Tekeli CHP 2 
+ Capacity: 24.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9619b2dcd20f0ce1b7b6ccd497cfef06 = L.marker(
+                [50.369144, 80.262938],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_035230541fdcf3d64c5458016c1a3c91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9619b2dcd20f0ce1b7b6ccd497cfef06.setIcon(icon_035230541fdcf3d64c5458016c1a3c91);
+        
+    
+            marker_9619b2dcd20f0ce1b7b6ccd497cfef06.bindTooltip(
+                `<div>
+                     Name: Semipalatinsk CHP 1 
+ Capacity: 18.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1853a114969dcd0d799a3850622634eb = L.marker(
+                [49.979874, 82.617016],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_807e4d7240bbe8bdee32451cc7aa336b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1853a114969dcd0d799a3850622634eb.setIcon(icon_807e4d7240bbe8bdee32451cc7aa336b);
+        
+    
+            marker_1853a114969dcd0d799a3850622634eb.bindTooltip(
+                `<div>
+                     Name: Ust 
+ Capacity: 331.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f5092e43e78dcd6255d0558df2012ce = L.marker(
+                [50.029165, 82.769151],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_ca8d3f3f5953087ce5de932324f9840c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_6f5092e43e78dcd6255d0558df2012ce.setIcon(icon_ca8d3f3f5953087ce5de932324f9840c);
+        
+    
+            marker_6f5092e43e78dcd6255d0558df2012ce.bindTooltip(
+                `<div>
+                     Name: Sogra CHP 
+ Capacity: 75.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa505fa9e7022be6537d4ea8611a339d = L.marker(
+                [50.35472, 83.48806],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_026de22d70e557746e24e08ba1d9f15c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_aa505fa9e7022be6537d4ea8611a339d.setIcon(icon_026de22d70e557746e24e08ba1d9f15c);
+        
+    
+            marker_aa505fa9e7022be6537d4ea8611a339d.bindTooltip(
+                `<div>
+                     Name: Ridder Leninogorsk CHP 
+ Capacity: 59.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1520269ee0fdcb4bfe8ba327775af58c = L.marker(
+                [43.657273, 51.16691],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_e92ac0f2a3754de5f22dfb692587d758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1520269ee0fdcb4bfe8ba327775af58c.setIcon(icon_e92ac0f2a3754de5f22dfb692587d758);
+        
+    
+            marker_1520269ee0fdcb4bfe8ba327775af58c.bindTooltip(
+                `<div>
+                     Name: Kazatomprom MAEC CHP 2 
+ Capacity: 1255.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ecd586e095d145388fed3e450ac79b4 = L.marker(
+                [43.630859, 51.22382],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_0404b698acb65b182753bc4bba839650 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5ecd586e095d145388fed3e450ac79b4.setIcon(icon_0404b698acb65b182753bc4bba839650);
+        
+    
+            marker_5ecd586e095d145388fed3e450ac79b4.bindTooltip(
+                `<div>
+                     Name: Kazatomprom MAEC CHP 1 
+ Capacity: 75.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac767734263d3ea58267f99440bee884 = L.marker(
+                [51.221222, 51.425776],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_df92acb3f8ed50c7788c5cca7ca1306f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_ac767734263d3ea58267f99440bee884.setIcon(icon_df92acb3f8ed50c7788c5cca7ca1306f);
+        
+    
+            marker_ac767734263d3ea58267f99440bee884.bindTooltip(
+                `<div>
+                     Name: Ural CHP 
+ Capacity: 59.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f18419c6e5ab384c69760b8aa6aa6121 = L.marker(
+                [51.273183, 51.483206],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_46c6666c07da2493e948686bdb5fcf1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f18419c6e5ab384c69760b8aa6aa6121.setIcon(icon_46c6666c07da2493e948686bdb5fcf1d);
+        
+    
+            marker_f18419c6e5ab384c69760b8aa6aa6121.bindTooltip(
+                `<div>
+                     Name: Karachaganak GES 
+ Capacity: 144.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01f615d7c32e0ebab983a2bc525c8d80 = L.marker(
+                [51.273323, 51.483285],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_cba6a9c3b5af8112b12c1f88e01d9145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_01f615d7c32e0ebab983a2bc525c8d80.setIcon(icon_cba6a9c3b5af8112b12c1f88e01d9145);
+        
+    
+            marker_01f615d7c32e0ebab983a2bc525c8d80.bindTooltip(
+                `<div>
+                     Name: Ural GTPS 
+ Capacity: 54.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_175daaabd77a510270f85223891ee18b = L.marker(
+                [45.33808, 51.914448],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_93c208e43128de3990a4a3baebac32c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_175daaabd77a510270f85223891ee18b.setIcon(icon_93c208e43128de3990a4a3baebac32c9);
+        
+    
+            marker_175daaabd77a510270f85223891ee18b.bindTooltip(
+                `<div>
+                     Name: Kalamkas GCHP 
+ Capacity: 90.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_780fcd35763f92b35c28d2e661b24a9e = L.marker(
+                [47.073199, 51.924988],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_bb1425dbb79c8d10f809eefc01217a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_780fcd35763f92b35c28d2e661b24a9e.setIcon(icon_bb1425dbb79c8d10f809eefc01217a10);
+        
+    
+            marker_780fcd35763f92b35c28d2e661b24a9e.bindTooltip(
+                `<div>
+                     Name: ANPS CHP 
+ Capacity: 30.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_369a58513b32f684213892d0c2477542 = L.marker(
+                [47.08153, 51.941813],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_355d976026cc8e9f6697a0e9d291da1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_369a58513b32f684213892d0c2477542.setIcon(icon_355d976026cc8e9f6697a0e9d291da1c);
+        
+    
+            marker_369a58513b32f684213892d0c2477542.bindTooltip(
+                `<div>
+                     Name: Atyrau CHP 
+ Capacity: 314.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fd2d13b0f2b671f31b9770ac7894407 = L.marker(
+                [47.247706, 52.465977],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_b4bd60b2846ee69402a2c25de68931ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8fd2d13b0f2b671f31b9770ac7894407.setIcon(icon_b4bd60b2846ee69402a2c25de68931ba);
+        
+    
+            marker_8fd2d13b0f2b671f31b9770ac7894407.bindTooltip(
+                `<div>
+                     Name: ES Kashagan AGIP KCO 
+ Capacity: 314.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e43475538e2a138f2f74d123d9cbc87 = L.marker(
+                [43.363643, 52.806916],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_6e788674401ae54dec7c31299f2f0c6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4e43475538e2a138f2f74d123d9cbc87.setIcon(icon_6e788674401ae54dec7c31299f2f0c6c);
+        
+    
+            marker_4e43475538e2a138f2f74d123d9cbc87.bindTooltip(
+                `<div>
+                     Name: Zhanaozen PP 
+ Capacity: 30.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e062e4177cbcf492d7ef05caf3cc8a82 = L.marker(
+                [46.131672, 53.370037],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9eb5b1ba849b7bbf1af89c69ce4a5f46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e062e4177cbcf492d7ef05caf3cc8a82.setIcon(icon_9eb5b1ba849b7bbf1af89c69ce4a5f46);
+        
+    
+            marker_e062e4177cbcf492d7ef05caf3cc8a82.bindTooltip(
+                `<div>
+                     Name: TGTES 
+ Capacity: 242.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14b2283fb7f87dc96854d17f845fd06d = L.marker(
+                [46.152724, 53.408833],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_50861528965b7d6d091a27e1112ad75f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_14b2283fb7f87dc96854d17f845fd06d.setIcon(icon_50861528965b7d6d091a27e1112ad75f);
+        
+    
+            marker_14b2283fb7f87dc96854d17f845fd06d.bindTooltip(
+                `<div>
+                     Name: TGTES 
+ Capacity: 111.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_822eb8fec843a09ee83cb8b970935075 = L.marker(
+                [46.161404, 53.412437],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_0b6f901dcc568d3344ff86e207bae4f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_822eb8fec843a09ee83cb8b970935075.setIcon(icon_0b6f901dcc568d3344ff86e207bae4f8);
+        
+    
+            marker_822eb8fec843a09ee83cb8b970935075.bindTooltip(
+                `<div>
+                     Name: TGTES 
+ Capacity: 136.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0211b43e943c0954629f2c9e51098ec9 = L.marker(
+                [50.341297, 57.133198],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_fcafd40a95789a242777d16871b312e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0211b43e943c0954629f2c9e51098ec9.setIcon(icon_fcafd40a95789a242777d16871b312e4);
+        
+    
+            marker_0211b43e943c0954629f2c9e51098ec9.bindTooltip(
+                `<div>
+                     Name: Karatobe 
+ Capacity: 9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e0b93454ea5387fd14c6ede221695e4 = L.marker(
+                [50.34808, 57.13376],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_16d342d3b6101c0d1be84744baa78428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3e0b93454ea5387fd14c6ede221695e4.setIcon(icon_16d342d3b6101c0d1be84744baa78428);
+        
+    
+            marker_3e0b93454ea5387fd14c6ede221695e4.bindTooltip(
+                `<div>
+                     Name: ES AFP TNK Kazchrome 
+ Capacity: 135.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1949c4cf780e3af3530d3dbda0bc9ca = L.marker(
+                [50.33618, 57.14072],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_de53fe3126a11a4547f4ea3a6e082f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d1949c4cf780e3af3530d3dbda0bc9ca.setIcon(icon_de53fe3126a11a4547f4ea3a6e082f98);
+        
+    
+            marker_d1949c4cf780e3af3530d3dbda0bc9ca.bindTooltip(
+                `<div>
+                     Name: Aktobe CHP 
+ Capacity: 88.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f6cc7b6053ffb922459a67f792cdd9a = L.marker(
+                [48.385282, 57.434115],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_e9fe8ca46509be6e9dfee186ecbbb89f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0f6cc7b6053ffb922459a67f792cdd9a.setIcon(icon_e9fe8ca46509be6e9dfee186ecbbb89f);
+        
+    
+            marker_0f6cc7b6053ffb922459a67f792cdd9a.bindTooltip(
+                `<div>
+                     Name: ZHGTS 56 JSC CNPC 
+ Capacity: 152.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e39975f4a53589528be2944bdea8fb1d = L.marker(
+                [45.62833, 63.30472],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_ac4d71feb35ff4ae1191ff92b1ee4df5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e39975f4a53589528be2944bdea8fb1d.setIcon(icon_ac4d71feb35ff4ae1191ff92b1ee4df5);
+        
+    
+            marker_e39975f4a53589528be2944bdea8fb1d.bindTooltip(
+                `<div>
+                     Name: Baikonur CHP 
+ Capacity: 48.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4216026f4b675b14fab6eb21bd5487c8 = L.marker(
+                [53.21913, 63.621569],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_8f1b28276e1b1368090f11fb9c80ade1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4216026f4b675b14fab6eb21bd5487c8.setIcon(icon_8f1b28276e1b1368090f11fb9c80ade1);
+        
+    
+            marker_4216026f4b675b14fab6eb21bd5487c8.bindTooltip(
+                `<div>
+                     Name: Kostanai CHP 1 
+ Capacity: 12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e0493f1b71897758f3018b57d18f19a = L.marker(
+                [44.865723, 65.457112],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_98f58d3deed3d7f3d99dc6a77fec8701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3e0493f1b71897758f3018b57d18f19a.setIcon(icon_98f58d3deed3d7f3d99dc6a77fec8701);
+        
+    
+            marker_3e0493f1b71897758f3018b57d18f19a.bindTooltip(
+                `<div>
+                     Name: Kyzylorda CHP 
+ Capacity: 67.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57545be4c4cee372a2accad114842227 = L.marker(
+                [44.840104, 65.517443],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_ed8d240d292968773d926f60f61fdc8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_57545be4c4cee372a2accad114842227.setIcon(icon_ed8d240d292968773d926f60f61fdc8d);
+        
+    
+            marker_57545be4c4cee372a2accad114842227.bindTooltip(
+                `<div>
+                     Name: KOGTES 
+ Capacity: 48.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_842653da8523e36fcaf5c308d8f1cd84 = L.marker(
+                [45.949594, 65.693342],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_c9c860a9eb0d799b403314833969bdf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_842653da8523e36fcaf5c308d8f1cd84.setIcon(icon_c9c860a9eb0d799b403314833969bdf9);
+        
+    
+            marker_842653da8523e36fcaf5c308d8f1cd84.bindTooltip(
+                `<div>
+                     Name: GTPP Akshabulak 
+ Capacity: 87.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abe695c87b33c3b37839060ffd611c8f = L.marker(
+                [46.42556, 65.69972],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9a3d07d303ca2db410f80b2b792c2208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_abe695c87b33c3b37839060ffd611c8f.setIcon(icon_9a3d07d303ca2db410f80b2b792c2208);
+        
+    
+            marker_abe695c87b33c3b37839060ffd611c8f.bindTooltip(
+                `<div>
+                     Name: GTPS Kumkol 
+ Capacity: 108.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2de24e71c03d8750e8c5d9f3f33d6ab4 = L.marker(
+                [50.282, 67.006],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_5bd781f8a6ca63e681cdbabc57550f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2de24e71c03d8750e8c5d9f3f33d6ab4.setIcon(icon_5bd781f8a6ca63e681cdbabc57550f9c);
+        
+    
+            marker_2de24e71c03d8750e8c5d9f3f33d6ab4.bindTooltip(
+                `<div>
+                     Name: Arkalyk CHP 
+ Capacity: 4.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ca513a7af20f60e72536ae3833d91e8 = L.marker(
+                [43.81938, 67.300827],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_5447f696c5ce20100092f07c64c73f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3ca513a7af20f60e72536ae3833d91e8.setIcon(icon_5447f696c5ce20100092f07c64c73f60);
+        
+    
+            marker_3ca513a7af20f60e72536ae3833d91e8.bindTooltip(
+                `<div>
+                     Name: SKZ 
+ Capacity: 19.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf059cec098a572eadf9f5318b0957b1 = L.marker(
+                [42.290069, 69.597662],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_68f9bf8726fe95583adaa8a7f7167332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_cf059cec098a572eadf9f5318b0957b1.setIcon(icon_68f9bf8726fe95583adaa8a7f7167332);
+        
+    
+            marker_cf059cec098a572eadf9f5318b0957b1.bindTooltip(
+                `<div>
+                     Name: Shymkent CHP 
+ Capacity: 30.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82514225452254cac1c994d95fbcd05a = L.marker(
+                [42.273447, 69.694596],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_4281160be345a7c7b40ed25cad264cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_82514225452254cac1c994d95fbcd05a.setIcon(icon_4281160be345a7c7b40ed25cad264cd6);
+        
+    
+            marker_82514225452254cac1c994d95fbcd05a.bindTooltip(
+                `<div>
+                     Name: Shymkent CHP 3 
+ Capacity: 160.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c01a5ab52fdfe9ece918dc6c570ee3c = L.marker(
+                [42.904088, 71.407458],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_bc9113bd42f3ed8477b9b2a7307bfde3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8c01a5ab52fdfe9ece918dc6c570ee3c.setIcon(icon_bc9113bd42f3ed8477b9b2a7307bfde3);
+        
+    
+            marker_8c01a5ab52fdfe9ece918dc6c570ee3c.bindTooltip(
+                `<div>
+                     Name: Taraz CHP 4 
+ Capacity: 60.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a955ee38934e6ad808f90edc67c113 = L.marker(
+                [42.84528, 71.47861],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_74061b7b448d77c9c075ed021cf40ddc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_25a955ee38934e6ad808f90edc67c113.setIcon(icon_74061b7b448d77c9c075ed021cf40ddc);
+        
+    
+            marker_25a955ee38934e6ad808f90edc67c113.bindTooltip(
+                `<div>
+                     Name: Zhambyl GES 
+ Capacity: 1230.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1807c6a572cee1d478a33b92914d442d = L.marker(
+                [43.280544, 76.930175],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9609924c5a44e9f5a239ef719453925a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1807c6a572cee1d478a33b92914d442d.setIcon(icon_9609924c5a44e9f5a239ef719453925a);
+        
+    
+            marker_1807c6a572cee1d478a33b92914d442d.bindTooltip(
+                `<div>
+                     Name: Almaty CHP 1 
+ Capacity: 25.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7d4db36bcc4bf412381fe54bcfaa10e = L.marker(
+                [53.872545, 67.433906],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a5e21cf68481af447bb09bac7ee916d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7d4db36bcc4bf412381fe54bcfaa10e.setIcon(icon_a5e21cf68481af447bb09bac7ee916d9);
+        
+    
+            marker_e7d4db36bcc4bf412381fe54bcfaa10e.bindTooltip(
+                `<div>
+                     Name: Sergeevskaya HPP 
+ Capacity: 2.46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e1d0eea1143daee5eae3607165ec51e = L.marker(
+                [41.248386, 67.955246],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_69633adc7dbd5c56afd844c7664f91f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e1d0eea1143daee5eae3607165ec51e.setIcon(icon_69633adc7dbd5c56afd844c7664f91f3);
+        
+    
+            marker_9e1d0eea1143daee5eae3607165ec51e.bindTooltip(
+                `<div>
+                     Name: Shardarinskaya HPS 
+ Capacity: 126.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_820598e5421e7e4f225d6d1de20bea79 = L.marker(
+                [41.308355, 68.93809],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f165e1c60831bee2caaba563c3df627e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_820598e5421e7e4f225d6d1de20bea79.setIcon(icon_f165e1c60831bee2caaba563c3df627e);
+        
+    
+            marker_820598e5421e7e4f225d6d1de20bea79.bindTooltip(
+                `<div>
+                     Name: Keles HPP cascade 
+ Capacity: 3.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2ff148b60d974d3c74bf4c6f6092f39 = L.marker(
+                [42.412612, 69.817589],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_3a564e71cc973f9721ec7807745808f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f2ff148b60d974d3c74bf4c6f6092f39.setIcon(icon_3a564e71cc973f9721ec7807745808f4);
+        
+    
+            marker_f2ff148b60d974d3c74bf4c6f6092f39.bindTooltip(
+                `<div>
+                     Name: Mankent HPP 
+ Capacity: 2.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee4482d4fedbfaade14f5e9d7218ed13 = L.marker(
+                [42.98458, 71.7889],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_6d9ddf62fbc81efe9b5d3af4df35a920 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee4482d4fedbfaade14f5e9d7218ed13.setIcon(icon_6d9ddf62fbc81efe9b5d3af4df35a920);
+        
+    
+            marker_ee4482d4fedbfaade14f5e9d7218ed13.bindTooltip(
+                `<div>
+                     Name: Merke Hydro 
+ Capacity: 3.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93d9c6e3438e1c55b78e42bdb916d4d8 = L.marker(
+                [42.923731, 72.840237],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f70bcb299dd18ac21d802aef600b968f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93d9c6e3438e1c55b78e42bdb916d4d8.setIcon(icon_f70bcb299dd18ac21d802aef600b968f);
+        
+    
+            marker_93d9c6e3438e1c55b78e42bdb916d4d8.bindTooltip(
+                `<div>
+                     Name: Karakistakskaya HPP 
+ Capacity: 2.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9beb2f542c12123caea7024d2fa19d9 = L.marker(
+                [43.3656, 73.9397],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_4aea93e312e082c04bab7a6cf52c3c7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9beb2f542c12123caea7024d2fa19d9.setIcon(icon_4aea93e312e082c04bab7a6cf52c3c7d);
+        
+    
+            marker_d9beb2f542c12123caea7024d2fa19d9.bindTooltip(
+                `<div>
+                     Name: Tasotkel GES 
+ Capacity: 9.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cb4eff8ca9a68535361cb17bb31c75d = L.marker(
+                [43.2408, 76.8507],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_ff454e777c512b3e8bc52f4082696441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3cb4eff8ca9a68535361cb17bb31c75d.setIcon(icon_ff454e777c512b3e8bc52f4082696441);
+        
+    
+            marker_3cb4eff8ca9a68535361cb17bb31c75d.bindTooltip(
+                `<div>
+                     Name: Almatinskaya 11,Almatinskaya 5,Almatinskaya 9,Almatinskaya 6,Almatinskaya 7,Almatinskaya 8,Almatinskaya 10,Almatinskaya HPS 8a ,Almatinskaya HPS № 2,Verkhne 
+ Capacity: 59.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8b246a1631f864b5aafadd87e54cd09 = L.marker(
+                [43.92276, 77.0981],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_5d1ea14f1a7ffc72d8a5ad87da7a930d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8b246a1631f864b5aafadd87e54cd09.setIcon(icon_5d1ea14f1a7ffc72d8a5ad87da7a930d);
+        
+    
+            marker_e8b246a1631f864b5aafadd87e54cd09.bindTooltip(
+                `<div>
+                     Name: Kapchagayskaya HPP 
+ Capacity: 364.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_151e508cc758623aa61257fddf1e91fb = L.marker(
+                [43.269722, 77.213611],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_933dbed50458c90067380b47d2dd7b44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_151e508cc758623aa61257fddf1e91fb.setIcon(icon_933dbed50458c90067380b47d2dd7b44);
+        
+    
+            marker_151e508cc758623aa61257fddf1e91fb.bindTooltip(
+                `<div>
+                     Name: Talgarskaya HPP 
+ Capacity: 3.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9728f11c1fee2ceff72a4e648508da4f = L.marker(
+                [45.010479, 78.383253],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_dd9181c429b4dfba8b66a1e904aa8574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9728f11c1fee2ceff72a4e648508da4f.setIcon(icon_dd9181c429b4dfba8b66a1e904aa8574);
+        
+    
+            marker_9728f11c1fee2ceff72a4e648508da4f.bindTooltip(
+                `<div>
+                     Name: Aksuskaya HPS ,Karatalskaya HPS 
+ Capacity: 29.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33468a5c7d02b1fc037f41bf9453788a = L.marker(
+                [44.869806, 78.794583],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_684ce349e880e2885083f6d66b8ef0b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33468a5c7d02b1fc037f41bf9453788a.setIcon(icon_684ce349e880e2885083f6d66b8ef0b1);
+        
+    
+            marker_33468a5c7d02b1fc037f41bf9453788a.bindTooltip(
+                `<div>
+                     Name: Korinskaya HPP 
+ Capacity: 28.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1352b81c08c66f14beef879263c03e27 = L.marker(
+                [43.027, 78.8451],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_0b6ca051cde86ff9bfc8cdfef48eebf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1352b81c08c66f14beef879263c03e27.setIcon(icon_0b6ca051cde86ff9bfc8cdfef48eebf4);
+        
+    
+            marker_1352b81c08c66f14beef879263c03e27.bindTooltip(
+                `<div>
+                     Name: Moynakskaya HPP 
+ Capacity: 300.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a276c930b4732e3bd553d1ba3bcc32bc = L.marker(
+                [45.388824, 79.919125],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_bc856ee256801bf5040f3dfc0412e09b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a276c930b4732e3bd553d1ba3bcc32bc.setIcon(icon_bc856ee256801bf5040f3dfc0412e09b);
+        
+    
+            marker_a276c930b4732e3bd553d1ba3bcc32bc.bindTooltip(
+                `<div>
+                     Name: Sarkand HPP 
+ Capacity: 2.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0629b3512348f68adab1ce77eb39a5d5 = L.marker(
+                [45.345364, 80.224678],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_e9e0416876f787dfe96780790b2fc173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0629b3512348f68adab1ce77eb39a5d5.setIcon(icon_e9e0416876f787dfe96780790b2fc173);
+        
+    
+            marker_0629b3512348f68adab1ce77eb39a5d5.bindTooltip(
+                `<div>
+                     Name: Verkhne 
+ Capacity: 4.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c765755ac5a506364d252de19d31827 = L.marker(
+                [45.693269, 80.306722],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_3c1e1bc588ab4a0b5741d2d60d383c33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c765755ac5a506364d252de19d31827.setIcon(icon_3c1e1bc588ab4a0b5741d2d60d383c33);
+        
+    
+            marker_6c765755ac5a506364d252de19d31827.bindTooltip(
+                `<div>
+                     Name: Lepsi HPP 
+ Capacity: 16.99
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e30735137e28cab84e0d1eecf06890b8 = L.marker(
+                [44.218338, 80.390446],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f147a673bc21b4e4d2549caa4f96c826 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e30735137e28cab84e0d1eecf06890b8.setIcon(icon_f147a673bc21b4e4d2549caa4f96c826);
+        
+    
+            marker_e30735137e28cab84e0d1eecf06890b8.bindTooltip(
+                `<div>
+                     Name: Khorgos HPP 
+ Capacity: 2.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e667e6e95310881a9215a6682c839a8 = L.marker(
+                [45.78913, 80.99036],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9596bf94b20b75656f1c258ea2e4ac3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e667e6e95310881a9215a6682c839a8.setIcon(icon_9596bf94b20b75656f1c258ea2e4ac3b);
+        
+    
+            marker_9e667e6e95310881a9215a6682c839a8.bindTooltip(
+                `<div>
+                     Name: Uspenskaya HPP 
+ Capacity: 1.92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a6b35779c9082dbe19c4d712c75145c = L.marker(
+                [50.3939, 81.0637],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_84bdd78f35f093faabeed195e4400a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a6b35779c9082dbe19c4d712c75145c.setIcon(icon_84bdd78f35f093faabeed195e4400a33);
+        
+    
+            marker_7a6b35779c9082dbe19c4d712c75145c.bindTooltip(
+                `<div>
+                     Name: Shulbinskaya HPS 
+ Capacity: 702.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72d168a20e0499849c4d4d8f71439be5 = L.marker(
+                [49.979874, 82.617016],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_b28ff8124d3fa27178657de0a1f998b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72d168a20e0499849c4d4d8f71439be5.setIcon(icon_b28ff8124d3fa27178657de0a1f998b1);
+        
+    
+            marker_72d168a20e0499849c4d4d8f71439be5.bindTooltip(
+                `<div>
+                     Name: Ust 
+ Capacity: 331.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1486a6237cd254b8045a9e308200e7e4 = L.marker(
+                [49.69749, 83.32532],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_4c27049fa52bb4b52f9f3b417f2a1ced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1486a6237cd254b8045a9e308200e7e4.setIcon(icon_4c27049fa52bb4b52f9f3b417f2a1ced);
+        
+    
+            marker_1486a6237cd254b8045a9e308200e7e4.bindTooltip(
+                `<div>
+                     Name: Bukhtarminskaya HPS 
+ Capacity: 693.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_726012b12a4e51ac594a612e8268ae9a = L.marker(
+                [50.2625, 83.32556],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_41e0ff5de093f7e2265e61c8230676e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_726012b12a4e51ac594a612e8268ae9a.setIcon(icon_41e0ff5de093f7e2265e61c8230676e9);
+        
+    
+            marker_726012b12a4e51ac594a612e8268ae9a.bindTooltip(
+                `<div>
+                     Name: Ulbinskaya HPP 
+ Capacity: 18.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0068ce6824ec2d8cb9ab95e5c6aee67f = L.marker(
+                [50.345667, 83.468667],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_d52da788505c45f74e1cf1d80acf018f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0068ce6824ec2d8cb9ab95e5c6aee67f.setIcon(icon_d52da788505c45f74e1cf1d80acf018f);
+        
+    
+            marker_0068ce6824ec2d8cb9ab95e5c6aee67f.bindTooltip(
+                `<div>
+                     Name: Leninogorsk HPP cascade 
+ Capacity: 11.8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1328fba4d6154925301c898fc29dde44 = L.marker(
+                [49.949819, 84.049938],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_d1b22d565237a8ca6d5c30ae6e6a4cd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1328fba4d6154925301c898fc29dde44.setIcon(icon_d1b22d565237a8ca6d5c30ae6e6a4cd5);
+        
+    
+            marker_1328fba4d6154925301c898fc29dde44.bindTooltip(
+                `<div>
+                     Name: Turgusunskaya HPP 
+ Capacity: 24.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14c34c4f44cd09ebf56200b43ca415d6 = L.marker(
+                [47.4557, 84.872628],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_3e14e41cc768f61f3479600a8af5cd03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14c34c4f44cd09ebf56200b43ca415d6.setIcon(icon_3e14e41cc768f61f3479600a8af5cd03);
+        
+    
+            marker_14c34c4f44cd09ebf56200b43ca415d6.bindTooltip(
+                `<div>
+                     Name: Zaysanskaya HPP 
+ Capacity: 2.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22a8ef383e413059c01e2eded1c40dd0 = L.marker(
+                [44.45896, 50.31406],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_3765d1a27815a702d02cf1b6be307827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_22a8ef383e413059c01e2eded1c40dd0.setIcon(icon_3765d1a27815a702d02cf1b6be307827);
+        
+    
+            marker_22a8ef383e413059c01e2eded1c40dd0.bindTooltip(
+                `<div>
+                     Name: Shevchenko WPP 
+ Capacity: 43.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48fdc26163e3ca72d8eb3be51539e2b4 = L.marker(
+                [46.972434, 50.573115],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_7084448309e3803495f0661dba11a9fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_48fdc26163e3ca72d8eb3be51539e2b4.setIcon(icon_7084448309e3803495f0661dba11a9fd);
+        
+    
+            marker_48fdc26163e3ca72d8eb3be51539e2b4.bindTooltip(
+                `<div>
+                     Name: Isatai WPP 
+ Capacity: 53.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_801e4923ca171909a1b15e13a968f4e2 = L.marker(
+                [47.571336, 53.086407],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_5dbed4745b6fe2e26cb83fbd423cf360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_801e4923ca171909a1b15e13a968f4e2.setIcon(icon_5dbed4745b6fe2e26cb83fbd423cf360);
+        
+    
+            marker_801e4923ca171909a1b15e13a968f4e2.bindTooltip(
+                `<div>
+                     Name: Makat WPP 
+ Capacity: 48.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d935def523ef3dd9bc8732cee177f07 = L.marker(
+                [50.490388, 58.262043],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_0a12d9a802eb62ef1dd6d9c611f304c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7d935def523ef3dd9bc8732cee177f07.setIcon(icon_0a12d9a802eb62ef1dd6d9c611f304c3);
+        
+    
+            marker_7d935def523ef3dd9bc8732cee177f07.bindTooltip(
+                `<div>
+                     Name: Badamsha WPP 
+ Capacity: 48.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0dd303df9b03a39460827d5aad21be4 = L.marker(
+                [53.27606, 63.81024],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_e8e23aa106cb382182223301c2064b09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f0dd303df9b03a39460827d5aad21be4.setIcon(icon_e8e23aa106cb382182223301c2064b09);
+        
+    
+            marker_f0dd303df9b03a39460827d5aad21be4.bindTooltip(
+                `<div>
+                     Name: Ybyrai WPP 
+ Capacity: 50.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b47dc98eae666a86fe387f526e40d681 = L.marker(
+                [54.5262, 68.6668],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a63db3bafe14a3cb70ff22e89558888c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b47dc98eae666a86fe387f526e40d681.setIcon(icon_a63db3bafe14a3cb70ff22e89558888c);
+        
+    
+            marker_b47dc98eae666a86fe387f526e40d681.bindTooltip(
+                `<div>
+                     Name: Novonikolsk WPP 
+ Capacity: 1.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f27312392ed848d34ce221f2151618b = L.marker(
+                [54.897759, 69.187306],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_841e16cdacca8e5fac0ca44e339d2971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4f27312392ed848d34ce221f2151618b.setIcon(icon_841e16cdacca8e5fac0ca44e339d2971);
+        
+    
+            marker_4f27312392ed848d34ce221f2151618b.bindTooltip(
+                `<div>
+                     Name: WPP 
+ Capacity: 5.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96cfd1e419886ce891585bf00529d883 = L.marker(
+                [53.3075, 69.2352],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a9f924d08751c1ea23105735200709c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_96cfd1e419886ce891585bf00529d883.setIcon(icon_a9f924d08751c1ea23105735200709c0);
+        
+    
+            marker_96cfd1e419886ce891585bf00529d883.bindTooltip(
+                `<div>
+                     Name: Krasny Yar WPP 
+ Capacity: 3.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97a387e940200fe95cd2f467cd9ff91e = L.marker(
+                [43.512541, 69.645164],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_0bede116cb8e4e185ef440df4d5f6aac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_97a387e940200fe95cd2f467cd9ff91e.setIcon(icon_0bede116cb8e4e185ef440df4d5f6aac);
+        
+    
+            marker_97a387e940200fe95cd2f467cd9ff91e.bindTooltip(
+                `<div>
+                     Name: Zhanatas WPP 
+ Capacity: 100.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1aeb36c83495ddb59e4adc1f96539a6b = L.marker(
+                [51.26002, 71.861851],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a3d1231c80a95ad326c01de241bd9f29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1aeb36c83495ddb59e4adc1f96539a6b.setIcon(icon_a3d1231c80a95ad326c01de241bd9f29);
+        
+    
+            marker_1aeb36c83495ddb59e4adc1f96539a6b.bindTooltip(
+                `<div>
+                     Name: Arshaly WPP 
+ Capacity: 45.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd4c807387fc84bc4dbfa7f2ad7b47e6 = L.marker(
+                [51.596126, 73.079606],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_945e7ca81357a10e13dcd12683a09915 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd4c807387fc84bc4dbfa7f2ad7b47e6.setIcon(icon_945e7ca81357a10e13dcd12683a09915);
+        
+    
+            marker_dd4c807387fc84bc4dbfa7f2ad7b47e6.bindTooltip(
+                `<div>
+                     Name: Erementau WPP 
+ Capacity: 45.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57857836fd3eea3fbedfb56b03972b67 = L.marker(
+                [43.33833, 74.96889],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_3ec8e3fe81394e7a60c2dea16ed0c5c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_57857836fd3eea3fbedfb56b03972b67.setIcon(icon_3ec8e3fe81394e7a60c2dea16ed0c5c0);
+        
+    
+            marker_57857836fd3eea3fbedfb56b03972b67.bindTooltip(
+                `<div>
+                     Name: Korday WPP 
+ Capacity: 21.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c43089a1423770a2a5c0a46f6c2f08b1 = L.marker(
+                [43.6461, 78.5329],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_00f05c0dcbbc38bb2eb722e3cff30391 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c43089a1423770a2a5c0a46f6c2f08b1.setIcon(icon_00f05c0dcbbc38bb2eb722e3cff30391);
+        
+    
+            marker_c43089a1423770a2a5c0a46f6c2f08b1.bindTooltip(
+                `<div>
+                     Name: Nurly WPP 
+ Capacity: 5.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92d1a44eb509ef3be3919d5be36249e8 = L.marker(
+                [46.913043, 79.753301],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_03bde2134910f196ee029dd698ec7710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_92d1a44eb509ef3be3919d5be36249e8.setIcon(icon_03bde2134910f196ee029dd698ec7710);
+        
+    
+            marker_92d1a44eb509ef3be3919d5be36249e8.bindTooltip(
+                `<div>
+                     Name: Abai WPP 1 
+ Capacity: 150.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b60fa34a7b7032f2b8eb967a29cca6b = L.marker(
+                [49.225172, 81.188053],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f76061510545f02809f485417dad7a8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b60fa34a7b7032f2b8eb967a29cca6b.setIcon(icon_f76061510545f02809f485417dad7a8f);
+        
+    
+            marker_0b60fa34a7b7032f2b8eb967a29cca6b.bindTooltip(
+                `<div>
+                     Name: Zhangiztobe WPP 
+ Capacity: 30.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8cf67c098e449b573d773cde122264a = L.marker(
+                [45.095792, 64.690586],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_a7c1b38f29d1a9e7f126e88e5bbc7bcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e8cf67c098e449b573d773cde122264a.setIcon(icon_a7c1b38f29d1a9e7f126e88e5bbc7bcf);
+        
+    
+            marker_e8cf67c098e449b573d773cde122264a.bindTooltip(
+                `<div>
+                     Name: Nomad SPP 
+ Capacity: 28.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_047f975a074156c5c919d6058d858d39 = L.marker(
+                [44.726176, 65.894033],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_bb68f3d8184457670a670ad878c3a4e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_047f975a074156c5c919d6058d858d39.setIcon(icon_bb68f3d8184457670a670ad878c3a4e9);
+        
+    
+            marker_047f975a074156c5c919d6058d858d39.bindTooltip(
+                `<div>
+                     Name: Baikonur SPP 
+ Capacity: 50.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ce8d4938cba1a8d280595d4d3a4660e = L.marker(
+                [44.42, 66.794],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_59c287c9ef95dbfada92c48dea7a2e08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9ce8d4938cba1a8d280595d4d3a4660e.setIcon(icon_59c287c9ef95dbfada92c48dea7a2e08);
+        
+    
+            marker_9ce8d4938cba1a8d280595d4d3a4660e.bindTooltip(
+                `<div>
+                     Name: SKZ 
+ Capacity: 0.42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34784a1b4571c21b8c38ec9f437312a1 = L.marker(
+                [43.875475, 67.36086],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_bf324d6244f6fc24b2471bb940e71a37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_34784a1b4571c21b8c38ec9f437312a1.setIcon(icon_bf324d6244f6fc24b2471bb940e71a37);
+        
+    
+            marker_34784a1b4571c21b8c38ec9f437312a1.bindTooltip(
+                `<div>
+                     Name: Zhanakorgan SPP 
+ Capacity: 10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_645ae78cdc42e9225a7644d694fe309c = L.marker(
+                [47.862317, 67.623516],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_df595fd4afed2310438f3eb21986b720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_645ae78cdc42e9225a7644d694fe309c.setIcon(icon_df595fd4afed2310438f3eb21986b720);
+        
+    
+            marker_645ae78cdc42e9225a7644d694fe309c.bindTooltip(
+                `<div>
+                     Name: Kengir SPP 
+ Capacity: 10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9685841a67014554f38e397c7dc8f08 = L.marker(
+                [43.440532, 68.52558],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_891d30892680f35801eb04a9c4ed702f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c9685841a67014554f38e397c7dc8f08.setIcon(icon_891d30892680f35801eb04a9c4ed702f);
+        
+    
+            marker_c9685841a67014554f38e397c7dc8f08.bindTooltip(
+                `<div>
+                     Name: Shoktas SPP 
+ Capacity: 60.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c62383e9ffac8d19ce043529a1803d = L.marker(
+                [43.471951, 68.529604],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_1c44b3787c0e70777f72e64af0e6e304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_15c62383e9ffac8d19ce043529a1803d.setIcon(icon_1c44b3787c0e70777f72e64af0e6e304);
+        
+    
+            marker_15c62383e9ffac8d19ce043529a1803d.bindTooltip(
+                `<div>
+                     Name: Kentau SPP 
+ Capacity: 50.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb5e33441b5fe3f68793bac4285c6581 = L.marker(
+                [42.408201, 68.763883],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_01ca5302abce7fb820e13bc04c2f476a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb5e33441b5fe3f68793bac4285c6581.setIcon(icon_01ca5302abce7fb820e13bc04c2f476a);
+        
+    
+            marker_fb5e33441b5fe3f68793bac4285c6581.bindTooltip(
+                `<div>
+                     Name: Zadarya 
+ Capacity: 19.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_183530d8f92b38e955f030742a555e24 = L.marker(
+                [42.306531, 69.355402],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_1086aabf135bb4be8395f6a3e62552bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_183530d8f92b38e955f030742a555e24.setIcon(icon_1086aabf135bb4be8395f6a3e62552bc);
+        
+    
+            marker_183530d8f92b38e955f030742a555e24.bindTooltip(
+                `<div>
+                     Name: Shymkent SPP 
+ Capacity: 20.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4198e438e33aa9e55f0fc2f26e4e912 = L.marker(
+                [42.510865, 70.284764],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_81a54461864ac8dd1db4463058ccc994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b4198e438e33aa9e55f0fc2f26e4e912.setIcon(icon_81a54461864ac8dd1db4463058ccc994);
+        
+    
+            marker_b4198e438e33aa9e55f0fc2f26e4e912.bindTooltip(
+                `<div>
+                     Name: SPP Ochistnoi 
+ Capacity: 1.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccdcafcbfa7ba0740ae53d08d31a713f = L.marker(
+                [43.1781, 70.4669],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_237c5030a4d4ead048db4305a47d1062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ccdcafcbfa7ba0740ae53d08d31a713f.setIcon(icon_237c5030a4d4ead048db4305a47d1062);
+        
+    
+            marker_ccdcafcbfa7ba0740ae53d08d31a713f.bindTooltip(
+                `<div>
+                     Name: Otar SPP 
+ Capacity: 0.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10f29b5ec6aa90c3907a2f216e19af9e = L.marker(
+                [42.71489, 70.815725],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f39b09eec9d9fa23b65985d09e18b3db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_10f29b5ec6aa90c3907a2f216e19af9e.setIcon(icon_f39b09eec9d9fa23b65985d09e18b3db);
+        
+    
+            marker_10f29b5ec6aa90c3907a2f216e19af9e.bindTooltip(
+                `<div>
+                     Name: Burnoye SPP 
+ Capacity: 100.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87809b5ae82f985cbfb2342abedd72d5 = L.marker(
+                [50.794794, 71.453023],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_26a691daf91cc26d5a6a1a3cc701b8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_87809b5ae82f985cbfb2342abedd72d5.setIcon(icon_26a691daf91cc26d5a6a1a3cc701b8de);
+        
+    
+            marker_87809b5ae82f985cbfb2342abedd72d5.bindTooltip(
+                `<div>
+                     Name: Nura SPP 
+ Capacity: 100.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d5fdee8449c288b7d657bb069338f86 = L.marker(
+                [49.812417, 72.874139],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_feb062e1a9d6e51ef8326c3c0035eb0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3d5fdee8449c288b7d657bb069338f86.setIcon(icon_feb062e1a9d6e51ef8326c3c0035eb0f);
+        
+    
+            marker_3d5fdee8449c288b7d657bb069338f86.bindTooltip(
+                `<div>
+                     Name: Saran SPP 
+ Capacity: 100.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49100ef2d64547dad285887300aabb6a = L.marker(
+                [48.287138, 72.909167],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_c4ad5d84003bcfc5a7a43a50289bc68e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_49100ef2d64547dad285887300aabb6a.setIcon(icon_c4ad5d84003bcfc5a7a43a50289bc68e);
+        
+    
+            marker_49100ef2d64547dad285887300aabb6a.bindTooltip(
+                `<div>
+                     Name: Akadyr SPP 
+ Capacity: 50.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c021c49e3ff514bd3f56788dbd6b9bf = L.marker(
+                [46.637437, 74.323293],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_f15cc1437d999202e550c8b3c837acdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4c021c49e3ff514bd3f56788dbd6b9bf.setIcon(icon_f15cc1437d999202e550c8b3c837acdc);
+        
+    
+            marker_4c021c49e3ff514bd3f56788dbd6b9bf.bindTooltip(
+                `<div>
+                     Name: Gulshat SPP 
+ Capacity: 40.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9ba079ff9be3eb3a5af7336f429485 = L.marker(
+                [43.621375, 76.973217],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_957ccd746f773ae489a3588602f3a6ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5b9ba079ff9be3eb3a5af7336f429485.setIcon(icon_957ccd746f773ae489a3588602f3a6ac);
+        
+    
+            marker_5b9ba079ff9be3eb3a5af7336f429485.bindTooltip(
+                `<div>
+                     Name: Kaskelen SPP 
+ Capacity: 50.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d5c286e3bd3ecd9d04a6858dd5bc219 = L.marker(
+                [43.92276, 77.0981],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_9f995ddfc4ab3d2980cae91236be05a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2d5c286e3bd3ecd9d04a6858dd5bc219.setIcon(icon_9f995ddfc4ab3d2980cae91236be05a5);
+        
+    
+            marker_2d5c286e3bd3ecd9d04a6858dd5bc219.bindTooltip(
+                `<div>
+                     Name: Kapchagay SPP 
+ Capacity: 2.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86e737b4f9efb95d0a9f805fcf02225e = L.marker(
+                [43.96689, 77.113784],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_7fcdfa092f1cc92820727c75cd44c5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_86e737b4f9efb95d0a9f805fcf02225e.setIcon(icon_7fcdfa092f1cc92820727c75cd44c5c9);
+        
+    
+            marker_86e737b4f9efb95d0a9f805fcf02225e.bindTooltip(
+                `<div>
+                     Name: Nurgisa SPP 
+ Capacity: 100.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a55a722e0a36d3e2f5826979cba8754 = L.marker(
+                [49.225172, 81.188053],
+                {}
+            ).addTo(map_3c5c7e35b87ebff3cbcb27c7ecb8c076);
+        
+    
+            var icon_40762741397a3793dae4d3c2d9ae5059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9a55a722e0a36d3e2f5826979cba8754.setIcon(icon_40762741397a3793dae4d3c2d9ae5059);
+        
+    
+            marker_9a55a722e0a36d3e2f5826979cba8754.bindTooltip(
+                `<div>
+                     Name: Zhangiz Solar SPP 
+ Capacity: 30.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
