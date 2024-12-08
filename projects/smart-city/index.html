@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart City</title>
+    <link rel="icon" href="../static/img/icon.ico" />
+    <link rel="stylesheet" href="../../static/css/projects.css" />
+    <link rel="stylesheet" href="../../static/css/base.css" />
+    <script src="../../static/js/carousel.js"></script>
+    
+    <!-- Load jQueryCDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load BootstrapCDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load FontAwesomeIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Load custom font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Include header and footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("../../navbar.html");
+        $("#footer").load("../../footer.html");
+      });
+    </script>
+  </head>
+  <div>
+    <div id="navbar"></div>
+    
+    <!-- banner section -->
+    <div class="container-fluid mb-5 p-0" id="projectBanner">
+      <div class="banner-content d-flex justify-content-center align-items-center">
+        <div class="text-center text-light text-wrap glassmorphism p-4 mx-3" id="slogan">
+          <h1 class="fw-bold display-1 glow-text">Smart City</h1>
+          <h3 class="fs-4 glow-text">smart - means energy efficient</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="container mb-5 py-5" id="projectDescription">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">About</h1>
+      <h2 class="mb-3">General</h2>
+      <div class="mb-5" id="projectCards">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                Elaboration of IT solutions for
+                optimization of heat and power supply system Thermal-electrical control
+                systems of Moscow city with application of methods of machine learning
+                for increase of power efficiency and reductions of harmful emissions
+                emissions reduction.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Goals and objectives</h5>
+                Development of IT solutions to optimizse the
+                energy system of of a smart city with application of machine learning
+                methods to reduce harmful emissions. The following will be developed
+                decision making tools to optimize the CHP, heating system of the city
+                and the control system of resource resource consumption of an apartment
+                building.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Expected results</h5>
+                RP-3 will be developed: a decision-making tool
+                for the optimal selection of the composition of the generating equipment
+                of the CHP; a model of the heat network city heating network model based
+                on telemetry big data analysis; information-computer system for optimal
+                modes of operation of the heat and power sector using modern methods on
+                the basis of the Virtual Power Plant; a prototype system for resource
+                consumption management based on the example of a multi-family
+                residential building; information and computer system for calculating
+                the optimal modes of operation of the heat and power of an apartment
+                building; information and computer system modules for the analysis of
+                energy efficiency, losses emissions, identification of blind spots in
+                the telemetry system, modeling of the stochastic consumption profile
+                consumption.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mb-3">Details</h2>
+      <div class="accordion" id="projectDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              Smart City within Astana and Astana IT University
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                Today, Astana IT University conducts research in the IT field in
+                multidisciplinary areas: smart systems and technologies, digital
+                twins, EdTech, FinTech, AgroTech and energy systems One of them is the
+                "Smart City" project aimed at development of urban infrastructure,
+                which aims to improve the quality of life of citizens by improving the
+                transport infrastructure, development of environmental conditions,
+                efficient use of energy resources and implementation of predictive
+                analytics principles of data for decision-making in the concept of
+                Smart City. One of the tasks of the scientific project is to develop a
+                biotechnological filter based on a biological agent to clean polluted
+                air in Nur-Sultan, as well as to create a favorable environment for
+                the surrounding area.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Combination with natural aspects
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                The main natural component in the biotech filter is moss. Mosses can
+                have a huge positive effect on the environment: they absorb fine dust
+                particles, actively absorb gas, including CO2 and NO, while releasing
+                oxygen. Mosses are characterized by a high sanitary and hygienic
+                effect, due to their antibacterial and septic influence on the
+                environment. The technology of moss cultivation (irrigation,
+                temperature, humidity, nutrition) in a closed system is provided by
+                automating processes using IoT technology. The developed air
+                purification system has not only an environmental effect, but also a
+                social one. The engineering solution has been designed in terms of
+                design and convenience for the citizens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Big data analytics of the city environment
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light mb-3">
+                One more task of the project is analytics of big data, which is
+                collected in different information systems of the city on the basis of
+                which it is necessary to make direct conclusions what projects of the
+                city it is necessary to develop. Where it is necessary to build a
+                school, a hospital, a store, a fire station or expand, optimize the
+                city's road interchanges, and possibly launch an additional bus route.
+                The sharing economy has been expanding in recent decades, especially
+                among the under-35 age group. According to a Goldman Sachs study, this
+                service is most popular among millennials. One in three (35%)
+                millennials worldwide is willing to rent a car for short periods of
+                time. Developments in energy system modeling using machine learning
+                will help the city identify potential places to reduce losses and
+                increase energy efficiency. To optimize the consumption of various
+                resources (electricity, water, heat, etc.) it is important not only
+                the efforts of the akimat, but also the need for massive involvement
+                of residents. The concept of Smart Home is being developed by large
+                companies that are not able to integrate new sensors from other
+                manufacturers. A prototype resource management system is being
+                developed for a residential house, which will integrate different
+                devices (leakage sensor, video camera, smart sockets, meters, smart
+                locks, etc.) into one system. Monitor and control it via phone.
+              </p>
+              <img src="../../static/img/projects/sc-components.png" class="img-thumbnail d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <h2 class="mb-3">Attachments</h2>
+      <div class="" id="projectAttachments">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Banner PSA Zhakiyev.pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Project banner</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Zhakiyev Hybrid modeling2023.pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Hybrid power system modeling to create a renewable energy roadmap for Kazakhstan</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Feaseble RES KZ Hybrid_modeling2023 (3).pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Feasibility Analysis on Renewable Energy Power Plant Development in Kazakhstan</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- publications section -->
+    <div class="container mb-5 py-5" id="publications">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Publications</h1>
+      <div class="table-responsive-md">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>№</th>
+              <th>Year</th>
+              <th>Article</th>
+              <th>Journal</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2021</td>
+              <td>
+                Z. Nurlan, T. Zhukabayeva, M. Othman and A. Adamova, "Resource
+                Allocation approach for Optimal routing in IoT Wireless Mesh
+                Networks"// IEEE Access(Q1).
+                <a
+                  href="https://doi.org/10.1109/ACCESS.2021.3123903"
+                  target="_blank"
+                  >https://doi.org/10.1109/ACCESS.2021.3123903</a
+                >
+              </td>
+              <td>Scopus Q1,WoS Q2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td rowspan="8">2022</td>
+              <td>
+                Omirgaliyev, R., Zhakiyev, N.*, Aitbayeva, N., Akhmetbekov, Y.
+                (2022). Application of machine learning methods for the analysis
+                of heat energy consumption by zones with a change in outdoor
+                temperature: Case study for Nur-Sultan city. International Journal
+                of Sustainable Development and Planning, Vol. 17, No. 4, pp.
+                1247-1257.
+                <a href="https://doi.org/10.18280/ijsdp.170423" target="_blank"
+                  >https://doi.org/10.18280/ijsdp.170423</a
+                >
+              </td>
+              <td>Scopus, Q2, 55%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Zhakiyev, N.*, Kalenova, A., & Khamzina, A. (2022). The Energy
+                Sector of the Capital of Kazakhstan: Status Quo and Policy towards
+                Smart City. International Journal of Energy Economics and Policy,
+                12(4), 414–423.
+                <a href="https://doi.org/10.32479/ijeep.13126" target="_blank"
+                  >https://doi.org/10.32479/ijeep.13126</a
+                >
+              </td>
+              <td>Scopus Q1, 90%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                Z. Nurlan, T. Zhukabayeva, M. Othman, A. Adamova and N. Zhakiyev,
+                "Wireless Sensor Network as a Mesh: Vision and Challenges," in
+                IEEE Access, vol. 10, pp. 46-67, 2022
+                <a
+                  href="https://doi.org/10.1109/ACCESS.2021.3137341"
+                  target="_blank"
+                  >https://doi.org/10.1109/ACCESS.2021.3137341</a
+                >
+              </td>
+              <td>Scopus Q1, WoS Q2</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                A. Satan, A. Khamzina, D. Toktarbayev, Z. Sotsial, I. Bapiyev, N.
+                Zhakiyev. “Comparative LSTM and SVM Machine Learning Approaches
+                for Energy Consumption Prediction: Case Study in Akmola” 2022
+                International Conference on Smart Information Systems and
+                Technologies (SIST), Nur-Sultan, 28 April 2022. (indexed in IEEE,
+                Scopus)
+              </td>
+              <td>Scopus</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                B. Akhmetzhanov, A. Omar, Z. Nurlan, N. Zhakiyev “Integration of a
+                Video Surveillance System into a Smart Home Using the Home
+                Assistant Platform” 2022 International Conference on Smart
+                Information Systems and Technologies (SIST), Nur-Sultan, 28 April
+                2022, (indexed in IEEE, Scopus)
+              </td>
+              <td>Scopus</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>
+                Nurlan, Z; Zhukabayeva, T; et.al. Fault Node Detection for
+                Wireless Sensor Network Based on Machine Support Vectors. MDPI
+                Sensors. Submitted: 05.05.2022. Q2.
+              </td>
+              <td>WoS Q2</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>
+                Arkhipkin O. et al. "Possibilities of automation of decentralized
+                heat production of Nur-Sultan through the transition to RES"
+                Bulletin of the AUES (August 2022). submitted to the journal
+                KOKSON
+              </td>
+              <td>KOKSON</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- interactice section -->
+    
+    <!-- team section -->
+    <div class="container mb-5 py-5" id="teamMembers">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Meet the team</h1>
+      <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/zhakiyev.png" alt="Team member 1"/>
+          <div class="card-body">
+          <h3 class="card-title">Zhakiev Nurkhat Kuandykovich</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember1" data-bs-toggle="collapse" aria-expanded="true" aria-controls="infoTeamMember1" class="text-decoration-none text-secondary">
+            PhD in Physics
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember1" data-bs-parent="#teamMembers">
+            <p>
+            Head of Subtask RP-3. He is engaged in computer modeling of energy systems,
+            predicting industrial greenhouse gas emissions, and climate change mitigation analytics.
+            His main research topic is mathematical and computer modeling of physical processes,
+            optimization and matrix algebra methods, and modeling in the GAMS environment.
+            h-index=4, https://www.scopus.com/authid/detail.uri?authorId=56043145000
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/balzhan.jpg" alt="Team member 2"/>
+          <div class="card-body">
+          <h3 class="card-title">Balzhan Azibek</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember2" class="text-decoration-none text-secondary">
+            Master in Electrical and Computer Engineering
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember2" data-bs-parent="#teamMembers">
+            <p>
+            Balzhan Azibek received the B.Sc. degree and M.Sc. degree in Electrical and Computer Engineering at Nazarbayev University,
+            Kazakhstan. In B.Sc. shestudied the power generaton and distribution. She mastered her research skills in higher education.
+            Her research area includes game theory approaches in power system modeling.
+            Currently, she works as a teacher at Astana IT University, Kazakhstan.
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/archipkin.jpg" alt="Team member 3"/>
+          <div class="card-body">
+          <h3 class="card-title">Oleg Arkhipkin</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember3" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember3" class="text-decoration-none text-secondary">
+            Master of Applied Physics and Mathematics
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember3" data-bs-parent="#teamMembers">
+            <p>
+            Education: Moscow Institute of Physics and Technology 2002 - 2008, Master of Applied Physics and Mathematics,
+            member of the Coordinating Council for Renewable Energy Development of the Ministry of Energy of the Republic of
+            Kazakhstan (Order of the Minister of Energy of the Republic of Kazakhstan № 304 of 07.07.2016);
+            member of the KAZENERGY Association Energy Council. Years at the Firm: 01/2021 - present - Zhasyl Damu JSC,
+            11/2019 - 08/2020 - ICZTIP NJSC, 07/2011 - 07/2019 - Kazakh Institute of Oil and Gas JSC, 07/2010 - 01/2011 - Speclabpribor A LLP,
+            04/2009 - 04/2010 - NAC Kazatomprom JSC, Awards: Medal of KAZENERGY Association for contribution to the development of the
+            oil and energy sector of Kazakhstan. The Best Innovation Expert of 2012
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/aidos.jpg" alt="Team member 4"/>
+          <div class="card-body">
+          <h3 class="card-title">Aidos Satan</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember4" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember4" class="text-decoration-none text-secondary">
+            Master's degree student at University of Genova in Energy Engineering
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+            <p>
+            He was born on May 18, 1999 in Kazakhstan, city Shymkent. He has attained Bachelor’s degree in Electrical
+            and Electronic Engineering at Nazarbayev University. Currently, he is Master’s degree Energy Engineering
+            student at University of Genova and works as a Junior Researcher at Astana IT University.
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/zhans.png" alt="Team member 5"/>
+              <div class="card-body">
+                <h3 class="card-title">Nurlan Zhanserik</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember5" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember5" class="text-decoration-none text-secondary">
+                    Ph.D. candidate in Computer Science
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember5">
+                  <p>
+                    Education: doctoral studies at ENU. L.N. GUMILEV Head of Laboratory FabLab / Junior Research Fellow of
+                    the Scientific Research Center "Industry 4.0" Senior Research Fellow of the PCF "Development of intelligent
+                    information and telecommunication systems for urban infrastructure: transport, ecology, energy and data analytics
+                    in the Smart City concept" 2021-2023, in the section "IT for optimizing the heat and power system". Researcher
+                    at the Research Center "Industry 4.0". Member of the Industry Center for Technological Competence "E-Industry".
+                    Member of the Research Center "Samsung Research" in the field of 5G and 6G.
+                    Years with the Firm: 09/2022 - present - Astana IT University (AITU)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/kenzhina_m.jpg" alt="Team member 6"/>
+              <div class="card-body">
+                <h3 class="card-title">Kenzhina Madina</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember6" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember6" class="text-decoration-none text-secondary">
+                    Bachelor's degree, Electrical and Electronics Engineering
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember6">
+                  <p>
+                    A graduate of Electrical and electronic engineering undergraduate program Nazarbayev University 2019, specialization in Power Engineering.
+                    She has several publications, dedicated to the study of the reliable operation of the power system, the feasibility of implementing
+                    a virtual power plant in Kazakhstan. Currently the leading engineer of KEGOC JSC. Business profile: operation of active-adaptive
+                    systems of the Unified Energy System of Kazakhstan (ARCHM, WAMS, etc.).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/unknown_person.jpeg" alt="Team member 7"/>
+              <div class="card-body">
+                <h3 class="card-title">Toksanov Sapar</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember7" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember7" class="text-decoration-none text-secondary">
+                    MA in Computer Science, PhD
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember7">
+                  <p>
+                    MA in Computer Science, PhD, AITU Fellow
+                    h-index=2 https://www.scopus.com/authid/detail.uri?authorId=57222154960
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/unknown_person.jpeg" alt="Team member 8"/>
+              <div class="card-body">
+                <h3 class="card-title">Ayagoz Hamzina</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember8" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember8" class="text-decoration-none text-secondary">
+                    MA in Computer Science, PhD
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember8">
+                  <p>
+                    Khamzina Ayagoz Saktagankyzy was born in 1994, November 25 (25.11.1994) in Uralsk, Kazakhstan.
+                    In 2012 she graduated from secondary general school № 2 and entered the Kazakh National
+                    University on a specialty "chemist-technologist". In 2016 she received a master's
+                    degree in technical sciences. She began her career as a student as a junior
+                    researcher at the Research Institute of combustion problems. In the course of
+                    her scientific activities she improved the technology of obtaining environmental
+                    water-soluble polyurethane paints. In 2017, she completed an internship at the Łódź
+                    Polytechnic University of Lodz, Poland. In 2018, she participated in a conference on
+                    sustainable development, organized by the UN at its headquarters in New York.
+                    Practiced at leading companies involved in oil refining, such as Karachaganak
+                    Petroleum Operated, Atyrau Oil Refinery. At she is currently a junior researcher
+                    in the Department of Science and Innovation at AITU.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- partners section -->
+
+    <div id="footer"></div>
+  </body>
+</html>

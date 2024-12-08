@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hybrid Modeling</title>
+    <link rel="icon" href="../static/img/icon.ico" />
+    <link rel="stylesheet" href="../../static/css/projects.css" />
+    <link rel="stylesheet" href="../../static/css/base.css" />
+    <script src="../../static/js/maps.js"></script>
+    
+    <!-- Load jQueryCDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load BootstrapCDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load FontAwesomeIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Load custom font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Include header and footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("../../navbar.html");
+        $("#footer").load("../../footer.html");
+      });
+    </script>
+  </head>
+  <div>
+    <div id="navbar"></div>
+    
+    <!-- banner section -->
+    <!-- style="background-image: url('../static/img/hm-theme.png') -->
+    <div class="container-fluid mb-5 p-0" id="projectBanner">
+      <div class="banner-content d-flex justify-content-center align-items-center" style="background-image: url('../../static/img/banners/hybrid_modeling.png');">
+        <div class="text-center text-light text-wrap glassmorphism p-4 mx-3" id="slogan">
+          <h1 class="fw-bold display-1 glow-text">Hybrid Modeling</h1>
+          <h3 class="fs-4 glow-text">energy modeling for planning sustainable future</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="container mb-5 py-5" id="projectDescription">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">About</h1>
+      <h2 class="mb-3">General</h2>
+      <div class="mb-5" id="projectCards">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                AP09261258 Hybrid power system modeling to create a renewable energy roadmap 
+                for Kazakhstan with high spatial, temporal and technical disaggregation.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Overall information</h5>
+                <ul>
+                    <li>Project funding provider: Committee of Science of the Ministry of Science and Higher Education of the Republic of Kazakhstan </li>
+                    <li>Principal investigator: Zhakiev Nurkhat</li>
+                    <li>Implementation period: 2021 - 2023 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Aims</h5>
+                <ul>
+                    <li>To develop an integrated hybrid modeling tool of the energy system, which includes a long-term planning model of the energy system and an operational model of the electric power system</li>
+                    <li>To develop Roadmap of RE deployment 2030, which corresponds to optimal performance parameters, ensuring reliability, economic feasibility and environmental friendliness of the energy system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tasks</h5>
+                <ul>
+                    <li>Update of the long-term energy system model</li>
+                    <li>Creation of an operational power model with high spatial, temporal, technical disaggregation</li>
+                    <liv>Linking of modeling tools</liv>
+                    <li>Development of a renewable energy roadmap for Kazakhstan </li>
+                    <li>Sensitivity analysis and uncertainties estimation  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Expected results</h5>
+                <ul>
+                    <li>Modeling tool with high quality input data</li>
+                    <li>Scenario analyses</li>
+                    <li>The roadmap for renewable energy in Kazakhstan with data on the optimal geographical location, construction time and investments, taking into account the renewable energy potential and energy demand of the region</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <h2 class="mb-3">Details</h2>
+      <div class="mb-5 accordion" id="projectDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              Smart City within Astana and Astana IT University
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                Today, Astana IT University conducts research in the IT field in
+                multidisciplinary areas: smart systems and technologies, digital
+                twins, EdTech, FinTech, AgroTech and energy systems One of them is the
+                "Smart City" project aimed at development of urban infrastructure,
+                which aims to improve the quality of life of citizens by improving the
+                transport infrastructure, development of environmental conditions,
+                efficient use of energy resources and implementation of predictive
+                analytics principles of data for decision-making in the concept of
+                Smart City. One of the tasks of the scientific project is to develop a
+                biotechnological filter based on a biological agent to clean polluted
+                air in Nur-Sultan, as well as to create a favorable environment for
+                the surrounding area.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Combination with natural aspects
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                The main natural component in the biotech filter is moss. Mosses can
+                have a huge positive effect on the environment: they absorb fine dust
+                particles, actively absorb gas, including CO2 and NO, while releasing
+                oxygen. Mosses are characterized by a high sanitary and hygienic
+                effect, due to their antibacterial and septic influence on the
+                environment. The technology of moss cultivation (irrigation,
+                temperature, humidity, nutrition) in a closed system is provided by
+                automating processes using IoT technology. The developed air
+                purification system has not only an environmental effect, but also a
+                social one. The engineering solution has been designed in terms of
+                design and convenience for the citizens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Big data analytics of the city environment
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light mb-3">
+                One more task of the project is analytics of big data, which is
+                collected in different information systems of the city on the basis of
+                which it is necessary to make direct conclusions what projects of the
+                city it is necessary to develop. Where it is necessary to build a
+                school, a hospital, a store, a fire station or expand, optimize the
+                city's road interchanges, and possibly launch an additional bus route.
+                The sharing economy has been expanding in recent decades, especially
+                among the under-35 age group. According to a Goldman Sachs study, this
+                service is most popular among millennials. One in three (35%)
+                millennials worldwide is willing to rent a car for short periods of
+                time. Developments in energy system modeling using machine learning
+                will help the city identify potential places to reduce losses and
+                increase energy efficiency. To optimize the consumption of various
+                resources (electricity, water, heat, etc.) it is important not only
+                the efforts of the akimat, but also the need for massive involvement
+                of residents. The concept of Smart Home is being developed by large
+                companies that are not able to integrate new sensors from other
+                manufacturers. A prototype resource management system is being
+                developed for a residential house, which will integrate different
+                devices (leakage sensor, video camera, smart sockets, meters, smart
+                locks, etc.) into one system. Monitor and control it via phone.
+              </p>
+              <img src="../../static/img/projects/sc-components.png" class="img-thumbnail d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <h2 class="mb-3">Attachments</h2>
+      <div class="" id="projectAttachments">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Banner PSA Zhakiyev.pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Project banner</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Zhakiyev Hybrid modeling2023.pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Hybrid power system modeling to create a renewable energy roadmap for Kazakhstan</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/Feaseble RES KZ Hybrid_modeling2023 (3).pdf" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Feasibility Analysis on Renewable Energy Power Plant Development in Kazakhstan</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+                <!-- <p></p> -->
+              </div>
+              <!-- <button class="btn btn-primary btn-sm">Download</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- publications section -->
+    <div class="container mb-5 py-5" id="publications">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Publications</h1>
+      <div class="table-responsive-md">
+        <table class="table">
+            <tbody>
+              <tr>
+                <th>№</th>
+                <th>Year</th>
+                <th>Article</th>
+                <th>Journal</th>
+              </tr>
+      
+              <tr>
+                <td>1</td>
+                <td>2021</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9465892">
+                    S. Zhakiyeva, M. Gabbassov, Y. Akhmetbekov, G. Akybayeva and N.
+                    Zhakiyev, "The Development of a Risk Assessment Modeling for the
+                    Power System of Kazakhstan," 2021 IEEE International Conference
+                    on Smart Information Systems and Technologies (SIST), 2021, pp.
+                    1-4,
+                  </a>
+                  doi: 10.1109/SIST50301.2021.9465892
+                </td>
+                <td>Scopus</td>
+              </tr>
+      
+              <tr>
+                <td>2</td>
+                <td rowspan="6">2022</td>
+                <td>
+                  <a href="https://www.mdpi.com/1996-1073/15/7/2404">
+                    Amanbek Y., Kalakova A., Zhakiyeva S., Korhan K., Zhakiyev N.,
+                    Fridrich D. "Distribution-LMP based Transactive Energy
+                    Management in Distribution Systems with Smart Prosumers - A
+                    Multi-Agent Approach"</a
+                  >
+                </td>
+                <td>WoS, Scopus-Q1</td>
+              </tr>
+      
+              <tr>
+                <td>3</td>
+                <td>
+                  <a
+                    href="https://www.researchgate.net/publication/358505657_Maximum_power_tracking_of_variable-speed_wind_energy_conversion_systems_based_on_a_near-optimal_servomechanism_control_system"
+                  >
+                    B. Sarsembayev, D. Zholtayev, and Ton Duc Do, Maximum Power
+                    Tracking of Variable-Speed Wind Energy Conversion Systems based
+                    on a Near-Optimal Servomechanism Control System // Optimal
+                    Control Applications and Methods </a
+                  > 
+                </td>
+                <td>WoS, Q2</td>
+              </tr>
+      
+              <tr>
+                <td>4</td>
+                <td>
+                  <a
+                    href="https://www.ijrer.org/ijrer/index.php/ijrer/article/view/13195"
+                  >
+                    A. Zhanbolatov, S. Zhakiyeva, N. Zhakiyev, K. Kayisli (2022)
+                    "Blockchain-Based Decentralized Peer-to-Peer Negawatt Trading in
+                    Demand-Side Flexibility Driven Transactive Energy System"
+                    International Journal of Renewable Energy Research (IJRER),
+                    12(3), 1475-1483.</a
+                  >
+                  doi:10.20508/ijrer.v12i3.13195.g8530
+                </td>
+                <td>Scopus percentile 58, Q2</td>
+              </tr>
+      
+              <tr>
+                <td>5</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/document/9848769/">
+                    B. Sarsembayev, N. Zhakiyev, A. Akhmetbayev and K. Kayisli,
+                    "Servomechanism based Optimal Control System Design for Maximum
+                    Power Extraction from WECS with PMSG," 2022 10th International
+                    Conference on Smart Grid
+                  </a>
+                </td>
+                <td>icSmartGrid</td>
+              </tr>
+      
+              <tr>
+                <td>6</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/document/9922874">
+                    A. Zhanbolatov, N. Zhakiyev, S. Zhakiyeva, K. Kayisli, B.Azibek,
+                    T.Dushayeva. “A Multi-carrier Energy Method for Self-Consumption
+                    Enhancement in Residential Buildings "
+                  </a>
+                </td>
+                <td>11th ICRERA</td>
+              </tr>
+      
+              <tr>
+                <td>7</td>
+                <td>
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-29831-8_5"
+                  >
+                    G.Abdi, N.Zhakiyev, and S.Toilybayeva "Decarbonization
+                    Opportunities and Emerging Carbon Pricing Instruments in Central
+                    Asia"
+                  </a>
+                </td>
+                <td>Chapter in Springer's eBook</td>
+              </tr>
+      
+              <tr>
+                <td>8</td>
+                <td>2023</td>
+                <td>
+                  <a href="https://www.mdpi.com/1996-1073/16/13/5142">
+                    Aidyn Bakdolotov, Rocco De Miglio, Nurkhat Zhakiyev.
+                    Optimization modelling of the decarbonization scenario of the
+                    total energy system of Kazakhstan until 2060
+                  </a>
+                </td>
+                <td>Energies</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+    <!-- interactive section -->
+    <div class="container mb-5 py-5" id="projectInteractive">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Interactive</h1>
+      <h2 class="mb-3">Map of electric power stations</h2>
+      <div class="card shadow-lg" id="mapsCard">
+        <div class="card-body">
+          <div class="mb-4" id="maps">
+            <iframe
+              id="contentIframe"
+              width="100%"
+              height="600vh"
+              border="none"
+              src="../../maps/energy_stations_map.html"
+            ></iframe>
+          </div>
+          <div class="row g-2" role="group" aria-label="Iframe Control Buttons">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/energy_stations_map.html')">Energy station lines</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/common_map.html')">Power plant types</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/wind_map.html')">Wind</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/coal_map.html')">Coal</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/gas_map.html')">Gas</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/pv_map.html')">PV</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/hydro_map.html')">Hydro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- team section -->
+    <div class="container mb-5 py-5" id="teamMembers">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Meet the team</h1>
+      <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/zhakiyev.png" alt="Team member 1"/>
+          <div class="card-body">
+          <h3 class="card-title">Zhakiev Nurkhat Kuandykovich</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember1" data-bs-toggle="collapse" aria-expanded="true" aria-controls="infoTeamMember1" class="text-decoration-none text-secondary">
+            PhD in Physics
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember1" data-bs-parent="#teamMembers">
+            <p>
+            Principal investigator. He is involved in computer
+            modeling of energy systems, forecasting industrial greenhouse gas
+            emissions, and climate change mitigation analytics. The main topic
+            of his research is mathematical and computer modeling of physical
+            processes, methods of optimization and matrix algebra, modeling in
+            the GAMS environment. h-index=4,
+            https://www.scopus.com/authid/detail.uri?authorId=56043145000
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/sarsembayev.png" alt="Team member 2"/>
+          <div class="card-body">
+          <h3 class="card-title">Bayandy Sarsembayev</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember2" class="text-decoration-none text-secondary">
+            PhD in Electrical Engineering and Electronics Research
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember2" data-bs-parent="#teamMembers">
+            <p>
+            Received the specialist qualification in Railway Automation and
+            Control following with Candidate (PhD) Degree in Technical Sciences
+            in Transport Operation from the Kazakh Academy of Transport and
+            Communications, Almaty, Kazakhstan, in 2000 and 2005 respectively.
+            He gained the M.Sc. degree in Systems and Control Engineering from
+            City University of London, London, U.K., in 2015. He earned Ph.D.
+            degree in Electrical Engineering and Electronics Research, Brunel
+            University London, U.K. in February, 2023.
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/akhmetov.png" alt="Team member 3"/>
+          <div class="card-body">
+          <h3 class="card-title">Yerbol Akhmetov</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember3" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember3" class="text-decoration-none text-secondary">
+            M.Sc. in Electrical and Electronic Engineering
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember3" data-bs-parent="#teamMembers">
+            <p>
+            Received the B.Sc. and M.Sc. degree in electrical and electronic
+            engineering at Nazarbayev University, Astana, Kazakhstan, in 2017
+            and 2019, respectively. He is currently pursuing research as a
+            researcher in Department of Science and Innovation at Astana IT
+            University (Astana, Kazakhstan) and in Electrical and Computer
+            Engineering Department at Nazarbayev University (Astana,
+            Kazakhstan). His research interests are frequency response analysis
+            of transformers, transformer modeling, insulator diagnosis using
+            computer vision and machine learning, analog circuit design, power
+            transmission and energy modeling.
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/ten.png" alt="Team member 4"/>
+          <div class="card-body">
+          <h3 class="card-title">Alexandr Ten</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember4" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember4" class="text-decoration-none text-secondary">
+            M.Sc. in Electrical and Computer Engineering
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+            <p>
+            Alexandr Ten gained Master of Engineering degree in Electrical and
+            Computer Engineering from the University of British Columbia,
+            Vancouver, Canada in 2021 under the “Bolashak” program. He earned
+            Bachelor degree in Automation and Control, Karaganda State Technical
+            University, Karagandy, Kazakhstan in 2008.
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/bakdolotov.png" alt="Team member 5"/>
+              <div class="card-body">
+                <h3 class="card-title">Aidyn Bakdolotov</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember5" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember5" class="text-decoration-none text-secondary">
+                    M.Sc. in Nuclear Engineering
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember5">
+                  <p>
+                    Aidyn Bakdolotov is a MSc in Nuclear Engineering (Purdue University,
+                    USA, 2013). He is an experienced energy sector modelling expert with
+                    research interests in energy policy, climate change and economic
+                    development of Kazakhstan and the Central Asian region. During his
+                    professional career, he worked in many different areas such as power
+                    industry (combined power plant at Almaty CHP-2), academia
+                    (Nazarbayev University), think tanks such as Economic Research
+                    Institute and Zhasyl Damu. He participated in many projects related
+                    to mitigation issues of the region, including preparation of
+                    nationally determined contributions (NDC), National communications,
+                    Biennial reports, Low carbon decarbonization strategy and pathways
+                    and many others. In these projects, he mainly took part in analysis,
+                    modelling and preparation of the scenarios of energy, climate
+                    policies with focus on GHG emissions, energy intensity of GDP,
+                    energy efficiency improvements and many others issues. In economic
+                    modelling he participated in research related to income, taxes,
+                    budget and many other macroeconomic parameters. Currently, he works
+                    as the Director of Climate change Center at the Economic research
+                    institute. He took direct part in the development of the Strategy of
+                    achievement of carbon neutrality of Kazakhstan till 2060 year. He
+                    has publications in national and international journals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/mukatov.png" alt="Team member 6"/>
+              <div class="card-body">
+                <h3 class="card-title">Bekzhan Mukatov</h3>
+                <p class="card-text">
+                  <a href="#infoTeamMember6" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember6" class="text-decoration-none text-secondary">
+                    PhD in Power systems
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                </p>
+                <div class="collapse mt-2" id="infoTeamMember6">
+                  <p>
+                    Mr. Bekzhan Mukatov has 14 years of experience in managing of power
+                    systems, improving, and creating new automated control systems for
+                    Kazakhstan power system. Mr. Mukatov was Managing Director for
+                    National Electric Grid Development and System Services at KEGOC JSC
+                    focusing on planning the development of the national electrical grid
+                    and the energy system of Kazakhstan as a whole. Interacted with the
+                    Central Asia and Russian power systems on export-import of
+                    electricity issues, provision of system services, and transit of
+                    electricity. Participated in the development of long-term forecast
+                    balances of electricity and capacity, in the formation and launch of
+                    the capacity market, on relations with Central Asian and Russia
+                    power systems, improvement and development of legislation on
+                    renewable energy sources.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- partners section -->
+    <div class="container mb-5 py-5" id="teamMembers">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Partners</h1>
+      <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://aifc.kz/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/a-aifc-logo-2.svg" alt="Partner 1"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">AIFC</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.energy.org.kz/about-us" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/kade.png" alt="Partner 2"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">KADE</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.kegoc.kz/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/kegoc.png" alt="Partner 3"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">KEGOC</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.korem.kz/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/korem.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">KOREM</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.tu.berlin/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/berlin.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Technical University of Berlin</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.ed.ac.uk/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/edinburgh_univeristy.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Edinburgh University</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://gazi.edu.tr/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/gazi_university.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Gazi University</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.unipi.it/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/university_of_pisa_italy.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">University of Pisa</h3>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

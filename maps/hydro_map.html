@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <script>
+      L_NO_TOUCH = false;
+      L_DISABLE_3D = false;
+    </script>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <style>
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      #map_e37b83713d40e2a536bbc2383b859632 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+      }
+      .leaflet-container {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="folium-map" id="map_e37b83713d40e2a536bbc2383b859632"></div>
+  </body>
+  <script>
+    var map_e37b83713d40e2a536bbc2383b859632 = L.map(
+      "map_e37b83713d40e2a536bbc2383b859632",
+      {
+        center: [48.0, 68.0],
+        crs: L.CRS.EPSG3857,
+        zoom: 5,
+        zoomControl: true,
+        preferCanvas: false,
+      }
+    );
+
+    var tile_layer_94edce029c1da7b6b289380a13a0e125 = L.tileLayer(
+      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        attribution:
+          'Data by \u0026copy; \u003ca target="_blank" href="http://openstreetmap.org"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target="_blank" href="http://www.openstreetmap.org/copyright"\u003eODbL\u003c/a\u003e.',
+        detectRetina: false,
+        maxNativeZoom: 18,
+        maxZoom: 18,
+        minZoom: 0,
+        noWrap: false,
+        opacity: 1,
+        subdomains: "abc",
+        tms: false,
+      }
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var feature_group_192eb11da8d15cf071f59160c2faf90b = L.featureGroup(
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    function geo_json_6ea6e2d8cccf887b708b651cb79882e7_styler(feature) {
+      switch (feature.id) {
+        default:
+          return { color: "black", fillColor: "lightblue" };
+      }
+    }
+
+    function geo_json_6ea6e2d8cccf887b708b651cb79882e7_onEachFeature(
+      feature,
+      layer
+    ) {
+      layer.on({});
+    }
+    var geo_json_6ea6e2d8cccf887b708b651cb79882e7 = L.geoJson(null, {
+      onEachFeature: geo_json_6ea6e2d8cccf887b708b651cb79882e7_onEachFeature,
+
+      style: geo_json_6ea6e2d8cccf887b708b651cb79882e7_styler,
+    });
+
+    function geo_json_6ea6e2d8cccf887b708b651cb79882e7_add(data) {
+      geo_json_6ea6e2d8cccf887b708b651cb79882e7
+        .addData(data)
+        .addTo(feature_group_192eb11da8d15cf071f59160c2faf90b);
+    }
+
+    fetch("./coordinates/Hydro_map.json").then(function (response) {
+      return geo_json_6ea6e2d8cccf887b708b651cb79882e7_add();
+    });
+
+    var layer_control_c1d10461d4617c487d9a03e685aaecdf = {
+      base_layers: {
+        openstreetmap: tile_layer_94edce029c1da7b6b289380a13a0e125,
+      },
+      overlays: {
+        Country: feature_group_192eb11da8d15cf071f59160c2faf90b,
+      },
+    };
+    L.control
+      .layers(
+        layer_control_c1d10461d4617c487d9a03e685aaecdf.base_layers,
+        layer_control_c1d10461d4617c487d9a03e685aaecdf.overlays,
+        { autoZIndex: true, collapsed: true, position: "topright" }
+      )
+      .addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var marker_61c4da1dbb043b4b30a8aa075c90e6b6 = L.marker(
+      [53.872545, 67.433906],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_e4f51186c422b2fcf0f958b3269d86f4 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_61c4da1dbb043b4b30a8aa075c90e6b6.setIcon(
+      icon_e4f51186c422b2fcf0f958b3269d86f4
+    );
+
+    marker_61c4da1dbb043b4b30a8aa075c90e6b6.bindTooltip(
+      `<div>
+                     Name: Sergeevskaya HPP 
+ Capacity: 2.46
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_683a28a0a98f731b18204b9f5c023ad6 = L.marker(
+      [41.248386, 67.955246],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_548ea5374c8822327757447378389161 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_683a28a0a98f731b18204b9f5c023ad6.setIcon(
+      icon_548ea5374c8822327757447378389161
+    );
+
+    marker_683a28a0a98f731b18204b9f5c023ad6.bindTooltip(
+      `<div>
+                     Name: Shardarinskaya HPS 
+ Capacity: 126.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_745e86dc7edd9f3b39a0027a3a0bb2c6 = L.marker(
+      [41.308355, 68.93809],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_f45fd4ae46b7b67d2ad65bc7b9091bce = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_745e86dc7edd9f3b39a0027a3a0bb2c6.setIcon(
+      icon_f45fd4ae46b7b67d2ad65bc7b9091bce
+    );
+
+    marker_745e86dc7edd9f3b39a0027a3a0bb2c6.bindTooltip(
+      `<div>
+                     Name: Keles HPP cascade 
+ Capacity: 3.3
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_4a476d83845326a14a6bb9e8792b537d = L.marker(
+      [42.412612, 69.817589],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_4e74a99db34a7568f0ae65522bf2350b = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_4a476d83845326a14a6bb9e8792b537d.setIcon(
+      icon_4e74a99db34a7568f0ae65522bf2350b
+    );
+
+    marker_4a476d83845326a14a6bb9e8792b537d.bindTooltip(
+      `<div>
+                     Name: Mankent HPP 
+ Capacity: 2.5
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_98a1a80ecea3945ca666e6c04d1f6cd7 = L.marker(
+      [42.98458, 71.7889],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_b2820cba8b9b6016fd26990871a3eebb = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_98a1a80ecea3945ca666e6c04d1f6cd7.setIcon(
+      icon_b2820cba8b9b6016fd26990871a3eebb
+    );
+
+    marker_98a1a80ecea3945ca666e6c04d1f6cd7.bindTooltip(
+      `<div>
+                     Name: Merke Hydro 
+ Capacity: 3.6
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_720cbef8f95126950fc9ca33f8277d5b = L.marker(
+      [42.923731, 72.840237],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_64958bf4924b27eb19d9fe2349d336ef = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_720cbef8f95126950fc9ca33f8277d5b.setIcon(
+      icon_64958bf4924b27eb19d9fe2349d336ef
+    );
+
+    marker_720cbef8f95126950fc9ca33f8277d5b.bindTooltip(
+      `<div>
+                     Name: Karakistakskaya HPP 
+ Capacity: 2.1
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_31b11a5e0f24ad4de9e502557e2311f1 = L.marker(
+      [43.3656, 73.9397],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_4b03a70e53056049aa05db0bfbb1b0bd = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_31b11a5e0f24ad4de9e502557e2311f1.setIcon(
+      icon_4b03a70e53056049aa05db0bfbb1b0bd
+    );
+
+    marker_31b11a5e0f24ad4de9e502557e2311f1.bindTooltip(
+      `<div>
+                     Name: Tasotkel GES 
+ Capacity: 9.2
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_c6c5e165ff4f401018fb25c88e029a7f = L.marker(
+      [43.2408, 76.8507],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_5d631afc3950d717b18231b0958c1736 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_c6c5e165ff4f401018fb25c88e029a7f.setIcon(
+      icon_5d631afc3950d717b18231b0958c1736
+    );
+
+    marker_c6c5e165ff4f401018fb25c88e029a7f.bindTooltip(
+      `<div>
+                     Name: Almatinskaya 11,Almatinskaya 5,Almatinskaya 9,Almatinskaya 6,Almatinskaya 7,Almatinskaya 8,Almatinskaya 10,Almatinskaya HPS 8a ,Almatinskaya HPS № 2,Verkhne 
+ Capacity: 59.4
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_cfad98c81e25a7240993b48bd6a185b9 = L.marker(
+      [43.92276, 77.0981],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_bd8599b12747e6ca8f612ba8c9b920de = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_cfad98c81e25a7240993b48bd6a185b9.setIcon(
+      icon_bd8599b12747e6ca8f612ba8c9b920de
+    );
+
+    marker_cfad98c81e25a7240993b48bd6a185b9.bindTooltip(
+      `<div>
+                     Name: Kapchagayskaya HPP 
+ Capacity: 364.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_d288070e6020f6783e65581284b1aaee = L.marker(
+      [43.269722, 77.213611],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_6965059c6ec65f6c83e36cad570452b5 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_d288070e6020f6783e65581284b1aaee.setIcon(
+      icon_6965059c6ec65f6c83e36cad570452b5
+    );
+
+    marker_d288070e6020f6783e65581284b1aaee.bindTooltip(
+      `<div>
+                     Name: Talgarskaya HPP 
+ Capacity: 3.2
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_bf831b1e4fbdb79d53bd1286744e3aae = L.marker(
+      [45.010479, 78.383253],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_4db3368d06319cc1267367a67411d792 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_bf831b1e4fbdb79d53bd1286744e3aae.setIcon(
+      icon_4db3368d06319cc1267367a67411d792
+    );
+
+    marker_bf831b1e4fbdb79d53bd1286744e3aae.bindTooltip(
+      `<div>
+                     Name: Aksuskaya HPS ,Karatalskaya HPS 
+ Capacity: 29.1
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_00da0a6e8a807fe6a857afa058eb62cc = L.marker(
+      [44.869806, 78.794583],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_e8acd36124d7fbbbdbd716d19b69f560 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_00da0a6e8a807fe6a857afa058eb62cc.setIcon(
+      icon_e8acd36124d7fbbbdbd716d19b69f560
+    );
+
+    marker_00da0a6e8a807fe6a857afa058eb62cc.bindTooltip(
+      `<div>
+                     Name: Korinskaya HPP 
+ Capacity: 28.5
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_9aced3601045b1438554c414c023cd41 = L.marker(
+      [43.027, 78.8451],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_718e2166cc65f0549825ac5200b35bf2 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_9aced3601045b1438554c414c023cd41.setIcon(
+      icon_718e2166cc65f0549825ac5200b35bf2
+    );
+
+    marker_9aced3601045b1438554c414c023cd41.bindTooltip(
+      `<div>
+                     Name: Moynakskaya HPP 
+ Capacity: 300.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_b98f99c59649c9a710c82191b812e129 = L.marker(
+      [45.388824, 79.919125],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_3c5a64ec93d330abaf073e0944d57b03 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_b98f99c59649c9a710c82191b812e129.setIcon(
+      icon_3c5a64ec93d330abaf073e0944d57b03
+    );
+
+    marker_b98f99c59649c9a710c82191b812e129.bindTooltip(
+      `<div>
+                     Name: Sarkand HPP 
+ Capacity: 2.4
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_667d8cb380bc4c6fb68fe78d5a734deb = L.marker(
+      [45.345364, 80.224678],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_1f6c801434e617cdab2c721695a49d5c = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_667d8cb380bc4c6fb68fe78d5a734deb.setIcon(
+      icon_1f6c801434e617cdab2c721695a49d5c
+    );
+
+    marker_667d8cb380bc4c6fb68fe78d5a734deb.bindTooltip(
+      `<div>
+                     Name: Verkhne 
+ Capacity: 4.2
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_23c5484c792fa90efc52ae950e9624fb = L.marker(
+      [45.693269, 80.306722],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_5abb42f7062308499a979f7bde141e76 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_23c5484c792fa90efc52ae950e9624fb.setIcon(
+      icon_5abb42f7062308499a979f7bde141e76
+    );
+
+    marker_23c5484c792fa90efc52ae950e9624fb.bindTooltip(
+      `<div>
+                     Name: Lepsi HPP 
+ Capacity: 16.99
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_2f1dd4ca4b14fcde55e76ceac72f1796 = L.marker(
+      [44.218338, 80.390446],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_59a6d871a4813338ef54dcd8769f6e66 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_2f1dd4ca4b14fcde55e76ceac72f1796.setIcon(
+      icon_59a6d871a4813338ef54dcd8769f6e66
+    );
+
+    marker_2f1dd4ca4b14fcde55e76ceac72f1796.bindTooltip(
+      `<div>
+                     Name: Khorgos HPP 
+ Capacity: 2.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_4452d810298d08403f2496f69dccc83d = L.marker(
+      [45.78913, 80.99036],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_c5cf972ae03fc52353d56171b86c1fbc = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_4452d810298d08403f2496f69dccc83d.setIcon(
+      icon_c5cf972ae03fc52353d56171b86c1fbc
+    );
+
+    marker_4452d810298d08403f2496f69dccc83d.bindTooltip(
+      `<div>
+                     Name: Uspenskaya HPP 
+ Capacity: 1.92
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_8f2dbd69db0216d329cc5a48116da126 = L.marker(
+      [50.3939, 81.0637],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_df46a21edf62b10e6f3775a9ecc953b7 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_8f2dbd69db0216d329cc5a48116da126.setIcon(
+      icon_df46a21edf62b10e6f3775a9ecc953b7
+    );
+
+    marker_8f2dbd69db0216d329cc5a48116da126.bindTooltip(
+      `<div>
+                     Name: Shulbinskaya HPS 
+ Capacity: 702.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_d00f16ead1ca0c9b4d79dd9390837d19 = L.marker(
+      [49.979874, 82.617016],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_02bd8996167106f779aaead2e3a5e549 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_d00f16ead1ca0c9b4d79dd9390837d19.setIcon(
+      icon_02bd8996167106f779aaead2e3a5e549
+    );
+
+    marker_d00f16ead1ca0c9b4d79dd9390837d19.bindTooltip(
+      `<div>
+                     Name: Ust 
+ Capacity: 331.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_68e9afeb225c274cc868dd5a52f66a46 = L.marker(
+      [49.69749, 83.32532],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_c5c60ea4dfffa32e68b3785ddeaad8e3 = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_68e9afeb225c274cc868dd5a52f66a46.setIcon(
+      icon_c5c60ea4dfffa32e68b3785ddeaad8e3
+    );
+
+    marker_68e9afeb225c274cc868dd5a52f66a46.bindTooltip(
+      `<div>
+                     Name: Bukhtarminskaya HPS 
+ Capacity: 693.0
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_0b2269d7cbed23bea2753a4763b5e441 = L.marker(
+      [50.2625, 83.32556],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_da05e2bc87d9bc92a29fd767201f383f = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_0b2269d7cbed23bea2753a4763b5e441.setIcon(
+      icon_da05e2bc87d9bc92a29fd767201f383f
+    );
+
+    marker_0b2269d7cbed23bea2753a4763b5e441.bindTooltip(
+      `<div>
+                     Name: Ulbinskaya HPP 
+ Capacity: 18.4
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_c0900f50dafbb9bb3da2ad8c0dd9ce93 = L.marker(
+      [50.345667, 83.468667],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_0e4117485530eadc353f1ecb7a541e3b = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_c0900f50dafbb9bb3da2ad8c0dd9ce93.setIcon(
+      icon_0e4117485530eadc353f1ecb7a541e3b
+    );
+
+    marker_c0900f50dafbb9bb3da2ad8c0dd9ce93.bindTooltip(
+      `<div>
+                     Name: Leninogorsk HPP cascade 
+ Capacity: 11.8
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_f58f13d11b442f817b392b24883f7bff = L.marker(
+      [49.949819, 84.049938],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_afda6d96229be662b28a34457eb9e27b = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_f58f13d11b442f817b392b24883f7bff.setIcon(
+      icon_afda6d96229be662b28a34457eb9e27b
+    );
+
+    marker_f58f13d11b442f817b392b24883f7bff.bindTooltip(
+      `<div>
+                     Name: Turgusunskaya HPP 
+ Capacity: 24.9
+                 </div>`,
+      { sticky: true }
+    );
+
+    var marker_1fbcaf36d8c9260a96751032242f748d = L.marker(
+      [47.4557, 84.872628],
+      {}
+    ).addTo(map_e37b83713d40e2a536bbc2383b859632);
+
+    var icon_ab7d6685ffd4161d5afb84e8f87e3ffb = L.AwesomeMarkers.icon({
+      extraClasses: "fa-rotate-0",
+      icon: "info-sign",
+      iconColor: "white",
+      markerColor: "blue",
+      prefix: "glyphicon",
+    });
+    marker_1fbcaf36d8c9260a96751032242f748d.setIcon(
+      icon_ab7d6685ffd4161d5afb84e8f87e3ffb
+    );
+
+    marker_1fbcaf36d8c9260a96751032242f748d.bindTooltip(
+      `<div>
+                     Name: Zaysanskaya HPP 
+ Capacity: 2.0
+                 </div>`,
+      { sticky: true }
+    );
+  </script>
+</html>

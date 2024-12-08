@@ -1,0 +1,12 @@
+body {
+  font-family: 'Geologica', sans-serif !important;
+  padding-top: 48px;
+}
+
+.project-card {
+  transition: transform 0.1s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}

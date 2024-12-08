@@ -1,200 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="new_energylab_final/static/img/icon.ico">
-    <link rel="stylesheet" href="new_energylab_final/static/css/base.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy Lab</title>
+    <link rel="icon" href="./static/img/icon.ico" />
+    <link rel="stylesheet" href="./static/css/base.css" />
 
+    <!-- Load jQueryCDN -->
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 
-    <script> 
-        $(function(){
-        $("#navbar").load("new_energylab_final/only_for_index/base-navbar.html"); 
-        $("#footer").load("new_energylab_final/only_for_index/footer.html"); 
-        });
-    </script> 
-    
-</head>
+    <!-- Load BootstrapCDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-<body> 
+    <!-- Load FontAwesomeIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <div id="navbar">
-    </div>
-    <div class="projects" >
+    <!-- Load custom font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-        
-        <h1>Current Projects</h1>
-        <div style="  border: 2px black solid;
-        width: 70%;
-        height: 4%;
-        margin-bottom:2% ;"></div>
-
-
-        <div class="porjects-inner">
-                <div onclick="window.location.href = 'new_energylab_final/templates/hybrid-modeling.html'" class="hm">
-                    <div>
-                        <h2>Hybrid Modeling</h2>
-                        <p >
-                            Developing an integrating hybrid modeling tool of the energy system, which includes a long-term planning model of the energy system and an operational model of the electric power system
-                        </p>
-
-
-                    </div>
-
-                </div>
-                <div onclick="window.location.href = 'new_energylab_final/templates/power-market.html'" class="pm">
-                    <div>
-                        <h2>Power Market</h2>
-                        <p >
-                            To study the potential for improving the energy efficiency of CHPPs, reducing greenhouse gas emissions and applying modeling and machine learning methods for optimal planning of the composition of the generating equipment of the CHPP in Pavlodar, Kazakhstan.
-                        </p>
-
-                    </div>
-
-                </div>
-        </div>
-        <br>
-        <h1>Completed Projects</h1>
-
-        <div style="  border: 2px black solid;
-                                        width: 70%;
-                                        height: 4%;
-                                        margin-bottom:2% ;"></div>
-
-        <div class="porjects-inner">
-                <div  onclick="window.location.href = 'new_energylab_final/templates/smart-city.html'" class="sc">
-                    <div>
-
-                        <h2>Smart City</h2>
-                        <p >
-                            Development of IT solutions to optimizse the energy system of of a smart city with application of machine learning methods to reduce harmful emissions. The following will be developed decision making tools to optimize the CHP, heating system of the city and the control system of resource resource consumption of an apartment building
-                        </p>
-
-                    </div>
-                </div>
-                <div onclick="window.location.href = 'new_energylab_final/templates/chpp.html'" class="chp">
-                    <div>
-                        <h2>CHPP-1</h2>
-                        <p >
-                            The purpose is to study the potential for improving the energy efficiency of CHPPs, reducing greenhouse gas emissions and applying modeling and machine learning methods for optimal planning of the composition of the generating equipment of the CHPP in Pavlodar, Kazakhstan.
-                        </p>
-                        
-
-                    </div>
-                </div>
-        </div>
-
-        <h1>Recent Publications</h1>
-        <div style="  border: 2px black solid;
-        width: 70%;
-        height: 4%;
-        margin-bottom:3% ;"></div>
-
-</div>
-
-        <div class="publications" id="pblc">
-            
-            <div class="publications-inner">
-                <div>
-                    1
-                </div>
-                <div>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9465892">  S. Zhakiyeva, M. Gabbassov, Y. Akhmetbekov, G. Akybayeva and N. Zhakiyev, "The Development of a Risk Assessment Modeling for the Power System of Kazakhstan," 2021 IEEE International Conference on Smart Information Systems and Technologies (SIST), 2021, pp. 1-4, </a> doi: 10.1109/SIST50301.2021.9465892
-   
-                </div>
-
-            </div>
-
-            <div class="publications-inner">
-                <div>
-                    2
-                </div>
-                <div>
-                    <a href="https://www.mdpi.com/1996-1073/15/7/2404"> Amanbek Y., Kalakova A., Zhakiyeva S., Korhan K., Zhakiyev N., Fridrich D. "Distribution-LMP based Transactive Energy Management in Distribution Systems with Smart Prosumers - A Multi-Agent Approach"</a> 
-
-                </div>
-
-            </div>
-            
-            <div class="publications-inner">
-                <div>
-                    3
-                </div>
-                <div>
-                    <a href="https://www.researchgate.net/publication/358505657_Maximum_power_tracking_of_variable-speed_wind_energy_conversion_systems_based_on_a_near-optimal_servomechanism_control_system">  B. Sarsembayev, D. Zholtayev, and Ton Duc Do, Maximum Power Tracking of Variable-Speed Wind Energy Conversion Systems based on a Near-Optimal Servomechanism Control System // Optimal Control Applications and Methods </a>
-                    
-                    
-                </div>
-
-            </div>
-
-            <div class="publications-inner">
-                <div>
-                    4
-                </div>
-                <div>
-                    <a href="https://www.ijrer.org/ijrer/index.php/ijrer/article/view/13195"> A. Zhanbolatov, S. Zhakiyeva, N. Zhakiyev, K. Kayisli (2022) "Blockchain-Based Decentralized Peer-to-Peer Negawatt Trading in Demand-Side Flexibility Driven Transactive Energy System" International Journal of Renewable Energy Research (IJRER), 12(3), 1475-1483.</a> doi:10.20508/ijrer.v12i3.13195.g8530
-
-                </div>
-
-            </div>
-
-            <div class="publications-inner">
-                <div>
-                    5
-                </div>
-                <div>
-                    <a href="https://ieeexplore.ieee.org/document/9848769/"> B. Sarsembayev, N. Zhakiyev, A. Akhmetbayev and K. Kayisli, "Servomechanism based Optimal Control System Design for Maximum Power Extraction from WECS with PMSG," 2022 10th International Conference on Smart Grid </a>
-                </div>
-            </div>
-
-
-            <div class="publications-inner">
-                <div>
-                    6
-                </div>
-                <div>
-                    <a href="https://ieeexplore.ieee.org/document/9922874"> A. Zhanbolatov, N. Zhakiyev, S. Zhakiyeva, K. Kayisli, B.Azibek, T.Dushayeva.  “A Multi-carrier Energy Method for Self-Consumption Enhancement in Residential Buildings " </a>
-                </div>
-            </div>
-
-            <div class="publications-inner">
-                <div>
-                    7
-                </div>
-                <div>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-29831-8_5"> G.Abdi, N.Zhakiyev, and S.Toilybayeva "Decarbonization Opportunities and Emerging Carbon Pricing Instruments in Central Asia"  </a>
-
-                </div>
-            </div>
-
-
-            <div class="publications-inner">
-                <div>
-                    8
-                </div>
-                <div>
-                    <a href="https://www.mdpi.com/1996-1073/16/13/5142"> Aidyn Bakdolotov, Rocco De Miglio, Nurkhat Zhakiyev. Optimization modelling of the decarbonization scenario of the total energy system of Kazakhstan until 2060 </a>
-                 </div>
-            </div>
-
-        </div>
-        
-
-
+    <!-- Include header and footer -->
     <script>
-        function openProj(proj){
-            window.location.replace(proj);
-        }
+      $(function () {
+        $("#navbar").load("/navbar.html");
+        $("#footer").load("/footer.html");
+      });
     </script>
-
-<div id="footer"></div>
-</body>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="container my-5" id="projects">
+      <h1 class="mb-4">Our projects</h1>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="project-card p-4 border rounded position-relative">
+            <a class="link-success text-decoration-none stretched-link" href="/projects/leap-kz/">
+              <h2>LEAP-KZ</h2>
+            </a>
+            <p class="text-success fw-bold">Status: Current</p>
+            <p>
+              To study the potential for improving the energy efficiency of CHPPs,
+              reducing greenhouse gas emissions and applying modeling and machine
+              learning methods for optimal planning of the composition of the
+              generating equipment of the CHPP in Pavlodar, Kazakhstan.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-card p-4 border rounded position-relative">
+            <a class="link-success text-decoration-none stretched-link" href="/projects/power-market/">
+              <h2>Power Market</h2>
+            </a>
+            <p class="text-success fw-bold">Status: Current</p>
+            <p>
+              To study the potential for improving the energy efficiency of CHPPs,
+              reducing greenhouse gas emissions and applying modeling and machine
+              learning methods for optimal planning of the composition of the
+              generating equipment of the CHPP in Pavlodar, Kazakhstan.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-card p-4 border rounded position-relative">
+            <a class="link-secondary text-decoration-none stretched-link" href="/projects/hybrid-modeling/">
+              <h2>Hybrid Modeling</h2>
+            </a>
+            <p class="text-secondary fw-bold">Status: Completed</p>
+            <p>
+              Developing an integrating hybrid modeling tool of the energy system,
+              which includes a long-term planning model of the energy system and
+              an operational model of the electric power system.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-card p-4 border rounded position-relative">
+            <a class="link-secondary text-decoration-none stretched-link" href="/projects/chpp-pavlodar/">
+              <h2>CHPP-1</h2>
+            </a>
+            <p class="text-secondary fw-bold">Status: Completed</p>
+            <p>
+              The purpose is to study the potential for improving the energy
+              efficiency of CHPPs, reducing greenhouse gas emissions and applying
+              modeling and machine learning methods for optimal planning of the
+              composition of the generating equipment of the CHPP in Pavlodar,
+              Kazakhstan.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="project-card p-4 border rounded position-relative">
+            <a class="link-secondary text-decoration-none stretched-link" href="/projects/smart-city/">
+              <h2>Smart City</h2>
+            </a>
+            <p class="text-secondary fw-bold">Status: Completed</p>
+            <p>
+              Development of IT solutions to optimizse the energy system of of a
+              smart city with application of machine learning methods to reduce
+              harmful emissions. The following will be developed decision making
+              tools to optimize the CHP, heating system of the city and the
+              control system of resource resource consumption of an apartment
+              building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex flex-column mb-5" id="publications">
+      <h1 class="mb-4">Recent publications</h1>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="https://doi.org/10.1109/SIST50301.2021.9465892">
+            S. Zhakiyeva, M. Gabbassov, Y. Akhmetbekov, G. Akybayeva and N.
+            Zhakiyev, "The Development of a Risk Assessment Modeling for the
+            Power System of Kazakhstan," 2021 IEEE International Conference on
+            Smart Information Systems and Technologies (SIST), 2021, pp. 1-4,
+            doi: 10.1109/SIST50301.2021.9465892
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.3390/en15072404">
+            Amanbek Y., Kalakova A., Zhakiyeva S., Korhan K., Zhakiyev N.,
+            Fridrich D. "Distribution-LMP based Transactive Energy Management in
+            Distribution Systems with Smart Prosumers - A Multi-Agent Approach
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="http://dx.doi.org/10.1002/oca.2863">
+            B. Sarsembayev, D. Zholtayev, and Ton Duc Do, Maximum Power Tracking
+            of Variable-Speed Wind Energy Conversion Systems based on a
+            Near-Optimal Servomechanism Control System // Optimal Control
+            Applications and Methods
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.20508/ijrer.v12i3.13195.g8530">
+            A. Zhanbolatov, S. Zhakiyeva, N. Zhakiyev, K. Kayisli (2022)
+            "Blockchain-Based Decentralized Peer-to-Peer Negawatt Trading in
+            Demand-Side Flexibility Driven Transactive Energy System"
+            International Journal of Renewable Energy Research (IJRER), 12(3),
+            1475-1483. doi:10.20508/ijrer.v12i3.13195.g8530
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.1109/icSmartGrid55722.2022.9848769">
+            B. Sarsembayev, N. Zhakiyev, A. Akhmetbayev and K. Kayisli,
+            "Servomechanism based Optimal Control System Design for Maximum
+            Power Extraction from WECS with PMSG," 2022 10th International
+            Conference on Smart Grid
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.1109/ICRERA55966.2022.9922874">
+            A. Zhanbolatov, N. Zhakiyev, S. Zhakiyeva, K. Kayisli, B.Azibek,
+            T.Dushayeva. “A Multi-carrier Energy Method for Self-Consumption
+            Enhancement in Residential Buildings"
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.1007/978-3-031-29831-8_5">
+            G.Abdi, N.Zhakiyev, and S.Toilybayeva "Decarbonization Opportunities
+            and Emerging Carbon Pricing Instruments in Central Asia"
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://doi.org/10.3390/en16135142">
+            Aidyn Bakdolotov, Rocco De Miglio, Nurkhat Zhakiyev. Optimization
+            modelling of the decarbonization scenario of the total energy system
+            of Kazakhstan until 2060
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="footer"></div>
+  </body>
 </html>

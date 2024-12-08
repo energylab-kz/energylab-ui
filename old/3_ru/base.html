@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../static/img/icon.ico" />
+    <link rel="stylesheet" href="../../static/css/base.css" />
+    <title>Energy Lab</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("base-navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div class="projects">
+      <h1>Текущие проекты</h1>
+      <div
+        style="
+          border: 2px black solid;
+          width: 70%;
+          height: 4%;
+          margin-bottom: 2%;
+        "
+      ></div>
+
+      <div class="porjects-inner">
+        <div onclick="openProj('hybrid-modeling.html')" class="hm">
+          <div>
+            <h2>Гибридное моделирование</h2>
+            <p>
+              Разработка интегрирующего инструмента гибридного
+              моделирования энергетической системы, включающего модель
+              долгосрочного планирования энергосистемы и операционную модель
+              электроэнергетической системы.
+            </p>
+          </div>
+        </div>
+        <div onclick="openProj('power-market.html')" class="pm">
+          <div>
+            <h2>Энергетический рынок</h2>
+            <p>
+              Изучить возможности повышения энергоэффективности ТЭЦ, снижения
+              выбросов парниковых газов и применения методов моделирования и
+              машинного обучения для оптимального планирования состава
+              генерирующего оборудования ТЭЦ в г. Павлодар, Казахстан.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h1>Завершенные проекты</h1>
+
+      <div
+        style="
+          border: 2px black solid;
+          width: 70%;
+          height: 4%;
+          margin-bottom: 2%;
+        "
+      ></div>
+
+      <div class="porjects-inner">
+        <div onclick="openProj('smart-city.html')" class="sc">
+          <div>
+            <h2>Умный город</h2>
+            <p>
+              Разработка ИТ-решений для оптимизации энергетической системы
+              умного города с применением методов машинного обучения для
+              снижения вредных выбросов. Будут разработаны инструменты принятия
+              решений по оптимизации ТЭЦ, системы теплоснабжения города и
+              системы управления потреблением ресурсов многоквартирного дома.
+            </p>
+          </div>
+        </div>
+        <div onclick="openProj('chpp.html')" class="chp">
+          <div>
+            <h2>ТЭЦ-1</h2>
+            <p>
+              Цель – исследование потенциала повышения энергоэффективности ТЭЦ,
+              снижения выбросов парниковых газов и применения методов
+              моделирования и машинного обучения для оптимального планирования
+              состава генерирующего оборудования ТЭЦ в Павлодаре, Казахстан.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h1>Недавние публикации</h1>
+      <div
+        style="
+          border: 2px black solid;
+          width: 70%;
+          height: 4%;
+          margin-bottom: 3%;
+        "
+      ></div>
+    </div>
+
+    <script>
+      function openProj(proj) {
+        window.location.replace(proj);
+      }
+    </script>
+
+    <div id="footer"></div>
+  </body>
+</html>

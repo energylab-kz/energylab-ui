@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEAP-KZ</title>
+    <link rel="icon" href="../static/img/icon.ico" />
+    <link rel="stylesheet" href="../../static/css/projects.css" />
+    <link rel="stylesheet" href="../../static/css/base.css" />
+    <script src="../../static/js/maps.js"></script>
+    
+    <!-- Load jQueryCDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load BootstrapCDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load FontAwesomeIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Load custom font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Include header and footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("../../navbar.html");
+        $("#footer").load("../../footer.html");
+      });
+    </script>
+  </head>
+  <div>
+    <div id="navbar"></div>
+    
+    <!-- banner section -->
+    <!-- style="background-image: url('../static/img/hm-theme.png') -->
+    <div class="container-fluid mb-5 p-0" id="projectBanner">
+      <div class="banner-content d-flex justify-content-center align-items-center" style="background-image: url('../../static/img/banners/leap_kz.jpg');">
+        <div class="text-center text-light text-wrap glassmorphism p-4 mx-3" id="slogan">
+          <h1 class="fw-bold display-1 glow-text">LEAP-KZ</h1>
+          <h3 class="fs-4 glow-text">modeling the fuel-energy balance of Kazakhstan</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="container mb-5 py-5" id="projectDescription">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">About</h1>
+      <h2 class="mb-3">General</h2>
+      <div class="mb-5" id="projectCards">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                Modeling the fuel-energy balance of Kazakhstan (LEAP-KZ) to analyse decarbonisation scenarios and carbon pricing instruments
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Overall information</h5>
+                <ul>
+                    <li>Principal investigator (PI): N. K. Zhakiyev</li>
+                    <li>Grant of the Ministry of Science and Higher Education of the RoK</li>
+                    <li>Project duration: 08.2024-12.2026</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Aims</h5>
+                <ul>
+                    <li>Development of a comprehensive modeling tool for the fuel and energy balance of Kazakhstan (LEAP-KZ), formation of an action plan for decision-making on an energy transition and analysis of carbon pricing instruments with a holistic cross-sectoral vision for the development of a green economy and achieving carbon neutrality.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tasks</h5>
+                <ul>
+                    <li>Analysis of the fuel and energy balance</li>
+                    <li>Development of the KZLEAP model</li>
+                    <liv>Modeling of development scenarios, quantitative and qualitative analytics</liv>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Research methods</h5>
+                Energy system models are used to analyse long-term policies and pathways to reduce greenhouse gas (GHG) emissions. It is necessary to create 'net zero' or 'net-negative emissions' energy systems that decarbonize the entire economy, covering energy supply and demand, as well as other sources of emissions, including industrial processes, agriculture, and land use. A subset of these models are engineering-economic models that minimize the costs of achieving exogenously given annual reductions in GHG emissions to limit the increase in average global temperature. Their results, called deep decarbonization models (DDMs), include levels and timing of energy investment that meet projections of future energy demand across all energy sectors over several decades.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Research tools</h5>
+                LEAP (Long-range Energy Alternatives Planning) is an integrated modeling tool that can be used to track energy consumption, production and resource extraction across all economic sectors over medium to long term forecast periods. It can also be used to account for sources and sinks of greenhouse gas emissions from both the energy and non-energy sectors, as well as emissions of local and regional air pollutants.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Expected results</h5>
+                Tasks (WP- work packages):
+                <ul>
+                    <li>WP1. Analysis of fuel and energy balance</li>
+                    <li>WP 2. Development of the KZLEAP model</li>
+                    <li>WP 3: Development scenario modeling, quantitative and qualitative analytics</li>
+                </ul>
+                Expected results:
+                <ul>
+                    <li>Data analytics, building forecast models, correlation analysis, comparison of indicators with other countries, dependency graphs, repository architecture. Collected data (datasets in monthly and seasonal resolution) included in the fuel and energy balance and collection of emissions data. Data processing in the SQL, Python, MS Excel, Wolfram Mathematica software environment.</li>
+                    <li>Simulation and simulation of various scenarios: Design and build an open, transparent and integrated modeling platform to assess low-carbon transition pathways for Kazakhstan's energy system in LEAP. Training in the field of modeling in LEAP and the formation of human capital of experts. Improving the qualifications of scientific staff in improving the KZLEAP model (participation in seminars, reporting at conferences, improving scientific methods, training undergraduates). Quantitative exploration of scenarios for medium- and long-term decarbonization pathways. Improving the qualifications of government employees to use the KZLEAP model and involving them in scientific research.</li>
+                    <li>Building scenario analyzes using the LEAP model for energy planning and climate change mitigation assessment. Exploring the potential of CA to develop carbon market pricing instruments to accelerate regional decarbonization and realize the benefits of sustainable energy cooperation in the region.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mb-3">Details</h2>
+      <div class="mb-5 accordion" id="projectDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              Transformation of energy policy 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                Kazakhstan's energy sector and economy as a whole are dependent on fossil fuels, with coal being the backbone of Kazakhstan's electricity sector, accounting for 67% of the country's electricity production and CO₂ emissions. The transition from fossil fuels to clean energy solutions for Kazakhstan is now high on the national strategy agenda. This requires a transformation of energy policy and a revision of traditional industrial development strategies, the introduction of innovative technologies and the application of “rapid decarbonization” measures. Energy modeling of development scenarios has an important role in shaping policy and investment decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Significance of the energy aspects within Kazakhstan
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light">
+                Kazakhstan is a leading producer and exporter of fossil energy: the 9th largest exporter of coal, the 9th largest exporter of crude oil, and the 12th largest producer of natural gas [1,2]. The economy of Kazakhstan is largely dependent on energy production mainly from fossil fuels, energy-intensive industry and natural resource processing. Kazakhstan, a leading exporter of hydrocarbons, is currently faced with the need to decarbonize economic sectors and transition to a new energy paradigm based on the climate agenda. The transition from fossil fuels to clean energy solutions is now prominent in national strategic documents [3,4].
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Decarbonization and carbon neutrality of Kazakhstan
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light mb-3">
+                A key factor in conducting this study are the environmental, economic and energy aspects of decarbonization of the national economy: (i) The Kazakhstan 2050 Strategy includes long-term goals to increase the share of alternative energy in electricity production (renewable and nuclear) to 50% by 2050; (ii) The strategy to achieve carbon neutrality by 2060 is a trigger to attract significant investment in alternative energy sources. The country's regions have great potential for renewable energy: solar, wind, bio, hydro and geothermal energy; (iii) By leveraging the region's diverse energy sources and production mix, the pilot market will pave the way for accelerated regional decarbonization and realize the benefits of sustainable energy cooperation in CA. These benefits include lower investment costs for new generation capacity, increased development of renewable energy sources, and improved operation and management of regional energy resources.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Transformation to renewable energy sources
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light mb-3">
+                To transition to a renewable energy system, the following three steps are necessary. First, modernize and further develop networks capable of integrating a high share of renewable energy. Second, increasing the flexibility of the energy system through demand management, energy storage systems, hydropower capacity and other technologies. Third, a clear plan for phasing out coal, including support for structural changes in coal regions. Interest in renewable energy production is growing throughout the region, motivated by current energy needs and the implementation of long-term CC mitigation strategies. The global push for clean technologies demonstrates that the energy crisis is certainly not a setback for the climate, but rather is accelerating the energy transition. In fact, the IEA's WEO 2022 report leads us to the conclusion that the famous energy trilemma can be solved with clean energy, providing solutions for energy security, economic competitiveness and sustainability.
+              </p>
+              <img src="../../static/img/projects/leap_abstract.png" class="img-thumbnail d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Application of the LEAP model to analysis
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+            <div class="accordion-body">
+              <p class="fw-light mb-3">
+                LEAP is an integrated scenario-based modeling tool that can be used to track energy consumption, production and resource extraction across all sectors of the economy. It can be used to account for sources and sinks of greenhouse gas (GHG) emissions in both the energy and non-energy sectors. In addition to tracking GHG emissions, LEAP can also be used to analyze emissions of local and regional air pollutants, as well as short-lived climate pollutants (SLCPs), making it well suited for studying the climate co-benefits of local air pollution reductions. The study will integrate DDPP, a collaborative initiative that aims to physically and economically demonstrate how countries can transform their energy systems to achieve deep decarbonization in line with national development priorities. This transition is represented by the deep decarbonization (DDM) pathways of individual countries. A key advantage of the approach is that country DDPs are prepared by in-country teams with local knowledge independent of government, with careful consideration of the national political, economic, technological, and geographic context. 
+              </p>
+              <img src="../../static/img/projects/leap_structure.jpg" class="img-thumbnail d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="mb-3">Attachments</h2>
+      <div class="" id="projectAttachments">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/leap-kz_banner.pptx" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">Project banner</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/leap_en.docx" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">LEAP (EN)</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center border rounded p-3">
+              <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+                <a href="../../static/pdf/leap_ru.docx" class="bi bi-paperclip text-primary">
+                  <i class="fa-solid fa-paperclip"></i>
+                </a>
+              </div>
+              <div class="flex-grow-1">
+                <h6 class="mb-1">LEAP (RU)</h6>
+                <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- publications section -->
+    <!-- <div class="container mb-5 py-5" id="publications">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Publications</h1>
+      <div class="table-responsive-md">
+        <table class="table">
+            <tbody>
+              <tr>
+                <th>№</th>
+                <th>Year</th>
+                <th>Article</th>
+                <th>Journal</th>
+              </tr>
+      
+              <tr>
+                <td>1</td>
+                <td>2021</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9465892">
+                    S. Zhakiyeva, M. Gabbassov, Y. Akhmetbekov, G. Akybayeva and N.
+                    Zhakiyev, "The Development of a Risk Assessment Modeling for the
+                    Power System of Kazakhstan," 2021 IEEE International Conference
+                    on Smart Information Systems and Technologies (SIST), 2021, pp.
+                    1-4,
+                  </a>
+                  doi: 10.1109/SIST50301.2021.9465892
+                </td>
+                <td>Scopus</td>
+              </tr>
+      
+              <tr>
+                <td>2</td>
+                <td rowspan="6">2022</td>
+                <td>
+                  <a href="https://www.mdpi.com/1996-1073/15/7/2404">
+                    Amanbek Y., Kalakova A., Zhakiyeva S., Korhan K., Zhakiyev N.,
+                    Fridrich D. "Distribution-LMP based Transactive Energy
+                    Management in Distribution Systems with Smart Prosumers - A
+                    Multi-Agent Approach"</a
+                  >
+                </td>
+                <td>WoS, Scopus-Q1</td>
+              </tr>
+      
+              <tr>
+                <td>3</td>
+                <td>
+                  <a
+                    href="https://www.researchgate.net/publication/358505657_Maximum_power_tracking_of_variable-speed_wind_energy_conversion_systems_based_on_a_near-optimal_servomechanism_control_system"
+                  >
+                    B. Sarsembayev, D. Zholtayev, and Ton Duc Do, Maximum Power
+                    Tracking of Variable-Speed Wind Energy Conversion Systems based
+                    on a Near-Optimal Servomechanism Control System // Optimal
+                    Control Applications and Methods </a
+                  > 
+                </td>
+                <td>WoS, Q2</td>
+              </tr>
+      
+              <tr>
+                <td>4</td>
+                <td>
+                  <a
+                    href="https://www.ijrer.org/ijrer/index.php/ijrer/article/view/13195"
+                  >
+                    A. Zhanbolatov, S. Zhakiyeva, N. Zhakiyev, K. Kayisli (2022)
+                    "Blockchain-Based Decentralized Peer-to-Peer Negawatt Trading in
+                    Demand-Side Flexibility Driven Transactive Energy System"
+                    International Journal of Renewable Energy Research (IJRER),
+                    12(3), 1475-1483.</a
+                  >
+                  doi:10.20508/ijrer.v12i3.13195.g8530
+                </td>
+                <td>Scopus percentile 58, Q2</td>
+              </tr>
+      
+              <tr>
+                <td>5</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/document/9848769/">
+                    B. Sarsembayev, N. Zhakiyev, A. Akhmetbayev and K. Kayisli,
+                    "Servomechanism based Optimal Control System Design for Maximum
+                    Power Extraction from WECS with PMSG," 2022 10th International
+                    Conference on Smart Grid
+                  </a>
+                </td>
+                <td>icSmartGrid</td>
+              </tr>
+      
+              <tr>
+                <td>6</td>
+                <td>
+                  <a href="https://ieeexplore.ieee.org/document/9922874">
+                    A. Zhanbolatov, N. Zhakiyev, S. Zhakiyeva, K. Kayisli, B.Azibek,
+                    T.Dushayeva. “A Multi-carrier Energy Method for Self-Consumption
+                    Enhancement in Residential Buildings "
+                  </a>
+                </td>
+                <td>11th ICRERA</td>
+              </tr>
+      
+              <tr>
+                <td>7</td>
+                <td>
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-29831-8_5"
+                  >
+                    G.Abdi, N.Zhakiyev, and S.Toilybayeva "Decarbonization
+                    Opportunities and Emerging Carbon Pricing Instruments in Central
+                    Asia"
+                  </a>
+                </td>
+                <td>Chapter in Springer's eBook</td>
+              </tr>
+      
+              <tr>
+                <td>8</td>
+                <td>2023</td>
+                <td>
+                  <a href="https://www.mdpi.com/1996-1073/16/13/5142">
+                    Aidyn Bakdolotov, Rocco De Miglio, Nurkhat Zhakiyev.
+                    Optimization modelling of the decarbonization scenario of the
+                    total energy system of Kazakhstan until 2060
+                  </a>
+                </td>
+                <td>Energies</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div> -->
+
+    <!-- interactive section -->
+    <!-- <div class="container mb-5 py-5" id="projectInteractive">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Interactive</h1>
+      <h2 class="mb-3">Map of electric power stations</h2>
+      <div class="card shadow-lg" id="mapsCard">
+        <div class="card-body">
+          <div class="mb-4" id="maps">
+            <iframe
+              id="contentIframe"
+              width="100%"
+              height="600vh"
+              border="none"
+              src="../../maps/energy_stations_map.html"
+            ></iframe>
+          </div>
+          <div class="row g-2" role="group" aria-label="Iframe Control Buttons">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/energy_stations_map.html')">Energy station lines</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/common_map.html')">Power plant types</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/wind_map.html')">Wind</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/coal_map.html')">Coal</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/gas_map.html')">Gas</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/pv_map.html')">PV</button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <button class="btn btn-outline-primary w-100" onclick="changeIframe('../../maps/hydro_map.html')">Hydro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- team section -->
+    <div class="container mb-5 py-5" id="teamMembers">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Meet the team</h1>
+      <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/zhakiyev.png" alt="Team member 1"/>
+          <div class="card-body">
+          <h3 class="card-title">Zhakiev Nurkhat Kuandykovich</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember1" data-bs-toggle="collapse" aria-expanded="true" aria-controls="infoTeamMember1" class="text-decoration-none text-secondary">
+              PI, PhD in Physics. Head of the Department of Science and Innovation
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember1" data-bs-parent="#teamMembers">
+            <p>
+            No information available
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/gulden_ormanova.jpg" alt="Team member 2"/>
+          <div class="card-body">
+          <h3 class="card-title">Gulden Ormanova</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember2" class="text-decoration-none text-secondary">
+            Senior Researcher, PhD in Science, Engineering and Technology (Nazarbayev University)              
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember2" data-bs-parent="#teamMembers">
+            <p>
+            No information available
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/aidyn_bakdolotov.png" alt="Team member 3"/>
+          <div class="card-body">
+          <h3 class="card-title">Aidyn Bakdolotov</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember3" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember3" class="text-decoration-none text-secondary">
+            MS in Engineering (Purdue University). Director of Climate change Center, Economic Research Institute
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember3" data-bs-parent="#teamMembers">
+            <p>
+            No information available
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/gulmira_ismagulova.jpg" alt="Team member 4"/>
+          <div class="card-body">
+          <h3 class="card-title">Gulmira Ismagulova</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember4" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember4" class="text-decoration-none text-secondary">
+            Project expert on macroeconomic analysis, carbon regulation and methodological issues of primary data processing              
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+            <p>
+            No information available
+            </p>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card text-center">
+          <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/ruslan.png" alt="Team member 5"/>
+          <div class="card-body">
+          <h3 class="card-title">Ruslan Omirgaliyev</h3>
+          <p class="card-text">
+            <a href="#infoTeamMember5" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember5" class="text-decoration-none text-secondary">
+              Researcher, MSc in  Electrical & Computer Engineering. Senior-lecturer, Astana IT University
+            <i class="fas fa-angle-down"></i>
+            </a>
+          </p>
+          <div class="collapse mt-2" id="infoTeamMember5">
+            <p>
+              No information available
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/ayagoz_khamzina.jpg" alt="Team member 6"/>
+            <div class="card-body">
+              <h3 class="card-title">Ayagoz Khamzina</h3>
+              <p class="card-text">
+                <a href="#infoTeamMember6" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember6" class="text-decoration-none text-secondary">
+                  Research associate (MSc in Chemical Engineering)
+                  <i class="fas fa-angle-down"></i>
+                </a>
+              </p>
+              <div class="collapse mt-2" id="infoTeamMember6">
+                <p>
+                  No information available
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/mirat_karibayev.jpg" alt="Team member 7"/>
+              <div class="card-body">
+              <h3 class="card-title">Mirat Karibayev</h3>
+              <p class="card-text">
+                <a href="#infoTeamMember7" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember7" class="text-decoration-none text-secondary">
+                  Research Assistant, PhD in Chemical Engineering (Nazarbayev University)                       
+                <i class="fas fa-angle-down"></i>
+                </a>
+              </p>
+              <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+                <p>
+                No information available
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/balzhan.jpg" alt="Team member 8"/>
+              <div class="card-body">
+              <h3 class="card-title">Balzhan Azibek</h3>
+              <p class="card-text">
+                <a href="#infoTeamMember8" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember8" class="text-decoration-none text-secondary">
+                  Junior Researcher, MSc in Electrical and Computer Engineering, Senior-lecturer, Astana IT University              
+                <i class="fas fa-angle-down"></i>
+                </a>
+              </p>
+              <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+                <p>
+                No information available
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img class="team-member-image object-fit-cover rounded mx-auto mt-4" src="../../static/img/team/ainur_medetkhan.png" alt="Team member 9"/>
+              <div class="card-body">
+              <h3 class="card-title">Ainur Medetkhan</h3>
+              <p class="card-text">
+                <a href="#infoTeamMember9" data-bs-toggle="collapse" aria-expanded="false" aria-controls="infoTeamMember9" class="text-decoration-none text-secondary">
+                  Junior Researcher, MSc in Technical Sciences (Thermal Power Engineering, L.N.Gumilev Eurasian National University)
+                <i class="fas fa-angle-down"></i>
+                </a>
+              </p>
+              <div class="collapse mt-2" id="infoTeamMember4" data-bs-parent="#teamMembers">
+                <p>
+                No information available
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    
+    <!-- partners section -->
+    <div class="container mb-5 py-5" id="teamMembers">
+      <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">Partners</h1>
+      <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://recycle.kz/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/zhasyl_damu.png" alt="Partner 2"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Zhasyl Damu</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.energy.org.kz/about-us" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/kade.png" alt="Partner 2"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">KADE</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.kegoc.kz/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/kegoc.png" alt="Partner 3"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">KEGOC</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://www.ed.ac.uk/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/edinburgh_univeristy.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Edinburgh University</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <a href="https://gazi.edu.tr/" target="_blank">
+              <img class="team-member-image object-fit-contain rounded mx-auto mt-4" src="../../static/img/partners/gazi_university.png" alt="Partner 4"/>
+            </a>
+            <div class="card-body">
+            <h3 class="card-title">Gazi University</h3>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
