@@ -37,6 +37,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y openssh-client
+          ping -c4 ${{ secrets.SSH_SERVER }}
       - name: Configure and connect to SSH + Execute commands (Sync files)
         uses: appleboy/ssh-action@v1.2.0
         with:
