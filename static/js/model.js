@@ -1,5 +1,5 @@
 let dataId = null;
-const API_URL = 'http://85.159.27.243:8000';
+const API_URL = 'https://85.159.27.243:8000';
 
 function checkHealth() {
   fetch(`${API_URL}/health`)
