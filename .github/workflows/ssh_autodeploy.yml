@@ -26,7 +26,7 @@ jobs:
           sudo apt install -y openfortivpn openconnect
       - name: Configure and connect to VPN + Check connection to VPN
         run: |
-          echo "${{ secrets.VPN_PASSWORD }}" | openconnect ${{ secrets.VPN_GATEWAY_HOST }}:${{ secrets.VPN_GATEWAY_PORT }} -u ${{ secrets.VPN_USERNAME }} --passwd-on-stdin --servercert=sha-256:${{ secrets.VPN_TRUSTED_CERT }} --protocol=fortinet --background & sleep 30
+          echo "${{ secrets.VPN_PASSWORD }}" | openconnect ${{ secrets.VPN_GATEWAY_HOST }}:${{ secrets.VPN_GATEWAY_PORT }} -u ${{ secrets.VPN_USERNAME }} --passwd-on-stdin --servercert=sha256:${{ secrets.VPN_TRUSTED_CERT }} --protocol=fortinet --background & sleep 30
           ping -c4 ${{ secrets.SSH_SERVER }}
   ssh:
     needs: vpn
