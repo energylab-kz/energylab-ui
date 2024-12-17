@@ -45,4 +45,6 @@ jobs:
             username: ${{ secrets.SSH_USERNAME }}
             password: ${{ secrets.SSH_PASSWORD }}
             port: ${{ vars.SSH_PORT }}
-            script: whoami
+            script: |
+              ls -la
+              
