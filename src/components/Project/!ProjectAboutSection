@@ -1,0 +1,327 @@
+<!-- about section -->
+general
+
+Title
+Modeling and digitalization of electricity system of Kazakhstan to form new market designs, tariff policy enable high share of renewables
+
+<h5 class="card-title">Overall information</h5>
+<ul>
+    <li>Irn AP19579354</li>
+    <li>State registration number 0123РК00127</li>
+    <li>Ministry of Science and Higher Education of the Republic of Kazakhstan</li>
+</ul>
+
+Aims
+<ul>
+  <li>Study and analysis of ways to form effective tariff policy and new market mechanisms in electric power industry of Kazakhstan with increase in share of renewable energy sources and digitalization of sector by comparing different development scenarios; development of software or web platform for efficient operation of electricity to consumers.</li>
+</ul>
+
+Tasks
+<ul>
+  <li>Analysis of existing models of the electricity market by studying the experience of developed countries. Use in practice of new models and its adaptation for the electricity market of Kazakhstan </li>
+  <li>Development of a core web platform for scenario analysis at various electricity prices. Comparative analysis of price behavior through Optimization / agent-based modeling of RES with / without the use of energy storage devices. </li>
+  <li>Optimization modeling of centralized electricity trades for the medium and long term. Prototype of a web platform for auction participants.</li>
+</ul>
+
+Expected results
+<ul>
+  <li>A new structured database for the electricity market in Kazakhstan with a detailed description of each element on PYPSA. Publication of at least 1 (one) article or review in a peer-reviewed foreign or domestic publication recommended by CQASHE</li>
+  <li>Simulation and simulation of various demand/supply scenarios for electricity from RES with/without the use of energy storage devices. Application of methods of optimization and agent-based modeling. Publication of at least 2 (two) articles and (or) reviews in peer-reviewed scientific publications in the scientific direction of the project, indexed in the Science Citation Index Expanded of the Web of Science database and (or) having a CiteScore percentile in the Scopus database of at least 35 (thirty five).</li>
+  <li>A computer model of medium-term and long-term trading using smart contracts and its optimization. Prototype of a web platform for auction participants. Recommendations for improving the tariff policy and the electricity market in Kazakhstan.</li>
+  <li>Publication of at least 1 (one) article (or) review in peer-reviewed scientific publications in the scientific direction of the project, indexed in the Science Citation Index Expanded of the Web of Science database and (or) having a CiteScore percentile in the Scopus database of at least 35 (thirty-five). As well as the publication of 1 (one) article or review in a peer-reviewed foreign or domestic publication recommended by CQASHE.</li>
+</ul>
+
+details
+Effective tariff policy
+<p>The purpose of the project: to study and analyze ways to form an effective tariff policy and new market mechanisms in the electric power industry of Kazakhstan with an increase in the share of renewable energy sources (RES) and digitalization of the sector by comparing different development scenarios; development of software or a web platform for the efficient operation of an electricity sales operator. The integration of renewable energy into energy systems has been made possible by the development of the power grid infrastructure, demand management measures (installation of multi-tariff meters and flexibility in electricity prices), the development of energy storage technologies, as well as industry cooperation and flexible generation of electricity in traditional power plants.
+        
+Energy balance in the market
+<p class="fw-light mb-3">
+  At the same time, the success in the development of RES and the rapid increase in its share in the energy balance were associated with large-scale state support provided to new technologies in developed countries. Purchases of green electricity at higher prices, subsidies to companies switching to the use of new technologies, significantly helped the industry in the early stages of development. The novelty of the study lies in the testing and integration of new systemic market mechanisms for the development of the electricity market with modern types of renewable energy sources and energy storage devices with computer scenario modeling tools. The research team will apply modern IT approaches in the field of scenario analysis and multi-agent modeling to form a new tariff policy in the electricity market. As a result of the project, it is expected to develop an optimization model of the Kazakhstani electricity market for testing and formation of a new tariff policy with a mechanism of transparent auctions between all participants. The scientific supervisor of the project is N.K. Zhakiev (PhD in physics).
+</p>
+<img src="../../static/img/projects/pm-structure.png" class="img-thumbnail d-block mx-auto" />
+
+
+
+
+
+
+Title
+AP09261258 Hybrid power system modeling to create a renewable energy roadmap for Kazakhstan with high spatial, temporal and technical disaggregation.
+
+Overall information
+<ul>
+    <li>Project funding provider: Committee of Science of the Ministry of Science and Higher Education of the Republic of Kazakhstan </li>
+    <li>Principal investigator: Zhakiev Nurkhat</li>
+    <li>Implementation period: 2021 - 2023 </li>
+</ul>
+
+Aims
+<ul>
+    <li>To develop an integrated hybrid modeling tool of the energy system, which includes a long-term planning model of the energy system and an operational model of the electric power system</li>
+    <li>To develop Roadmap of RE deployment 2030, which corresponds to optimal performance parameters, ensuring reliability, economic feasibility and environmental friendliness of the energy system</li>
+</ul>
+
+Tasks
+<ul>
+    <li>Update of the long-term energy system model</li>
+    <li>Creation of an operational power model with high spatial, temporal, technical disaggregation</li>
+    <liv>Linking of modeling tools</liv>
+    <li>Development of a renewable energy roadmap for Kazakhstan </li>
+    <li>Sensitivity analysis and uncertainties estimation  </li>
+</ul>
+
+Expected results
+<ul>
+    <li>Modeling tool with high quality input data</li>
+    <li>Scenario analyses</li>
+    <li>The roadmap for renewable energy in Kazakhstan with data on the optimal geographical location, construction time and investments, taking into account the renewable energy potential and energy demand of the region</li>
+</ul>
+
+<!-- about section -->
+Title
+Application of modeling methods and machine learning for optimal planning of the composition of the generating equipment of the Pavlodar CHPP-1.
+
+Tasks
+<ul>
+  <li>
+    Collection and processing of telemetry data, ranges of operating
+    modes, weather, digitization of processes, diagrams and drawings.
+  </li>
+  <li>
+    Modeling of CHP and development of a machine learning algorithm for
+    planning (short-term and long-term) maintenance and repairs of
+    equipment.
+  </li>
+  <li>
+    Development of recommendations for improving energy efficiency, for
+    managing the reliability of CHP plants based on the Decision Tree.
+  </li>
+</ul>
+
+Aim
+The purpose is to study the potential for improving the energy efficiency of CHPPs, reducing greenhouse gas emissions and applying modeling and machine learning methods for optimal planning of the composition of the generating equipment of the CHPP in Pavlodar, Kazakhstan.
+
+Project relevance
+This study is important for the applied testing of methods for processing big data using machine learning methods coming from an industrial facility that generates electricity, heat, and industrial steam. Pavlodar CHPP is special in that it is located in the northern zone of Kazakhstan, and has two different consumers - an aluminum plant and the population. The complexity in the variability of the consumption profile requires the use of modern methods of predictive planning of the composition of generating equipment for the day, week, year ahead. The long service life of the units, the hours worked, requires constant adjustment of the repair plan for the year ahead. It is necessary to take into account the curve of dynamic demand for heat and electricity by forecasting methods depending on the weather, the variability of heat and electricity consumption is changed by probabilistic laws based on historical data on consumption of the population.
+
+Results
+In the process of working on a scientific project, a quantitative analysis of the data from CHPP-1 of Aluminum of Kazakhstan JSC was carried out. Various levels of loading of aggregates were analyzed, data clustering was carried out. A CHP model has been developed in the GAMS environment for optimal medium-term planning of the composition of generating equipment for the day ahead. The numerical results of the ARIMA and Decision Tree models show that the effectiveness of the proposed approach is manifested with a large uncertainty in demand, when the operating costs of the system and fuel consumption increase due to unplanned changes in generation. The advantages of the proposed model lie in the modeling of uncertainties in solving the stochastic long-term problem of choosing the composition of generating units. The developed algorithms can be used for other similar CHPPs.
+
+<div class="container mb-5 py-5" id="projectDescription">
+    <h1 class="mb-4 text-center fw-bold display-4 border-bottom border-secondary border-opacity-10">About</h1>
+    <h2 class="mb-3">General</h2>
+    <div class="mb-5" id="projectCards">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              Modeling the fuel-energy balance of Kazakhstan (LEAP-KZ) to analyse decarbonisation scenarios and carbon pricing instruments
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Overall information</h5>
+              <ul>
+                  <li>Principal investigator (PI): N. K. Zhakiyev</li>
+                  <li>Grant of the Ministry of Science and Higher Education of the RoK</li>
+                  <li>Project duration: 08.2024-12.2026</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Aims</h5>
+              <ul>
+                  <li>Development of a comprehensive modeling tool for the fuel and energy balance of Kazakhstan (LEAP-KZ), formation of an action plan for decision-making on an energy transition and analysis of carbon pricing instruments with a holistic cross-sectoral vision for the development of a green economy and achieving carbon neutrality.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tasks</h5>
+              <ul>
+                  <li>Analysis of the fuel and energy balance</li>
+                  <li>Development of the KZLEAP model</li>
+                  <liv>Modeling of development scenarios, quantitative and qualitative analytics</liv>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Research methods</h5>
+              Energy system models are used to analyse long-term policies and pathways to reduce greenhouse gas (GHG) emissions. It is necessary to create 'net zero' or 'net-negative emissions' energy systems that decarbonize the entire economy, covering energy supply and demand, as well as other sources of emissions, including industrial processes, agriculture, and land use. A subset of these models are engineering-economic models that minimize the costs of achieving exogenously given annual reductions in GHG emissions to limit the increase in average global temperature. Their results, called deep decarbonization models (DDMs), include levels and timing of energy investment that meet projections of future energy demand across all energy sectors over several decades.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Research tools</h5>
+              LEAP (Long-range Energy Alternatives Planning) is an integrated modeling tool that can be used to track energy consumption, production and resource extraction across all economic sectors over medium to long term forecast periods. It can also be used to account for sources and sinks of greenhouse gas emissions from both the energy and non-energy sectors, as well as emissions of local and regional air pollutants.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Expected results</h5>
+              Tasks (WP- work packages):
+              <ul>
+                  <li>WP1. Analysis of fuel and energy balance</li>
+                  <li>WP 2. Development of the KZLEAP model</li>
+                  <li>WP 3: Development scenario modeling, quantitative and qualitative analytics</li>
+              </ul>
+              Expected results:
+              <ul>
+                  <li>Data analytics, building forecast models, correlation analysis, comparison of indicators with other countries, dependency graphs, repository architecture. Collected data (datasets in monthly and seasonal resolution) included in the fuel and energy balance and collection of emissions data. Data processing in the SQL, Python, MS Excel, Wolfram Mathematica software environment.</li>
+                  <li>Simulation and simulation of various scenarios: Design and build an open, transparent and integrated modeling platform to assess low-carbon transition pathways for Kazakhstan's energy system in LEAP. Training in the field of modeling in LEAP and the formation of human capital of experts. Improving the qualifications of scientific staff in improving the KZLEAP model (participation in seminars, reporting at conferences, improving scientific methods, training undergraduates). Quantitative exploration of scenarios for medium- and long-term decarbonization pathways. Improving the qualifications of government employees to use the KZLEAP model and involving them in scientific research.</li>
+                  <li>Building scenario analyzes using the LEAP model for energy planning and climate change mitigation assessment. Exploring the potential of CA to develop carbon market pricing instruments to accelerate regional decarbonization and realize the benefits of sustainable energy cooperation in the region.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mb-3">Details</h2>
+    <div class="mb-5 accordion" id="projectDetails">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne">
+            Transformation of energy policy 
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectDetails">
+          <div class="accordion-body">
+            <p class="fw-light">
+              Kazakhstan's energy sector and economy as a whole are dependent on fossil fuels, with coal being the backbone of Kazakhstan's electricity sector, accounting for 67% of the country's electricity production and CO₂ emissions. The transition from fossil fuels to clean energy solutions for Kazakhstan is now high on the national strategy agenda. This requires a transformation of energy policy and a revision of traditional industrial development strategies, the introduction of innovative technologies and the application of “rapid decarbonization” measures. Energy modeling of development scenarios has an important role in shaping policy and investment decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Significance of the energy aspects within Kazakhstan
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+          <div class="accordion-body">
+            <p class="fw-light">
+              Kazakhstan is a leading producer and exporter of fossil energy: the 9th largest exporter of coal, the 9th largest exporter of crude oil, and the 12th largest producer of natural gas [1,2]. The economy of Kazakhstan is largely dependent on energy production mainly from fossil fuels, energy-intensive industry and natural resource processing. Kazakhstan, a leading exporter of hydrocarbons, is currently faced with the need to decarbonize economic sectors and transition to a new energy paradigm based on the climate agenda. The transition from fossil fuels to clean energy solutions is now prominent in national strategic documents [3,4].
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Decarbonization and carbon neutrality of Kazakhstan
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+          <div class="accordion-body">
+            <p class="fw-light mb-3">
+              A key factor in conducting this study are the environmental, economic and energy aspects of decarbonization of the national economy: (i) The Kazakhstan 2050 Strategy includes long-term goals to increase the share of alternative energy in electricity production (renewable and nuclear) to 50% by 2050; (ii) The strategy to achieve carbon neutrality by 2060 is a trigger to attract significant investment in alternative energy sources. The country's regions have great potential for renewable energy: solar, wind, bio, hydro and geothermal energy; (iii) By leveraging the region's diverse energy sources and production mix, the pilot market will pave the way for accelerated regional decarbonization and realize the benefits of sustainable energy cooperation in CA. These benefits include lower investment costs for new generation capacity, increased development of renewable energy sources, and improved operation and management of regional energy resources.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Transformation to renewable energy sources
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+          <div class="accordion-body">
+            <p class="fw-light mb-3">
+              To transition to a renewable energy system, the following three steps are necessary. First, modernize and further develop networks capable of integrating a high share of renewable energy. Second, increasing the flexibility of the energy system through demand management, energy storage systems, hydropower capacity and other technologies. Third, a clear plan for phasing out coal, including support for structural changes in coal regions. Interest in renewable energy production is growing throughout the region, motivated by current energy needs and the implementation of long-term CC mitigation strategies. The global push for clean technologies demonstrates that the energy crisis is certainly not a setback for the climate, but rather is accelerating the energy transition. In fact, the IEA's WEO 2022 report leads us to the conclusion that the famous energy trilemma can be solved with clean energy, providing solutions for energy security, economic competitiveness and sustainability.
+            </p>
+            <img src="../../static/img/projects/leap_abstract.png" class="img-thumbnail d-block mx-auto" />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Application of the LEAP model to analysis
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#projectDetails">
+          <div class="accordion-body">
+            <p class="fw-light mb-3">
+              LEAP is an integrated scenario-based modeling tool that can be used to track energy consumption, production and resource extraction across all sectors of the economy. It can be used to account for sources and sinks of greenhouse gas (GHG) emissions in both the energy and non-energy sectors. In addition to tracking GHG emissions, LEAP can also be used to analyze emissions of local and regional air pollutants, as well as short-lived climate pollutants (SLCPs), making it well suited for studying the climate co-benefits of local air pollution reductions. The study will integrate DDPP, a collaborative initiative that aims to physically and economically demonstrate how countries can transform their energy systems to achieve deep decarbonization in line with national development priorities. This transition is represented by the deep decarbonization (DDM) pathways of individual countries. A key advantage of the approach is that country DDPs are prepared by in-country teams with local knowledge independent of government, with careful consideration of the national political, economic, technological, and geographic context. 
+            </p>
+            <img src="../../static/img/projects/leap_structure.jpg" class="img-thumbnail d-block mx-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="mb-3">Attachments</h2>
+    <div class="" id="projectAttachments">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center border rounded p-3">
+            <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+              <a href="../../static/pdf/leap-kz_banner.pptx" class="bi bi-paperclip text-primary">
+                <i class="fa-solid fa-paperclip"></i>
+              </a>
+            </div>
+            <div class="flex-grow-1">
+              <h6 class="mb-1">Project banner</h6>
+              <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-center border rounded p-3">
+            <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+              <a href="../../static/pdf/leap_en.docx" class="bi bi-paperclip text-primary">
+                <i class="fa-solid fa-paperclip"></i>
+              </a>
+            </div>
+            <div class="flex-grow-1">
+              <h6 class="mb-1">LEAP (EN)</h6>
+              <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-center border rounded p-3">
+            <div class="bg-light rounded-circle p-3 d-flex justify-content-center align-items-center me-3">
+              <a href="../../static/pdf/leap_ru.docx" class="bi bi-paperclip text-primary">
+                <i class="fa-solid fa-paperclip"></i>
+              </a>
+            </div>
+            <div class="flex-grow-1">
+              <h6 class="mb-1">LEAP (RU)</h6>
+              <small class="text-muted">FILE_SIZE - FILE_TYPE</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

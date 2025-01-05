@@ -1,0 +1,19 @@
+.htaccess - apache
+
+force all traffic to https and redirect from http to https
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+turn off all caching
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|css|js|png|jpg|jpeg|gif|ico|svg|webp|woff|woff2|ttf|otf|eot)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>

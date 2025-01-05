@@ -1,0 +1,617 @@
+{
+  "our_projects": ["Our projects", "Наши проекты", "Біздің жобалар"],
+  "recent_publications": [
+    "Recent publications",
+    "Недавние публикации",
+    "Соңғы жарияланымдар"
+  ],
+  "about": ["About", ""],
+  "contacts": ["Contacts", "Контакты", "Байланыс"],
+  "more": ["More", "Подробнее", "Толығырақ"],
+  "team_members": ["Team members", "Участники команды", "Жоба мүшелері"],
+  "our_partners": ["Our partners", "Наши партнеры", "Біздің партнерлері"],
+  "header": {
+    "logo": "static/img/header-logo.png",
+    "projects": "Projects",
+    "publications": "Publications",
+    "contacts": "Contacts",
+    "translations": {
+      "ru": {
+        "projects": "Проекты",
+        "publications": "Публикации",
+        "contacts": "Контакты"
+      },
+      "kk": {
+        "projects": "Жобалар",
+        "publications": "Жарияланымдар",
+        "contacts": "Байланыс"
+      }
+    }
+  },
+  "footer": {
+    "logo": "static/img/footer-logo.png",
+    "address": "Astana, 010000 av. Mangilik Yel, 55/11. EXPO Pavilion C1, KZ",
+    "email": "nurkhat.zhakiyev@astanait.edu.kz",
+    "mobile_number": "+7 7172 64-57-13",
+    "whatsapp_number": "+7 777-469-8612",
+    "copyright": "2024, energylab.kz",
+    "translations": {
+      "ru": {
+        "address": "Астана, 010000 пр. Манигилик Ел, 55/11. ЭКСПО Павильон C1, КЗ"
+      },
+      "kk": {
+        "address": "Астана, 010000 Мәнгілің Ел көшесі, 55/11. EXPO Павилион C1, КЗ"
+      }
+    }
+  },
+  "partners": [{}, {}, {}],
+  "projects": [
+    {
+      "title": "Hybrid modeling",
+      "description": "",
+      "status": "CURRENT",
+      "translations": {
+        "ru": {
+          "title": "Гибридное моделирование",
+          "description": "Разработка интегрирующего инструмента гибридного моделирования энергетической системы, включающего модель долгосрочного планирования энергосистемы и операционную модель электроэнергетической системы."
+        },
+        "kk": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    {
+      "title": "Power market",
+      "description": "",
+      "status": "CURRENT",
+      "translations": {
+        "ru": {
+          "title": "Энергетический рынок",
+          "description": "Изучить возможности повышения энергоэффективности ТЭЦ, снижения выбросов парниковых газов и применения методов моделирования и машинного обучения для оптимального планирования состава генерирующего оборудования ТЭЦ в г. Павлодар, Казахстан."
+        },
+        "kk": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    {
+      "title": "Smart city",
+      "description": "",
+      "status": "COMPLETED",
+      "translations": {
+        "ru": {
+          "title": "Умный город",
+          "description": "Разработка ИТ-решений для оптимизации энергетической системы умного города с применением методов машинного обучения для снижения вредных выбросов. Будут разработаны инструменты принятия решений по оптимизации ТЭЦ, системы теплоснабжения города и системы управления потреблением ресурсов многоквартирного дома."
+        },
+        "kk": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    {
+      "title": "CHPP-1 Pavlodar",
+      "description": "",
+      "status": "COMPLETED",
+      "translations": {
+        "ru": {
+          "title": "ТЭЦ-1 Павлодар",
+          "description": "Исследование потенциала повышения энергоэффективности ТЭЦ, снижения выбросов парниковых газов и применения методов моделирования и машинного обучения для оптимального планирования состава генерирующего оборудования ТЭЦ в Павлодаре, Казахстан."
+        },
+        "kk": {
+          "title": "",
+          "description": ""
+        }
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Zhakiev Nurkhat Kuandykovich",
+      "position": "Project Manager, Senior Researcher, PhD in Physics. Head of the Department of Science and Innovation",
+      "bio": "Head of Subtask RP-3. Principal investigator. He is engaged in computer modeling of energy systems, forecasting industrial greenhouse gas emissions, and climate change mitigation analytics. His main research topics include mathematical and computer modeling of physical processes, optimization and matrix algebra methods, and modeling in the GAMS environment. h-index=4, https://www.scopus.com/authid/detail.uri?authorId=56043145000.",
+      "photo": "../../static/img/team/zhakiyev.png",
+      "translations": {
+        "ru": {
+          "name": "Жакиев Нурхат Куандыкович",
+          "position": "Руководитель проекта, старший научный сотрудник, кандидат физико-математических наук, заведующий отделом науки и инноваций",
+          "bio": "Руководитель подзадачи RP-3. Главный исследователь. Занимается компьютерным моделированием энергетических систем, прогнозированием промышленных выбросов парниковых газов и аналитикой смягчения последствий изменения климата. Основные темы исследований включают математическое и компьютерное моделирование физических процессов, методы оптимизации и матричной алгебры, моделирование в среде GAMS. h-index=4, https://www.scopus.com/authid/detail.uri?authorId=56043145000."
+        },
+        "kk": {
+          "name": "Жақиев Нұрхат Қуандықұлы",
+          "position": "Жоба жетекшісі, аға ғылыми қызметкер, физика ғылымдарының кандидаты. Ғылым және инновациялар басқармасының басшысы",
+          "bio": "РП-3 қосалқы тапсырманың меңгерушісі. Бас тергеуші. Ол энергетикалық жүйелерді компьютерлік модельдеумен, өнеркәсіптік парниктік газдар шығарындыларын болжаумен және климаттың өзгеруін азайтуды талдаумен айналысады. Негізгі зерттеу тақырыптарына физикалық процестерді математикалық және компьютерлік модельдеу, оңтайландыру әдістері мен матрицалық алгебра, GAMS ортасында модельдеу кіреді. h-index=4, https://www.scopus.com/authid/detail.uri?authorId=56043145000."
+        }
+      }
+    },
+    {
+      "name": "Salkenov Aldiyar Kanatovich",
+      "position": "Master of Information Technology",
+      "bio": "Junior researcher, education: master of information technology. Research interests: web development, data analytics.",
+      "photo": "../../static/img/team/unknown_person.jpeg",
+      "translations": {
+        "ru": {
+          "name": "Салкенов Алдияр Канатович",
+          "position": "Магистр информационных технологий",
+          "bio": "Младший научный сотрудник, образование: магистр информационных технологий. Научные интересы: веб-разработка, аналитика данных."
+        },
+        "kk": {
+          "name": "Салкенов Алдияр Қанатұлы",
+          "position": "Ақпараттық технологиялар магистрі",
+          "bio": "Кіші ғылыми қызметкер, білімі: ақпараттық технология магистрі. Ғылыми қызығушылықтары: веб-әзірлеу, деректерді талдау."
+        }
+      }
+    },
+    {
+      "name": "Social Zhuldyz Zheniskyzy",
+      "position": "Master of Mechanical and Aerospace Engineering",
+      "bio": "",
+      "photo": "../../static/img/team/unknown_person.jpeg",
+      "translations": {
+        "ru": {
+          "name": "Социал Жулдыз Женискызы",
+          "position": "Магистр машиностроения и аэрокосмической техники",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Социал Жұлдыз Жеңісқызы",
+          "position": "Машина және аэроғарыштық инженерия магистрі",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Omirgaliev Ruslan",
+      "position": "MSc in  Electrical & Computer Engineering, Executive Officer, Researcher. Senior-lecturer, Astana IT University",
+      "bio": "Junior researcher, education: master of electrical engineering. Scientific interests: physics, mathematics, programming, data analytics.",
+      "photo": "../../static/img/team/Ruslan.png",
+      "translations": {
+        "ru": {
+          "name": "Омиргалиев Руслан",
+          "position": "Магистр в области электротехники и вычислительной техники, исполнительный директор, научный сотрудник. Старший преподаватель, Astana IT University",
+          "bio": "Младший научный сотрудник, образование: магистр электротехники. Научные интересы: физика, математика, программирование, аналитика данных."
+        },
+        "kk": {
+          "name": "Өмірғалиев Руслан",
+          "position": "Электротехника және компьютерлік инженерия магистрі, атқарушы директор, ғылыми қызметкер. Астана IT университетінің аға оқытушысы",
+          "bio": "Кіші ғылыми қызметкер, білімі: электротехника магистрі. Ғылыми қызығушылықтары: физика, математика, бағдарламалау, деректерді талдау."
+        }
+      }
+    },
+    {
+      "name": "Balzhan Azibek",
+      "position": "Junior Researcher, MSc in Electrical and Computer Engineering, Senior-lecturer, Astana IT University",
+      "bio": "Balzhan Azibek received the B.Sc. degree and M.Sc. degree in Electrical and Computer Engineering at Nazarbayev University, Kazakhstan. In B.Sc. shestudied the power generaton and distribution. She mastered her research skills in higher education. Her research area includes game theory approaches in power system modeling. Currently, she works as a teacher at Astana IT University, Kazakhstan.",
+      "photo": "../../static/img/team/Balzhan.jpg",
+      "translations": {
+        "ru": {
+          "name": "Балжан Азибек",
+          "position": "Младший научный сотрудник, магистр электротехники и вычислительной техники, старший преподаватель, Astana IT University.",
+          "bio": "Балжан Азибек получила степень бакалавра наук и степень магистра наук по электротехнике и вычислительной технике в Назарбаев Университете, Казахстан. В бакалавриате она изучала генерацию и распределение электроэнергии. Она освоила свои исследовательские навыки в высшем образовании. Ее область исследований включает игровые подходы к моделированию энергосистем. В настоящее время она работает преподавателем в Astana IT University, Казахстан."
+        },
+        "kk": {
+          "name": "Балжан Әзібек",
+          "position": "Кіші ғылыми қызметкер, электр және компьютерлік инженерия магистрі, Астана IT университетінің аға оқытушысы.",
+          "bio": "Балжан Әзібек бакалавр дәрежесін алды. дәрежесі және магистратура. Назарбаев Университетінде электр және компьютерлік инженерия мамандығы бойынша, Қазақстан. B.Sc. ол электр энергиясын өндіру мен бөлуді зерттеді. Ол жоғары оқу орнында өзінің зерттеушілік қабілетін игерді. Оның зерттеу саласы энергетикалық жүйені модельдеудегі ойын теориясының тәсілдерін қамтиды. Қазіргі уақытта Қазақстан, Астана IT университетінде оқытушы болып жұмыс істейді."
+        }
+      }
+    },
+    {
+      "name": "Bayandy Sarsembayev",
+      "position": "PhD in Electrical Engineering and Electronics Research",
+      "bio": "Received the specialist qualification in Railway Automation and Control following with Candidate (PhD) Degree in Technical Sciences in Transport Operation from the Kazakh Academy of Transport and Communications, Almaty, Kazakhstan, in 2000 and 2005 respectively. He gained the M.Sc. degree in Systems and Control Engineering from City University of London, London, U.K., in 2015. He earned Ph.D. degree in Electrical Engineering and Electronics Research, Brunel University London, U.K. in February, 2023.",
+      "photo": "../../static/img/team/sarsembayev.png",
+      "translations": {
+        "ru": {
+          "name": "Баянды Сарсембаев",
+          "position": "Кандидат наук в области электротехники и электроники",
+          "bio": "Получил квалификацию специалиста по железнодорожной автоматике и управлению с присвоением степени кандидата технических наук по эксплуатации транспорта в Казахской академии транспорта и коммуникаций, г. Алматы, Казахстан, в 2000 и 2005 годах соответственно. Он получил степень магистра наук. степень в области систем и систем управления Лондонского городского университета, Лондон, Великобритания, в 2015 году. Он получил докторскую степень. степень в области электротехники и исследований в области электроники, Лондонский университет Брунеля, Великобритания, февраль, 2023."
+        },
+        "kk": {
+          "name": "Баянды Сарсембаев",
+          "position": "Электротехника және электроника ғылымдарының докторы",
+          "bio": "2000 және 2005 жж. «Темір жолын автоматтандыру және басқару» мамандығы бойынша Қазақ көлік және коммуникациялар академиясының «Көлікті пайдалану» мамандығы бойынша техника ғылымдарының кандидаты (PhD) ғылыми дәрежесін алды, Қазақстан, Алматы қ., 2005 ж. Ол магистр дәрежесін алды. 2015 жылы Лондон Сити университетінде Жүйелер және басқару инженериясы дәрежесін алды. Ол Ph.D дәрежесін алды. 2023 жылдың ақпанында Лондондағы Брунель университетінің электротехника және электроника зерттеулері бойынша дәрежесі."
+        }
+      }
+    },
+    {
+      "name": "Oleg Arkhipkin",
+      "position": "Master of Applied Physics and Mathematics",
+      "bio": "Education: Moscow Institute of Physics and Technology 2002 - 2008, Master of Applied Physics and Mathematics, member of the Coordinating Council for Renewable Energy Development of the Ministry of Energy of the Republic of Kazakhstan (Order of the Minister of Energy of the Republic of Kazakhstan № 304 of 07.07.2016); member of the KAZENERGY Association Energy Council. Years at the Firm: 01/2021 - present - Zhasyl Damu JSC, 11/2019 - 08/2020 - ICZTIP NJSC, 07/2011 - 07/2019 - Kazakh Institute of Oil and Gas JSC, 07/2010 - 01/2011 - Speclabpribor A LLP, 04/2009 - 04/2010 - NAC Kazatomprom JSC, Awards: Medal of KAZENERGY Association for contribution to the development of the oil and energy sector of Kazakhstan. The Best Innovation Expert of 2012",
+      "photo": "../../static/img/team/archipkin.jpg",
+      "translations": {
+        "ru": {
+          "name": "Олег Архипкин",
+          "position": "Магистр прикладной физики и математики",
+          "bio": "Образование: Московский физико-технический институт 2002 - 2008 гг., магистр прикладной физики и математики, член Координационного совета по развитию возобновляемой энергетики Министерства энергетики Республики Казахстан (Приказ Министра энергетики Республики Казахстан № 304 от 07.07.2016 г.); член Энергетического Совета Ассоциации KAZENERGY. Годы в Фирме: 01/2021 - настоящее время - АО \"Жасыл Даму\", 11/2019 - 08/2020 - НАО \"ИКЗТИП\", 07/2011 - 07/2019 - АО \"Казахский институт нефти и газа\", 07/2010 - 01/2011 - ТОО \"Спецлабприбор А\", 04/2009 - 04/2010 - Н АО АК «Казатомпром», Награды: Медаль Ассоциации KAZENERGY за вклад в развитие нефтегазового сектора Казахстана. Лучший эксперт по инновациям 2012 года"
+        },
+        "kk": {
+          "name": "Олег Архипкин",
+          "position": "Қолданбалы физика және математика магистрі",
+          "bio": "Білімі: Мәскеу физика-техникалық институты 2002 - 2008 жж., қолданбалы физика-математика магистрі, Қазақстан Республикасы Энергетика министрлігінің жаңартылатын энергия көздерін дамыту жөніндегі үйлестіру кеңесінің мүшесі (Қазақстан Республикасы Энергетика министрінің бұйрығы 07.07.2016 ж. № 304); KAZENERGY қауымдастығының энергетикалық кеңесінің мүшесі. Фирмада жұмыс істеген жылдары: 01/2021 – қазіргі – «Жасыл Даму» АҚ, 11/2019 – 08/2020 – «ICZTIP» КЕАҚ, 07/2011 – 07.07.2019 – «Қазақ мұнай және газ институты» АҚ, 07.2010 – 01.02. «Speclabpribor A» ЖШС, 04/2009 - 04/2010 - «Қазатомөнеркәсіп» ҰАК» АҚ, Марапаттары: Қазақстанның мұнай және энергетика секторын дамытуға қосқан үлесі үшін KAZENERGY қауымдастығының медалі. 2012 жылдың үздік инновация сарапшысы"
+        }
+      }
+    },
+    {
+      "name": "Mukatov Bekzhan",
+      "position": "PhD in Power systems",
+      "bio": "Mr. Bekzhan Mukatov has 14 years of experience in managing of power systems, improving, and creating new automated control systems for Kazakhstan power system. Mr. Mukatov was Managing Director for National Electric Grid Development and System Services at KEGOC JSC focusing on planning the development of the national electrical grid and the energy system of Kazakhstan as a whole. Interacted with the Central Asia and Russian power systems on export-import of electricity issues, provision of system services, and transit of electricity. Participated in the development of long-term forecast balances of electricity and capacity, in the formation and launch of the capacity market, on relations with Central Asian and Russia power systems, improvement and development of legislation on renewable energy sources.",
+      "photo": "../../static/img/team/mukatov.png",
+      "translations": {
+        "ru": {
+          "name": "Мукатов Бекжан",
+          "position": "Кандидат технических наук в области энергосистем",
+          "bio": "Г-н Бекжан Мукатов имеет 14-летний опыт управления энергосистемами, совершенствования и создания новых автоматизированных систем управления энергосистемой Казахстана. Г-н Мукатов занимал должность управляющего директора по развитию национальной электрической сети и системным услугам в АО «KEGOC», где занимался планированием развития национальной электрической сети и энергосистемы Казахстана в целом. Взаимодействовал с энергосистемами Центральной Азии и России по вопросам экспорта-импорта электроэнергии, оказания системных услуг и транзита электроэнергии. Участвовал в разработке долгосрочных прогнозных балансов электроэнергии и мощности, в формировании и запуске рынка мощности, по вопросам взаимодействия с энергосистемами Центральной Азии и России, совершенствования и развития законодательства по возобновляемым источникам энергии."
+        },
+        "kk": {
+          "name": "Мукатов Бекжан",
+          "position": "Энергетикалық жүйелер техника ғылымдарының кандидаты",
+          "bio": "Бекжан Мұқатов мырзаның энергетикалық жүйелерді басқару, жетілдіру және Қазақстанның электр жүйесін басқарудың жаңа автоматтандырылған жүйелерін құруда 14 жылдық тәжірибесі бар. Мұқатов «KEGOC» АҚ Ұлттық электр желілерін дамыту және жүйелік қызмет көрсету жөніндегі басқарушы директоры болды, ол ұлттық электр желісін және жалпы Қазақстанның энергетикалық жүйесін дамытуды жоспарлауға көңіл бөлді. Орталық Азия және Ресей энергетикалық жүйелерімен электр энергиясының экспорт-импорты, жүйелік қызметтерді көрсету, электр энергиясының транзиті мәселелері бойынша өзара әрекеттестік. Электр энергиясы мен қуаттың ұзақ мерзімді болжамды теңгерімдерін әзірлеуге, қуат нарығын қалыптастыруға және іске қосуға, Орталық Азия мен Ресейдің энергетикалық жүйелерімен қарым-қатынасқа, жаңартылатын энергия көздері туралы заңнаманы жетілдіруге және дамытуға қатысты."
+        }
+      }
+    },
+    {
+      "name": "Aidos Satan",
+      "position": "Master's degree student at University of Genova in Energy Engineering",
+      "bio": "He was born on May 18, 1999 in Kazakhstan, city Shymkent. He has attained Bachelor’s degree in Electrical and Electronic Engineering at Nazarbayev University. Currently, he is Master’s degree Energy Engineering student at University of Genova and works as a Junior Researcher at Astana IT University.",
+      "photo": "../../static/img/team/aidos.jpg",
+      "translations": {
+        "ru": {
+          "name": "Айдос Сатан",
+          "position": "Магистр Университета Генуи в области энергетики",
+          "bio": "Родился 18 мая 1999 года в Казахстане, город Шымкент. Он получил степень бакалавра в области электротехники и электроники в Назарбаев Университете. В настоящее время он является студентом магистратуры по энергетике в Университете Генуи и работает младшим научным сотрудником в Астанинском университете информационных технологий."
+        },
+        "kk": {
+          "name": "Айдос Сатан",
+          "position": "Генова университетінің энергетикалық инженерия мамандығы бойынша магистратура студенті",
+          "bio": "1999 жылы 18 мамырда Қазақстан, Шымкент қаласында дүниеге келген. Назарбаев Университетінде электр және электронды инженерия мамандығы бойынша бакалавр дәрежесін алды. Қазіргі уақытта ол Генова университетінің энергетикалық инженерия мамандығының магистранты және Астана IT университетінде кіші ғылыми қызметкер болып жұмыс істейді."
+        }
+      }
+    },
+    {
+      "name": "Kenzhina Madina",
+      "position": "Bachelor's degree, Electrical and Electronics Engineering",
+      "bio": "A graduate of Electrical and electronic engineering undergraduate program Nazarbayev University 2019, specialization in Power Engineering. She has several publications, dedicated to the study of the reliable operation of the power system, the feasibility of implementing a virtual power plant in Kazakhstan. Currently the leading engineer of KEGOC JSC. Business profile: operation of active-adaptive systems of the Unified Energy System of Kazakhstan (ARCHM, WAMS, etc.).",
+      "photo": "../../static/img/team/kenzhina_m.jpg",
+      "translations": {
+        "ru": {
+          "name": "Кенжина Мадина",
+          "position": "Степень бакалавра, электротехника и электроника",
+          "bio": "Выпускник программы бакалавриата «Электротехника и электроника» Назарбаев Университета 2019 года по специальности «Электроэнергетика». Имеет несколько публикаций, посвященных изучению надежности работы энергосистемы, возможности реализации виртуальной электростанции в Казахстане. В настоящее время ведущий инженер АО «KEGOC». Сфера деятельности: эксплуатация активно-адаптивных систем Единой энергетической системы Казахстана (АРЧМ, ВАМС и др.)."
+        },
+        "kk": {
+          "name": "Кенжина Мадина",
+          "position": "Бакалавриат, Электротехника және электроника инженериясы",
+          "bio": "Назарбаев Университетінің 2019 жылғы «Электротехника және электронды инженерия» бакалавриат бағдарламасының «Энергетика» мамандығы бойынша түлегі. Оның энергетикалық жүйенің сенімді жұмысын, Қазақстанда виртуалды электр станциясын енгізудің орындылығын зерттеуге арналған бірнеше басылымдары бар. Қазіргі уақытта «KEGOC» АҚ жетекші инженері. Бизнес профилі: Қазақстанның Бірыңғай энергетикалық жүйесінің (ARCHM, WAMS және т.б.) белсенді-бейімделу жүйелерін пайдалану."
+        }
+      }
+    },
+    {
+      "name": "Nurlan Zhanserik",
+      "position": "Ph.D. candidate in Computer Science",
+      "bio": "Education: doctoral studies at ENU. L.N. GUMILEV Head of Laboratory FabLab / Junior Research Fellow of the Scientific Research Center \"Industry 4.0\" Senior Research Fellow of the PCF \"Development of intelligent information and telecommunication systems for urban infrastructure: transport, ecology, energy and data analytics in the Smart City concept\" 2021-2023, in the section \"IT for optimizing the heat and power system\". Researcher at the Research Center \"Industry 4.0\". Member of the Industry Center for Technological Competence \"E-Industry\". Member of the Research Center \"Samsung Research\" in the field of 5G and 6G. Years with the Firm: 09/2022 - present - Astana IT University (AITU)",
+      "photo": "../../static/img/team/Zhans.png",
+      "translations": {
+        "ru": {
+          "name": "Нурлан Жансерик",
+          "position": "Кандидат наук. кандидат компьютерных наук",
+          "bio": "Образование: докторантура ЕНУ. Л.Н. ГУМИЛЕВ Заведующий лабораторией FabLab / Младший научный сотрудник НИЦ «Индустрия 4.0» Старший научный сотрудник ФКП «Развитие интеллектуальных информационно-телекоммуникационных систем городской инфраструктуры: транспорт, экология, энергетика и аналитика данных в концепции «Умный город» 2021-2023 гг., в секции «ИТ для оптимизации теплоэнергетической системы». Научный сотрудник исследовательского центра «Индустрия 4.0». Член Отраслевого центра технологических компетенций «Электронная индустрия». Член исследовательского центра «Samsung Research» в области 5G и 6G. Годы работы в фирме: 09/2022 - настоящее время - Astana IT University (AITU)"
+        },
+        "kk": {
+          "name": "Нұрлан Жансерік",
+          "position": "Ph.D. Информатика ғылымдарының кандидаты",
+          "bio": "Білімі: ЕҰУ-де докторантура. Л.Н. ГУМИЛЕВ FabLab зертханасының меңгерушісі / «Индустрия 4.0» ғылыми-зерттеу орталығының кіші ғылыми қызметкері «Қала инфрақұрылымы үшін интеллектуалды ақпараттық және телекоммуникациялық жүйелерді дамыту: Smart City тұжырымдамасында көлік, экология, энергетика және деректер талдауы» ПКФ аға ғылыми қызметкері 2021-2023 жж., «Жылу-энергетикалық жүйені оңтайландырудың АТ» бөлімінде. «Индустрия 4.0» ғылыми-зерттеу орталығының ғылыми қызметкері. «E-Industry» технологиялық құзыреттілік салалық орталығының мүшесі. 5G және 6G саласындағы «Samsung Research» зерттеу орталығының мүшесі. Фирмамен жұмыс істеген жылдары: 09/2022 – қазіргі уақытта – Астана IT университеті (АТУ)"
+        }
+      }
+    },
+    {
+      "name": "Alexandr Ten",
+      "position": "M.Sc. in Electrical and Computer Engineering",
+      "bio": "Alexandr Ten gained Master of Engineering degree in Electrical and Computer Engineering from the University of British Columbia, Vancouver, Canada in 2021 under the “Bolashak” program. He earned Bachelor degree in Automation and Control, Karaganda State Technical University, Karagandy, Kazakhstan in 2008.",
+      "photo": "../../static/img/team/Ten.png",
+      "translations": {
+        "ru": {
+          "name": "Александр Тен",
+          "position": "Магистр наук в области электротехники и вычислительной техники",
+          "bio": "Александр Тен получил степень магистра инженерии в области электротехники и вычислительной техники в Университете Британской Колумбии, Ванкувер, Канада, в 2021 году по программе «Болашак». В 2008 году получил степень бакалавра по специальности «Автоматика и управление» Карагандинского государственного технического университета, г. Караганда, Казахстан."
+        },
+        "kk": {
+          "name": "Александр Тен",
+          "position": "Электротехника және есептеуіш техника ғылымдарының магистрі",
+          "bio": "Александр Тен 2021 жылы «Болашақ» бағдарламасы бойынша Ванкувер, Канада Британдық Колумбия университетінде электр және компьютерлік инженерия мамандығы бойынша инженерлік магистр дәрежесін алды. 2008 жылы Қарағанды ​​мемлекеттік техникалық университетінің «Автоматтандыру және басқару» мамандығы бойынша бакалавр дәрежесін алды, Қарағанды ​​қ., Қазақстан."
+        }
+      }
+    },
+    {
+      "name": "Samal Zakaryanova",
+      "position": "Junior Research Fellow, MSc",
+      "bio": "",
+      "photo": "../../static/img/team/samal.png",
+      "translations": {
+        "ru": {
+          "name": "Самал Закарьянова",
+          "position": "Младший научный сотрудник, MSc",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Самал Закарьянова",
+          "position": "Кіші ғылыми қызметкер, MSc",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Ayagoz Khamzina",
+      "position": "Research associate (MSc in Chemical Engineering), MA in Computer Science, PhD",
+      "bio": "Khamzina Ayagoz Saktagankyzy was born in 1994, November 25 (25.11.1994) in Uralsk, Kazakhstan. In 2012 she graduated from secondary general school № 2 and entered the Kazakh National University on a specialty \"chemist-technologist\". In 2016 she received a master's degree in technical sciences. She began her career as a student as a junior researcher at the Research Institute of combustion problems. In the course of her scientific activities she improved the technology of obtaining environmental water-soluble polyurethane paints. In 2017, she completed an internship at the Łódź Polytechnic University of Lodz, Poland. In 2018, she participated in a conference on sustainable development, organized by the UN at its headquarters in New York. Practiced at leading companies involved in oil refining, such as Karachaganak Petroleum Operated, Atyrau Oil Refinery. At she is currently a junior researcher in the Department of Science and Innovation at AITU.",
+      "photo": "../../static/img/team/ayagoz_khamzina.jpg",
+      "translations": {
+        "ru": {
+          "name": "Аягоз Хамзина",
+          "position": "Научный сотрудник (магистр химического машиностроения), магистр компьютерных наук, доктор философии",
+          "bio": "Хамзина Аягоз Сактаганкызы родилась в 1994 году, 25 ноября (25.11.1994) в городе Уральск, Казахстан. В 2012 году окончила среднюю общеобразовательную школу № 2 и поступила в Казахский национальный университет на специальность «химик-технолог». В 2016 году получила степень магистра технических наук. Трудовую деятельность начала еще студенткой младшим научным сотрудником НИИ проблем горения. В ходе своей научной деятельности усовершенствовала технологию получения экологически чистых водорастворимых полиуретановых красок. В 2017 году прошла стажировку в Лодзинском политехническом университете в Лодзи, Польша. В 2018 году она участвовала в конференции по устойчивому развитию, организованной ООН в ее штаб-квартире в Нью-Йорке. Практиковал в ведущих компаниях, занимающихся нефтепереработкой, таких как «Карачаганак Петролиум Оперетейтед», «Атырауский нефтеперерабатывающий завод». В настоящее время она является младшим научным сотрудником Департамента науки и инноваций в AITU."
+        },
+        "kk": {
+          "name": "Аягөз Хамзина",
+          "position": "Ғылыми қызметкер (химиялық инженерия магистрі), информатика магистрі, PhD докторы",
+          "bio": "Хамзина Аягөз Сақтағанқызы 1994 жылы 25 қарашада (25.11.1994) Орал қаласында дүниеге келген. 2012 жылы №2 орта мектепті бітіріп, Қазақ Ұлттық Университетіне \"химик-технолог\" мамандығы бойынша оқуға түсті. 2016 жылы техникалық ғылымдар магистрі дәрежесін алды. Еңбек жолын студент кезінен Жану мәселелері ғылыми-зерттеу институтында кіші ғылыми қызметкер болып бастады. Ғылыми қызметі барысында ол экологиялық суда еритін полиуретанды бояуларды алу технологиясын жетілдірді. 2017 жылы Польшаның Лодзь қаласындағы Лодзь политехникалық университетінде тағылымдамадан өтті. 2018 жылы ол Нью-Йорктегі штаб-пәтерінде БҰҰ ұйымдастырған тұрақты даму жөніндегі конференцияға қатысты. Қарашығанақ Петролиум Оперейтед, Атырау мұнай өңдеу зауыты сияқты мұнай өңдеумен айналысатын жетекші компанияларда тәжірибеден өтті. Қазіргі уақытта АТУ ғылым және инновациялар кафедрасының кіші ғылыми қызметкері."
+        }
+      }
+    },
+    {
+      "name": "Yerbol Akhmetov",
+      "position": "M.Sc. in Electrical and Electronic Engineering",
+      "bio": "Received the B.Sc. and M.Sc. degree in electrical and electronic engineering at Nazarbayev University, Astana, Kazakhstan, in 2017 and 2019, respectively. He is currently pursuing research as a researcher in Department of Science and Innovation at Astana IT University (Astana, Kazakhstan) and in Electrical and Computer Engineering Department at Nazarbayev University (Astana, Kazakhstan). His research interests are frequency response analysis of transformers, transformer modeling, insulator diagnosis using computer vision and machine learning, analog circuit design, power transmission and energy modeling.",
+      "photo": "../../static/img/team/Akhmetov.png",
+      "translations": {
+        "ru": {
+          "name": "Ербол Ахметов",
+          "position": "Магистр наук в области электротехники и электронной техники",
+          "bio": "Получил степень бакалавра наук. и магистр наук. степень в области электротехники и электронной техники в Назарбаев Университете, Астана, Казахстан, в 2017 и 2019 годах соответственно. В настоящее время он проводит исследования в качестве исследователя в Департаменте науки и инноваций Астанинского ИТ-университета (Астана, Казахстан) и в Департаменте электротехники и вычислительной техники Назарбаев Университета (Астана, Казахстан). Его исследовательские интересы включают анализ частотных характеристик трансформаторов, моделирование трансформаторов, диагностику изоляторов с использованием компьютерного зрения и машинного обучения, проектирование аналоговых схем, передачу электроэнергии и моделирование энергии."
+        },
+        "kk": {
+          "name": "Ербол Ахметов",
+          "position": "Электротехника және электроника ғылымдарының магистрі",
+          "bio": "Ғылым бакалавры дәрежесін алды. және М.ғ.к. Сәйкесінше 2017 және 2019 жылдары Астана, Қазақстан, Назарбаев Университетінде электротехника және электронды инженерия мамандығы бойынша білім алған. Қазіргі уақытта Астана ІТ Университетінің Ғылым және инновациялар департаментінде (Астана, Қазақстан) және Назарбаев Университетінің Электротехника және компьютерлік техника кафедрасында (Астана, Қазақстан) ғылыми қызметкер ретінде ғылыми жұмыстар жүргізуде. Оның ғылыми қызығушылықтарына трансформаторлардың жиілік реакциясын талдау, трансформаторларды модельдеу, компьютерлік көру және машиналық оқытуды қолдану арқылы изоляторларды диагностикалау, аналогтық схемаларды жобалау, қуат беру және энергияны модельдеу кіреді."
+        }
+      }
+    },
+    {
+      "name": "Aidyn Bakdolotov",
+      "position": "M.Sc. in Nuclear Engineering, MS in Engineering (Purdue University). Director of Climate change Center, Economic Research Institute",
+      "bio": "Aidyn Bakdolotov is a MSc in Nuclear Engineering (Purdue University, USA, 2013). He is an experienced energy sector modelling expert with research interests in energy policy, climate change and economic development of Kazakhstan and the Central Asian region. During his professional career, he worked in many different areas such as power industry (combined power plant at Almaty CHP-2), academia (Nazarbayev University), think tanks such as Economic Research Institute and Zhasyl Damu. He participated in many projects related to mitigation issues of the region, including preparation of nationally determined contributions (NDC), National communications, Biennial reports, Low carbon decarbonization strategy and pathways and many others. In these projects, he mainly took part in analysis, modelling and preparation of the scenarios of energy, climate policies with focus on GHG emissions, energy intensity of GDP, energy efficiency improvements and many others issues. In economic modelling he participated in research related to income, taxes, budget and many other macroeconomic parameters. Currently, he works as the Director of Climate change Center at the Economic research institute. He took direct part in the development of the Strategy of achievement of carbon neutrality of Kazakhstan till 2060 year. He has publications in national and international journals.",
+      "photo": "../../static/img/team/bakdolotov.png",
+      "translations": {
+        "ru": {
+          "name": "Айдын Бакдолотов",
+          "position": "Магистр наук в области ядерной инженерии, магистр наук в области инжиниринга (Университет Пердью). Директор Центра по изменению климата, Институт экономических исследований",
+          "bio": "Айдын Бакдолотов – магистр атомной промышленности (Университет Пердью, США, 2013 год). Он является опытным экспертом по моделированию энергетического сектора с исследовательскими интересами в области энергетической политики, изменения климата и экономического развития Казахстана и региона Центральной Азии. За свою профессиональную карьеру он работал во многих различных областях, таких как энергетика (Алматинской ТЭЦ-2), научная деятельность (Назарбаев Университет), аналитические центры, такие как Институт экономических исследований и «Жасыл Даму». Он участвовал во многих проектах, связанных с вопросами смягчения последствий изменения климата в регионе, включая подготовку определяемых на национальном уровне вкладов (ОНУВ), национальных сообщений, двухгодичных отчетов и других международных исследовательских проектах. В этих проектах он в основном принимал участие в анализе, моделировании и подготовке сценариев энергетики, климатической политики с акцентом на выбросы парниковых газов, энергоемкость ВВП, повышение энергоэффективности и многие другие вопросы. В области экономического моделирования он участвовал в исследованиях, связанных с доходами, налогами, бюджетом и многими другими макроэкономическими параметрами. В настоящее время работает директором Центра изменения климата Института экономических исследований. Принимал непосредственное участие в разработке Стратегии достижения углеродной нейтральности Казахстана до 2060 года. Имеет публикации в национальных и международных журналах."
+        },
+        "kk": {
+          "name": "Айдын Бакдолотов",
+          "position": "Ядролық инженерия саласындағы ғылым магистрі, инженерия саласындағы ғылым магистрі (Пурдю университеті). Экономикалық зерттеулер институты Климаттың өзгеруі орталығының директоры",
+          "bio": "Айдын Бакдолотов – ядролық инженерия магистрі (Пурдю университеті, АҚШ, 2013 ж.). Ол энергетикалық саясат, климаттың өзгеруі және Қазақстан мен Орталық Азия өңірінің экономикалық дамуы мәселелері бойынша ғылыми қызығушылықтары бар энергетика секторын модельдеу бойынша тәжірибелі сарапшы. Кәсіби қызметінде ол энергетика (Алматы ЖЭО-2), ғылыми қызмет (Назарбаев Университеті), Экономикалық зерттеулер институты және «Жасыл Даму» сияқты сараптамалық орталықтар сияқты көптеген түрлі салаларда жұмыс істеді. Ол аймақтағы климаттың өзгеруінің салдарын азайту мәселелеріне қатысты көптеген жобаларға қатысты, соның ішінде Ұлттық анықталған жарналарды (NDC), Ұлттық коммуникацияларды, екіжылдық есептерді және басқа да халықаралық зерттеу жобаларын дайындау. Бұл жобаларда ол негізінен энергетикалық сценарийлерді талдау, модельдеу және дайындау, парниктік газдар шығарындыларына, ЖІӨ энергия сыйымдылығына, энергия тиімділігін арттыруға және басқа да көптеген мәселелерге назар аудара отырып, климаттық саясатқа қатысты. Экономикалық модельдеу саласында ол табыс, салық, бюджет және басқа да көптеген макроэкономикалық параметрлерге қатысты зерттеулермен айналысты. Қазіргі уақытта Экономикалық зерттеулер институты Климаттың өзгеруі орталығының директоры қызметін атқарады. Ол Қазақстанның 2060 жылға дейінгі көміртегі бейтараптығына қол жеткізу стратегиясын әзірлеуге тікелей қатысты. Ол ұлттық және халықаралық журналдарда жарияланған."
+        }
+      }
+    },
+    {
+      "name": "Toksanov Sapar",
+      "position": "MA in Computer Science, PhD",
+      "bio": "MA in Computer Science, PhD, AITU Fellow h-index=2 https://www.scopus.com/authid/detail.uri?authorId=57222154960",
+      "photo": "../../static/img/team/unknown_person.jpeg",
+      "translations": {
+        "ru": {
+          "name": "Токсанов Сапар",
+          "position": "Магистр компьютерных наук, кандидат технических наук",
+          "bio": "Магистр компьютерных наук, кандидат технических наук, научный сотрудник AITUh-index=2 scopus.com/authid/detail.uri?authorId=57222154960"
+        },
+        "kk": {
+          "name": "Токсанов Сапар",
+          "position": "Информатика магистрі, PhD",
+          "bio": "Информатика магистрі, PhD, AITU стипендиаты h-index=2 https://www.scopus.com/authid/detail.uri?authorId=57222154960"
+        }
+      }
+    },
+    {
+      "name": "Daniel Friedrich",
+      "position": "Consultant, University of Edinburgh, UK, Professor",
+      "bio": "",
+      "photo": "../../static/img/team/Daniel Friedrich.png",
+      "translations": {
+        "ru": {
+          "name": "Даниел Фридрх",
+          "position": "Консультант, Профессор Эдинбург Университета, UK",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Даниел Фридрх",
+          "position": "Кеңесші, Профессор, Эдинбург университеті, UK",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Zhenis Otarbaev",
+      "position": "Junior Research Fellow, MSc",
+      "bio": "",
+      "photo": "../../static/img/team/zhenis.png",
+      "translations": {
+        "ru": {
+          "name": "Женис Отарбаев",
+          "position": "Младший научный сотрудник, MSc",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Жеңіс Отарбаев",
+          "position": "Кіші ғылыми қызметкер, MSc",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Abdiramanov Orisbay",
+      "position": "Junior Research Fellow, MSc",
+      "bio": "",
+      "photo": "../../static/img/team/Abdiramanov.png",
+      "translations": {
+        "ru": {
+          "name": "Әбдіраманов Өрісбай",
+          "position": "Младший научный сотрудник, MSc",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Әбдіраманов Өрісбай",
+          "position": "Кіші ғылыми қызметкер, MSc",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Bakhtiyar Kazbekov",
+      "position": "Junior Research Fellow, MSc",
+      "bio": "",
+      "photo": "../../static/img/team/Bahtiyar.png",
+      "translations": {
+        "ru": {
+          "name": "Бахтияр Казбеков",
+          "position": "Младший научный сотрудник, MSc",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Бахтияр Казбеков",
+          "position": "Кіші ғылыми қызметкер, MSc",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Kabdygali Samat",
+      "position": "Junior Research Fellow, MSc",
+      "bio": "",
+      "photo": "../../static/img/team/Samat.png",
+      "translations": {
+        "ru": {
+          "name": "Кабдыгали Самат",
+          "position": "Младший научный сотрудник, MSc",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Кабдыгали Самат",
+          "position": "Кіші ғылыми қызметкер, MSc",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Baysakalova Nazia",
+      "position": "Junior Research Fellow",
+      "bio": "",
+      "photo": "../../static/img/team/Nazia.png",
+      "translations": {
+        "ru": {
+          "name": "Байсакалова Назия",
+          "position": "Младший научный сотрудник",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Байсакалова Назия",
+          "position": "Кіші ғылыми қызметкер",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Uikas Olzhas",
+      "position": "Junior Research Fellow",
+      "bio": "",
+      "photo": "../../static/img/team/Olzhas_Uikas.png",
+      "translations": {
+        "ru": {
+          "name": "Уйкас Олжас",
+          "position": "Младший научный сотрудник",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Уйкас Олжас",
+          "position": "Кіші ғылыми қызметкер",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Gulden Ormanova",
+      "position": "Senior Researcher, PhD in Science, Engineering and Technology (Nazarbayev University)",
+      "bio": "",
+      "photo": "../../static/img/team/gulden_ormanova.jpg",
+      "translations": {
+        "ru": {
+          "name": "Гульден Орманова",
+          "position": "Старший научный сотрудник, доктор наук в области науки, техники и технологий (Назарбаев Университет)",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Гүлден Орманова",
+          "position": "Аға ғылыми қызметкер, ғылым, техника және технология ғылымдарының кандидаты (Назарбаев Университеті)",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Gulmira Ismagulova",
+      "position": "Project expert on macroeconomic analysis, carbon regulation and methodological issues of primary data processing",
+      "bio": "",
+      "photo": "../../static/img/team/gulmira_ismagulova.jpg",
+      "translations": {
+        "ru": {
+          "name": "Гульмира Исмагулова",
+          "position": "Эксперт проекта по макроэкономическому анализу, углеродному регулированию и методическим вопросам первичной обработки данных",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Гүлмира Исмағұлова",
+          "position": "Макроэкономикалық талдау, көміртекті реттеу және бастапқы деректерді өңдеудің әдіснамалық мәселелері бойынша жоба сарапшысы",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Mirat Karibayev",
+      "position": "Research Assistant, PhD in Chemical Engineering (Nazarbayev University)",
+      "bio": "",
+      "photo": "../../static/img/team/mirat_karibayev.jpg",
+      "translations": {
+        "ru": {
+          "name": "Мират Карибаев",
+          "position": "Научный сотрудник, доктор философии в области химической инженерии (Назарбаев Университет)",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Мират Кәрібаев",
+          "position": "Ғылыми қызметкер, химия ғылымдарының кандидаты (Назарбаев Университеті)",
+          "bio": ""
+        }
+      }
+    },
+    {
+      "name": "Ainur Medetkhan",
+      "position": "Junior Researcher, MSc in Technical Sciences (Thermal Power Engineering, L.N.Gumilev Eurasian National University)",
+      "bio": "",
+      "photo": "../../static/img/team/ainur_medetkhan.png",
+      "translations": {
+        "ru": {
+          "name": "Айнур Медетхан",
+          "position": "Младший научный сотрудник, магистр технических наук (Теплоэнергетика, Евразийский национальный университет им. Л.Н. Гумилева)",
+          "bio": ""
+        },
+        "kk": {
+          "name": "Айнұр Медетхан",
+          "position": "Кіші ғылыми қызметкер, техника ғылымдарының магистрі (жылу энергетикасы, Л.Н.Гумилев атындағы Еуразия ұлттық университеті)",
+          "bio": ""
+        }
+      }
+    }
+  ],
+  "publications": [{}, {}, {}]
+}
