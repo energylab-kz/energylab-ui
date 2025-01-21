@@ -1,5 +1,23 @@
 # energylab-old
 
+- locally (outside container)
+  - nginx (frontend, backend, https configs, dns, etc.)
+    - download nginx and start:
+      - sudo apt update && sudo apt install nginx -y
+      - sudo systemctl status nginx
+      - sudo systemctl enable nginx
+      - sudo systemctl start nginx
+      - sudo systemctl restart nginx
+    - configure nginx
+      - cd enerylab
+      - cp -r ./energylab-ui /var/www/html/
+      - nano /etc/nginx/sites-available/default.conf
+  - certbot + cron(certification management)
+    - download certbot
+      - sudo apt install certbot python3-certbot-nginx
+    - sudo certbot --nginx -d energylab.kz -d www.energylab.kz
+    - sudo systemctl status certbot.timer
+
 ## TODO
 
 - Common:
