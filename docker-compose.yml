@@ -1,0 +1,109 @@
+# TODO: external nginx reverse proxy with certs, other one nginx for frontend inside
+# TODO: check how it build automatically - use build context and etc.
+
+# services:
+#   frontend:
+#     image: energylab-ui:latest
+#     container_name: "nginx_energylab"
+#     ports:
+#       - "80:80"
+#       - "443:443"
+#     networks:
+#       - energylab
+#     restart: unless-stopped
+
+# networks:
+#   energylab:
+#     driver: bridge
+#     name: energylab
+
+# TODO: change api insecure to secure and add basic http auth to dashboard or just don't expose dashboard
+# TODO: configure traefik config externally with traefik.yml  
+  # reverse-proxy:
+    # image: traefik:v3.3
+    # container_name: "traefik_energylab"
+    # command:
+    #   - "--api.insecure=true"
+    #   - "--providers.docker"
+    #   - "--providers.docker.exposedbydefault=false"
+    #   - "--entryPoints.http.address=:80"
+    #   # - "--entryPoints.https.address=:443"
+    #   # - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+    #   # - "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
+    #   # - "--certificatesresolvers.myresolver.acme.email=postmaster@example.com"
+    #   # - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    # ports:
+    # - "80:80"
+    # # - "443:433"
+    # - "8080:8080"
+    # volumes:
+    #   # - "./letsencrypt:/letsencrypt"
+    #   - /var/run/docker.sock:/var/run/docker.sock
+
+  # certificate-manager:
+  #   image: certbot/certbot:latest # TODO: find out exact certbot versions
+  #   container_name: "certbot_energylab"
+  #   networks:
+  #     - energylab
+
+  # frontend:
+  #   image: energylab-ui:latest
+  #   # TODO: check how it build automatically - use build context and etc.
+  #   container_name: "nginx_energylab"
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)" # energylab.kz
+  #     - "traefik.http.routers.whoami.entrypoints=http"
+  #     # - "traefik.http.routers.whoami.tls.certresolver=myresolver"
+  #   networks:
+  #     - energylab
+
+# volumes:
+#   traefik_energylab:
+#   certbot_energylab:
+
+# certs/ dir
+#   postgres:
+#     env_file:
+#       - .env
+#     environment:
+#       POSTGRES_DB: ${DATABASE_DB}
+#       POSTGRES_USER: ${DATABASE_USER}
+#       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+#     volumes:
+#       - postgres_data_fastsandbox:/var/lib/postgres_data_fastsandbox/data
+#       # - ./deploy/postgres/docker-entrypoint-initdb.d/pgvector.sql:/docker-entrypoint-initdb.d/init.sql # automatic initialization script for "CREATE EXTENSION vector;"
+#     ports:
+#       - "127.0.0.1:${DATABASE_PORT_EXTERNAL}:${DATABASE_PORT}" # "${POSTGRES_HOST}:${POSTGRES_PORT}:${POSTGRES_PORT}"
+#       # "${DATABASE_PORT_EXTERNAL}:${DATABASE_PORT}"
+#     networks:
+#       - fastsandbox
+#     restart: unless-stopped
+#     healthcheck:
+#       test: ["CMD", "pg_isready", "-p", "${DATABASE_PORT}", "-U", "${DATABASE_USER}"]
+#       interval: 30s
+#       timeout: 30s
+#       retries: 3
+#       start_period: 30s
+#       start_interval: 5s
+#   minio:
+#     image: quay.io/minio/minio:RELEASE.2024-10-02T17-50-41Z
+#     container_name: minio-fastsandbox
+#     env_file:
+#       - .env
+#     environment:
+#       MINIO_ROOT_USER: minioadmin
+#       MINIO_ROOT_PASSWORD: minioadmin
+#     volumes:
+#       - minio_fastsandbox:/var/lib/minio_fastsandbox/data
+#     command: server --console-address ":9001" /var/lib/minio_fastsandbox/data # server --console-address ":9001" http://minio/data
+#     ports:
+#       - "9000:9000"
+#       - "9001:9001"
+#     healthcheck:
+#       test: ["CMD", "mc", "ready", "local"]
+#       interval: 30s
+#       timeout: 30s
+#       retries: 3
+#       start_period: 30s
+#       start_interval: 5s
